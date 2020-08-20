@@ -1,0 +1,77 @@
+// Variables
+// --------------------------  
+ 
+// Colors and backgrounds
+// --------------------------
+
+$darker:                      #000000!default;
+$lighter: 		              #ffffff!default;
+$text-color:                  #6C6B6B;  
+$link-color:                  #7C5BB0;
+$title-color:                 #3B3B3B;
+$color1:                      #9ED4C7;
+$color2:                      #f7f7f7;
+$color3:                      #d8d8d8;
+$color4:                      #585858;
+$color5:                      #EDFBF8;
+$color6:                      #555555;
+$color7:                      #9071C0;
+$color8:                      #f1eff0;
+$color10:                     #B3A3CA;
+$color11:                     #CFEBF7;
+$color12:                     #757575;
+$color13:                     #e1e1e1;
+$color14:                     #CFCFCF;
+$color15:                     #d6d6d6;
+$color16:                     #b1a1c6;
+$color17:                     #B0B0B0;
+$color18:                     #272727;
+$color19:                     #EFF7FA;
+$color20:                     #EAEAEA;
+$color21:                     #f9f9f9;
+$color22:                     #6b6b6b;
+
+
+//== Typography
+// -------------------------- 
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+TC:100,300,400,500,700,900&display=swap');
+
+$main-font: 	'Noto Sans TC', sans-serif;
+
+$thin:       100;
+$light:      300;
+$regular:    400;
+$medium:     500;
+$semibold:   600;
+$bold:       700;
+$extrabold:  800;
+$black:      900;
+
+
+$size-base:    16px !default; 
+
+$size-h1:                       ceil(($size-base * 2.00)) 		    !default;   // ~32px
+$size-h2:                       ceil(($size-base * 1.63)) 			!default;   // ~26px
+$size-h3:                       ceil(($size-base * 1.50)) 			!default;   // ~24px
+$size-h4:                       ceil(($size-base * 1.375)) 			!default;   // ~22px
+$size-h5:                       ceil(($size-base * 1.25)) 			!default;   // ~20px
+$size-h6:              		    ceil(($size-base * 1.125)) 			!default;   // ~18px
+$text-size:              		ceil(($size-base * 0.93)) 			!default;   // ~15px
+$md-size:              		    ceil(($size-base * 0.875)) 			!default;   // ~14px
+$sm-size:              		    ceil(($size-base * 0.81)) 			!default;   // ~13px
+$xsm-size:              	    ceil(($size-base * 0.75)) 			!default;   // ~12px
+$thin-size:              	    ceil(($size-base * 0.687)) 			!default;   // ~11px
+
+
+//== Media queries breakpoints
+$desktop-only:      "(min-width: 768px)";/*@media #{$desktop-only} {}*/
+$lg-desktop-only:   "(min-width: 1440px)";
+$tablet-landscape:  "(min-width: 1024px) and (max-width: 1279px)";  
+$tablet-portrait:   "(min-width: 768px) and (max-width: 1023px)";
+$mobile-landscape:  "only screen and (max-width : 767px)";
+$mobile-portrait:   "only screen and (max-width : 479px)";  
+
+
+
+
+ 

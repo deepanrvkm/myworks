@@ -1,0 +1,223 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+body {
+    font-family: $main-font;
+	font-weight: $regular;
+    font-size: $text-size;
+    line-height: 1.73;
+    color: $text-color;
+	margin: 0px;
+	padding: 0px;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-style: normal;
+	font-weight: normal;
+	margin: 0px;
+	padding: 0px;
+}
+h1{
+   font-family: $main-font;
+   font-weight: $bold; 
+   font-size: $size-h1;
+   line-height: 1.13;
+   color: $title-color; 
+}
+h2{
+   font-family: $main-font;
+   font-weight: $bold;
+   font-size: $size-h2;
+   line-height: 1.08; 
+   color: $title-color; 
+}
+h3{
+   font-family: $main-font;
+   font-weight: $bold;
+   font-size: $size-h3;
+   line-height: 1.17;
+   color: $title-color; 
+   @media #{$tablet-portrait} { 
+       font-size: 20px;
+   }
+}
+h4{
+   font-family: $main-font;
+   font-weight: $bold; 
+   font-size: $size-h4;
+   line-height: 1.09;
+   color: $title-color; 
+}
+h5{
+   font-family: $main-font;
+   font-weight: $bold; 
+   font-size: $size-h5;
+   line-height: 1.10; 
+   color: $title-color; 
+}
+h6{
+   font-family: $main-font;
+   font-weight: $bold;
+   font-size: $size-h6;
+   line-height: 1.11;
+   color: $title-color; 
+}
+p {
+	font-family: $main-font;
+	font-weight: $regular;
+    font-size: $text-size;
+    line-height: 1.73;
+    color: $text-color;
+    margin: 0px;
+	padding: 0 0 26px;
+    @media #{$tablet-portrait} { 
+        font-size: 13px;
+    }
+}
+ul {
+	background: none;
+	margin: 0px;
+	padding: 0px;
+	list-style-image: none;
+	list-style-type: none;
+}
+ul li {
+	background: none;
+	margin: 0px;
+	padding: 0px;
+	list-style-image: none;
+	list-style-type: none;
+}
+a{
+	@include transition (all .3s ease-in-out);
+}
+a, a:hover, a:focus {
+	text-decoration: none;
+	outline: 0px none !important;
+}
+img, a img {
+	max-width: 100%;
+	margin: 0px;
+	padding: 0px;
+	border: none 0;
+	outline: 0px none !important;
+}
+input:focus, textarea:focus, a:focus {
+	outline: 0px none !important;
+}
+input[type="text"], 
+input[type="email"],
+input[type="password"]{
+	width: 100%;
+	font-family: $main-font;
+    font-weight: $regular;
+    font-size: $md-size;
+    line-height: 1;
+    color: $color6;
+	height: 44px;
+	border: solid 1px $color15;
+	border-radius: 2px;
+	padding: 0 14px;
+	box-shadow: none;
+	background: none;
+	margin: 0;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+}
+input[type="text"]:focus, 
+input[type="email"]:focus,
+input[type="password"]:focus {
+	box-shadow: none;
+	background: none;
+	font-style: normal;
+	color: $color6;
+    box-shadow: none;
+	background: none;
+    border: solid 1px $color14;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+}
+input[type="text"]::-moz-placeholder, 
+input[type="email"]::-moz-placeholder, 
+textarea::-moz-placeholder, 
+input[type="password"]::-moz-placeholder {
+ color: $color14;
+ opacity: 1;
+}
+input[type="text"]::-webkit-input-placeholder, 
+input[type="email"]::-webkit-input-placeholder, 
+textarea::-webkit-input-placeholder, 
+input[type="password"]::-webkit-input-placeholder {
+    color: $color14;
+    line-height: 16px;
+}
+input[type="text"]:-ms-input-placeholder, 
+input[type="email"]:-ms-input-placeholder, 
+textarea:-ms-input-placeholder, 
+input[type="password"]:-ms-input-placeholder {
+    color: $color14;
+}
+.btn{    
+    font-family: $main-font;
+    font-weight: $medium;
+    font-size: $text-size;
+    line-height: 1.07;
+    color: $lighter;  
+    min-width: 210px;
+    margin: 0;
+    border-radius: 0;
+    padding:14px 15px 16px;
+    border-radius: 2px;
+    background: $color7;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+    border: none;
+    outline: none !important;
+    display: inline-block;
+    box-shadow: none!important;
+    @include transition (all .3s ease-in-out);
+    &:hover, &:focus{
+        background: $link-color;
+        color: $lighter;
+    }
+    
+}
+.check-box {
+    margin:0 0 18px;
+    input[type=checkbox] {
+	   display: none;
+    }
+    input[type=checkbox] + label {
+        display: block;
+        position: relative;
+        cursor: pointer;
+        z-index: 1;
+        width: 100%;
+        font-family: $main-font;
+        font-size: $md-size;
+        line-height: 1.43;
+        color: $color6;
+        padding-left: 35px;
+        margin: 0;
+        &:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: -1;
+            width: 21px;
+            height: 21px;
+            border-radius: 2px;
+            background: none;
+            border: solid 1px $color15;
+        }
+    }
+    input[type=checkbox]:checked + label:before {
+        background: $color22 url("../images/tick.svg") no-repeat center center;
+    }
+}

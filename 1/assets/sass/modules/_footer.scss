@@ -1,0 +1,118 @@
+/**********************************************
+    Footer
+***********************************************/
+.footer-container{
+    background: $color2;
+}
+.footer-top{
+    padding:60px 0 28px;
+    @media #{$tablet-landscape} { 
+        padding:50px 0 28px;
+    }
+    @media #{$tablet-portrait} { 
+        padding:40px 0 25px;
+    }
+    @media #{$mobile-landscape} { 
+        padding:40px 0 25px;
+    }
+    .footer-links{
+        @include flexbox;
+        @include flex-wrap(wrap);
+        font-size: $sm-size;
+        line-height: 1.85;
+        color: $color4;
+        @media #{$tablet-landscape} { 
+            font-size: 12px;
+        }
+        @media #{$tablet-portrait} { 
+            font-size: 11px;
+            @include justify-content(space-between);
+        }
+        @media #{$mobile-landscape} { 
+            padding: 20px 0 0;
+        }
+        ul{
+            width: 33.33%;
+            padding-right: 15px;
+            @media #{$tablet-portrait} { 
+                width: auto;
+            }
+            @media #{$mobile-landscape} { 
+                width: 100%;
+                text-align: center;
+                padding: 0;
+            }
+            li{
+                padding:0 0 6px;
+            }
+        }
+        a{
+            color: $color4;
+            &:hover{
+                color: $link-color; 
+            }
+        }
+    }
+    .online{
+        font-size: $sm-size;
+        font-weight: $medium;
+        line-height: 1.69;
+        color: $color4;
+        @media #{$tablet-landscape} { 
+            font-size: 12px;
+        }
+        @media #{$tablet-portrait} { 
+            font-size: 11px;
+        }
+        @media #{$mobile-landscape} { 
+            text-align: center;
+            padding: 15px 0 0;
+        }
+        a{
+            color: $color4;
+            &:hover{
+                color: $link-color; 
+            }
+        }
+    }
+    .footer-logo{
+        @media #{$mobile-landscape} { 
+            text-align: center;
+        }
+    }
+}
+.bottom-inner{
+    padding:19px 0;
+    border-top: solid 1px $color3;
+    @include flexbox;
+    @include justify-content(space-between);
+    @include flex-wrap(wrap);
+    font-size: $sm-size;
+    line-height: 2;
+    color: $color4;
+    @media #{$tablet-landscape} { 
+        font-size: 12px;
+    }
+    @media #{$tablet-portrait} { 
+        font-size: 11px;
+    }
+    @media #{$mobile-landscape} { 
+        text-align: center;
+    }
+    a{
+        color: $color4;
+        &:hover{
+            color: $link-color; 
+        }
+    }
+    .copyright{
+        @media #{$mobile-landscape} { 
+            width: 100%;
+        }
+    }
+    .siteby{
+        @media #{$mobile-landscape} { 
+            width: 100%;
+        }
+    }
+}

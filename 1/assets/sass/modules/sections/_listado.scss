@@ -1,0 +1,210 @@
+/**********************************************
+    Listado Page 
+***********************************************/
+.intro-content-outer{
+    background: $color21;
+    .intro-content{
+        padding:46px 0 28px;
+        @media #{$tablet-portrait} { 
+            padding:40px 0 10px;
+        }
+        @media #{$mobile-landscape} { 
+            padding:40px 0 10px;
+        }
+        h1{
+            font-size: $size-h6;
+            line-height: 1.22;
+            padding:0 0 30px;
+            @media #{$tablet-landscape} { 
+               padding:0 0 25px; 
+            }
+            @media #{$tablet-portrait} { 
+                padding:0 0 20px;
+            }
+            @media #{$mobile-landscape} { 
+                padding:0 0 20px;
+            }
+        }
+        p{
+            font-size: $sm-size;
+            line-height: 2;
+        }
+    }
+}
+.product-list-outer{
+    padding:50px 0 0;
+    .product-list-block{
+        @include flexbox;
+        @include justify-content(space-between);
+        @media #{$mobile-landscape} { 
+            @include flex-wrap(wrap);
+        }
+    }
+    .grid-left{
+        width: 19.3%;
+        min-width: 220px;
+        padding-right: 10px;
+        @media #{$mobile-landscape} { 
+          width: 100%;
+            padding:0;  
+        }
+        h6{
+            padding:0 0 22px;
+            text-transform: uppercase;
+        }
+        .expand{
+            font-size: $md-size;
+            font-weight: $medium;
+            line-height: 1.43;
+            color: $color6;
+            text-decoration: underline;
+            cursor: pointer;
+            &:hover, &:focus{
+                color: $link-color;
+            }
+        }
+        .filter-block{
+            padding:0 0 40px;
+        }
+    }
+    .grid-right{
+        width: 80.7%;
+        @media #{$mobile-landscape} { 
+            width: 100%;
+        }
+        .product-list{
+            ul{
+                li{
+                    width: 25%;
+                    @media #{$tablet-portrait} { 
+                        width: 33.33%;
+                    }
+                    @media #{$mobile-landscape} { 
+                        width: 50%;                        
+                    }
+                    @media #{$mobile-portrait} { 
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+.range-slider{
+    padding: 14px 0 30px;
+}
+.slider-handle{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: solid 3px $color7;
+    background: $lighter;
+    &:hover, &:focus{
+        background: $lighter;
+    }
+}
+.slider-fill{
+    background: $color7;
+    height: 3px;
+}
+.slider{
+    background: $color15;
+    height: 3px;
+    border-radius: 2px;
+    margin: 0 0 20px;
+    cursor: pointer;
+    max-width: 185px;
+    @media #{$mobile-landscape} { 
+        max-width: inherit;
+    }
+    input[type="text"]{
+        width: 30px;
+        height: 20px;
+        background: none;
+        border: none;
+        cursor: default;
+        padding: 0;
+        text-align: right;
+        font-size: $text-size;
+        color: $text-color;
+        font-weight: $regular;
+    }
+    .range-value{
+        position: absolute;
+        left: 0;
+        top: 14px;
+        /*padding-right: 11px;*/
+        &:before{
+            content: attr(data-currency);
+            position: absolute;
+            right: 0;
+            top: -2px;
+            display: none;
+        }
+        &.start{
+            left: 0;
+            input[type="text"]{
+                width: 18px;
+            }
+        }
+        &.end{
+            left: inherit;
+            right: 0;
+            text-align: right;
+        }
+    }
+}
+.sort-area-outer{
+    text-align: right;
+    padding:0 0 30px;    
+    @media #{$mobile-landscape} { 
+        text-align: center;
+    }
+    .SumoSelect{
+        width: 140px;
+    }
+    .sort-block{
+        display: inline-block;
+        text-align: left;
+        vertical-align: top;
+    }
+}
+.SumoSelect > {    
+    .CaptionCont{
+        font-size: $sm-size;
+        border: none;
+        border-bottom: solid 2px $color3;
+        padding: 5px 0;
+    }
+    .CaptionCont > span{
+        padding-right: 10px;
+    }
+    .CaptionCont > label{
+        width: 10px;
+    }
+    .CaptionCont > label > i{
+        background: url("../images/angle-down.svg") no-repeat left center;
+        margin: 0;
+        position: absolute;
+        right: 0;
+        top: 10px;
+        background-size: 10px;
+    }
+    .optWrapper > .options li.opt{
+        padding: 0;
+    }
+    .optWrapper > .options li label{
+        font-size: $xsm-size;
+        line-height: 1.2;
+        color: $text-color;
+        font-weight: $regular;
+        padding:10px 5px 10px 10px;
+    }
+}
+.SumoSelect.open > .optWrapper{
+     top: 33px;
+}
+.SumoSelect:focus > .CaptionCont, .SumoSelect:hover > .CaptionCont, .SumoSelect.open > .CaptionCont{
+    box-shadow: none;
+    border-color: $color3;
+}

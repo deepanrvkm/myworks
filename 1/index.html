@@ -1,11 +1,633 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Untitled Document</title>
+<meta charset="utf-8">
+<title>Home | Reira</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="format-detection" content="telephone=no">
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="shortcut icon" href="favicon.ico"/>
+<link rel="stylesheet" href="assets/css/foundation.css"/>
+<link rel="stylesheet" href="assets/css/slick.css"/>
+<link rel="stylesheet" href="assets/css/style.css"/>
 </head>
 
 <body>
-<h1>project1</h1>
+<div class="main-outercon">
+  <div class="off-canvas-wrapper">
+    <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper> 
+      
+      <!--Begin header section-->
+      <header class="header-container">
+        <div class="header-inner">
+          <div class="header-top-outer">
+            <div class="row">
+              <div class="medium-12 columns">
+                <div class="header-top">
+                  <div class="logo"> <a href="#"><img src="assets/images/logo.png" alt=""></a> </div>
+                  <div class="header-right">
+                    <div class="right-top">
+                      <div class="top-left">
+                        <div class="timing-detail"> De lunes a viernes<br/>
+                          de 9:00-14:00 y de 17:00-21:00 </div>
+                        <div class="location"> <a href="#">Localizar tienda</a> </div>
+                      </div>
+                      <div class="top-right">
+                        <div class="social-media"> <a href="#"><img src="assets/images/facebook.svg" alt=""></a> </div>
+                        <div class="language">
+                          <div id="polyglotLanguageSwitcher" class="language-switcher">
+                            <form action="#">
+                              <select id="polyglot-language-options">
+                                <option id="en" value="en" selected>&nbsp;</option>
+                                <option id="es" value="es">&nbsp;</option>
+                                <option id="nl" value="nl">&nbsp;</option>
+                                <option id="fr" value="fr">&nbsp;</option>
+                                <option id="de" value="de">&nbsp;</option>
+                              </select>
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="right-bottom">
+                      <div class="search-block">
+                        <form>
+                          <input class="search-box" type="text" placeholder="Buscar marca o término">
+                          <button type="submit" class="search-btn"></button>
+                        </form>
+                      </div>
+                      <div class="shipping-block"> Envío gratuito a partir de 19€ Entrega en 48/72 horas* </div>
+                      <div class="cart-block"> <a href="JavaScript:void(0);" class="cart-box">
+                        <div class="cart-icon"> <img src="assets/images/cart-icon.svg" alt="">
+                          <div class="cart-count">2</div>
+                        </div>
+                        <div class="cart-text"> Tu cesta <span>18,75 €</span> </div>
+                        </a>
+                        <div class="shopping-basket">
+                          <div class="basket-inner">
+                            <div class="basket-title">Cesta de compra</div>
+                            <ul>
+                              <li>
+                                <div class="basket-outer">
+                                  <div class="item-image"> <img src="assets/images/content/cart-item1.jpg" alt=""> </div>
+                                  <div class="item-details">
+                                    <h6>TOUS</h6>
+                                    <p><span>Gems power</span>Eau de toilette vaporizador 90 ml</p>
+                                    <div class="item-price">Precio: 46,95 €</div>
+                                    <div class="delete-btn"> <img src="assets/images/delete-icon.svg" alt=""> </div>
+                                  </div>
+                                </div>
+                              </li>
+                              <li>
+                                <div class="basket-outer">
+                                  <div class="item-image"> <img src="assets/images/content/cart-item2.jpg" alt=""> </div>
+                                  <div class="item-details">
+                                    <h6>NINNA RICCI</h6>
+                                    <p><span>Nina le sorbet</span>Eau de toilette vaporizador edicion limitada 50 ml</p>
+                                    <div class="item-price">Precio: 75,00 €</div>
+                                    <div class="delete-btn"> <img src="assets/images/delete-icon.svg" alt=""> </div>
+                                  </div>
+                                </div>
+                              </li>
+                            </ul>
+                            <a href="#" class="btn">Comprar</a> </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <button class="menu-icon" type="button" data-open="offCanvasLeft"></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="menu-outer">
+            <div class="row">
+              <div class="medium-12 columns">
+                <div class="main-menu">
+                  <ul>
+                    <li><a href="#">Perfumes</a></li>
+                    <li><a href="#">Cosmética</a></li>
+                    <li><a href="#">Maquillaje</a></li>
+                    <li><a href="#">Cabello</a></li>
+                    <li><a href="#">Bronceadores</a></li>
+                    <li><a href="#">Cuerpo</a></li>
+                    <li><a href="#">Hogar</a></li>
+                    <li class="active"><a href="#">Marcas</a></li>
+                    <li><a href="#">Promociones</a></li>
+                    <li><a href="#">Novedades</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- off-canvas left menu -->
+        <div class="off-canvas position-left" id="offCanvasLeft" data-off-canvas>
+          <aside class="left-off-canvas-menu">
+            <div class="left-off-canvas">
+              <div class="menu-logo"> <a href="#"><img src="assets/images/logo.png" alt=""></a> </div>
+              <div class="timing-detail"> De lunes a viernes<br/>
+                de 9:00-14:00 y de 17:00-21:00 </div>
+              <div class="location"> <a href="#">Localizar tienda</a> </div>
+              <div class="cart-block"> <a href="JavaScript:void(0);" class="cart-box">
+                <div class="cart-icon"> <img src="assets/images/cart-icon.svg" alt="">
+                  <div class="cart-count">2</div>
+                </div>
+                <div class="cart-text"> Tu cesta <span>18,75 €</span> </div>
+                </a>
+                <div class="shopping-basket">
+                  <div class="basket-inner">
+                    <div class="basket-title">Cesta de compra</div>
+                    <ul>
+                      <li>
+                        <div class="basket-outer">
+                          <div class="item-image"> <img src="assets/images/content/cart-item1.jpg" alt=""> </div>
+                          <div class="item-details">
+                            <h6>TOUS</h6>
+                            <p><span>Gems power</span>Eau de toilette vaporizador 90 ml</p>
+                            <div class="item-price">Precio: 46,95 €</div>
+                            <div class="delete-btn"> <img src="assets/images/delete-icon.svg" alt=""> </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="basket-outer">
+                          <div class="item-image"> <img src="assets/images/content/cart-item2.jpg" alt=""> </div>
+                          <div class="item-details">
+                            <h6>NINNA RICCI</h6>
+                            <p><span>Nina le sorbet</span>Eau de toilette vaporizador edicion limitada 50 ml</p>
+                            <div class="item-price">Precio: 75,00 €</div>
+                            <div class="delete-btn"> <img src="assets/images/delete-icon.svg" alt=""> </div>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                    <a href="#" class="btn">Comprar</a> </div>
+                </div>
+              </div>
+              <div class="search-block">
+                <form>
+                  <input class="search-box" type="text" placeholder="Buscar marca o término">
+                  <button type="submit" class="search-btn"></button>
+                </form>
+              </div>
+              <div class="shipping-block"> Envío gratuito a partir de 19€ Entrega en 48/72 horas* </div>
+              <div class="main-menu">
+                <ul>
+                  <li><a href="#">Perfumes</a></li>
+                  <li><a href="#">Cosmética</a></li>
+                  <li><a href="#">Maquillaje</a></li>
+                  <li><a href="#">Cabello</a></li>
+                  <li><a href="#">Bronceadores</a></li>
+                  <li><a href="#">Cuerpo</a></li>
+                  <li><a href="#">Hogar</a></li>
+                  <li class="active"><a href="#">Marcas</a></li>
+                  <li><a href="#">Promociones</a></li>
+                  <li><a href="#">Novedades</a></li>
+                </ul>
+              </div>
+            </div>
+          </aside>
+        </div>
+        <!-- off-canvas left menu --> 
+        
+      </header>
+      <!--End header section--> 
+      
+      <!--Begin off-canvas section-->
+      <div class="off-canvas-content" data-off-canvas-content> 
+        <!--Begin Content section-->
+        <section class="content-container">
+          <div class="banner-block-outer">
+            <div class="banner-slider-outer">
+              <div class="row">
+                <div class="medium-12 columns">
+                  <div class="banner-slider-inner">
+                    <div class="banner-left">
+                      <div class="banner-slider">
+                        <div class="banner-slide">
+                          <div class="banner-content">
+                            <h5>Llévate de regalo esta toalla</h5>
+                            <p>Vivamus venenatis dui ut libero condimentum imperdiet. Integer in tortor neque. Praesent id quam ultricies neque ultricies porta vitae ornare enim.</p>
+                            <a href="#" class="btn">Descubrir</a> </div>
+                          <div class="banner-image"> <img src="assets/images/content/banner-1.jpg" alt=""> </div>
+                        </div>
+                        <div class="banner-slide">
+                          <div class="banner-content">
+                            <h5>Llévate de regalo esta toalla</h5>
+                            <p>Vivamus venenatis dui ut libero condimentum imperdiet. Integer in tortor neque. Praesent id quam ultricies neque ultricies porta vitae ornare enim.</p>
+                            <a href="#" class="btn">Descubrir</a> </div>
+                          <div class="banner-image"> <img src="assets/images/content/banner-1.jpg" alt=""> </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="banner-right">
+                      <div class="sm-slide"> <a href="#"><img src="assets/images/content/banner-image1.jpg" alt=""></a> </div>
+                      <div class="sm-slide"> <a href="#"><img src="assets/images/content/banner-image2.jpg" alt=""></a> </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="logo-slider-outer">
+              <div class="row">
+                <div class="medium-12 columns">
+                  <div class="logo-slider">
+                    <div class="brand"> <a href="#"><img src="assets/images/content/logo1.png" alt=""></a> </div>
+                    <div class="brand"> <a href="#"><img src="assets/images/content/logo2.png" alt=""></a> </div>
+                    <div class="brand"> <a href="#"><img src="assets/images/content/logo3.png" alt=""></a> </div>
+                    <div class="brand"> <a href="#"><img src="assets/images/content/logo4.png" alt=""></a> </div>
+                    <div class="brand"> <a href="#"><img src="assets/images/content/logo5.png" alt=""></a> </div>
+                    <div class="brand"> <a href="#"><img src="assets/images/content/logo6.png" alt=""></a> </div>
+                    <div class="brand"> <a href="#"><img src="assets/images/content/logo4.png" alt=""></a> </div>
+                    <div class="brand"> <a href="#"><img src="assets/images/content/logo3.png" alt=""></a> </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="product-block-outer">
+            <div class="row">
+              <div class="medium-12 columns">
+                <div class="product-block">
+                  <ul class="tabs" data-responsive-accordion-tabs="tabs small-accordion medium-tabs" id="product-tabs">
+                    <li class="tabs-title color1 is-active"><a href="#panel1" aria-selected="true">Ofertas</a></li>
+                    <li class="tabs-title color2"><a href="#panel2">Novedades</a></li>
+                    <li class="tabs-title color3"><a href="#panel3">Lo más vendidos</a></li>
+                    <li class="tabs-title"><a href="#panel4">Sets de tratamiento</a></li>
+                    <li class="tabs-title"><a href="#panel5">Perfumes</a></li>
+                  </ul>
+                  <div class="tabs-content" data-tabs-content="product-tabs">
+                    <div class="tabs-panel is-active" id="panel1">
+                      <div class="product-list" data-equalizer data-equalize-on="medium">
+                        <ul>
+                          <li> <a href="#">
+                            <div class="product" data-equalizer-watch>
+                              <div class="product-image"> <img src="assets/images/content/product1.jpg" alt=""> </div>
+                              <div class="product-details">
+                                <div class="product-name">Guerlain</div>
+                                <div class="product-category">Perfumes</div>
+                                <div class="product-description">Mon Guerlain Bloom of Rose edit. Un perfume que ...</div>
+                                <div class="product-price">Desde:<span>50.45€</span></div>
+                                <div class="product-pvr">P.V.R:<span>84.00€</span></div>
+                              </div>
+                            </div>
+                            </a> </li>
+                          <li> <a href="#">
+                            <div class="product" data-equalizer-watch>
+                              <div class="product-image"> <img src="assets/images/content/product2.jpg" alt=""> </div>
+                              <div class="product-details">
+                                <div class="product-name">Carolina Herrera</div>
+                                <div class="product-category">Perfumes</div>
+                                <div class="product-description">Ch Good Girl Legere Edp. Dualidad femenina hecha</div>
+                                <div class="product-price">Desde:<span>59.59€</span></div>
+                                <div class="product-pvr">P.V.R:<span>63.00€</span></div>
+                              </div>
+                            </div>
+                            </a> </li>
+                          <li> <a href="#">
+                            <div class="product" data-equalizer-watch>
+                              <div class="product-image"> <img src="assets/images/content/product3.jpg" alt=""> </div>
+                              <div class="product-details">
+                                <div class="product-name">Lancome</div>
+                                <div class="product-category">Maquillaje</div>
+                                <div class="product-description">Lancome Absolu Rouge Matte Lancome</div>
+                                <div class="product-price">Desde:<span>35.00€</span></div>
+                                <div class="product-pvr">P.V.R:<span>24.50€</span></div>
+                              </div>
+                            </div>
+                            </a> </li>
+                          <li> <a href="#">
+                            <div class="product" data-equalizer-watch>
+                              <div class="product-image"> <img src="assets/images/content/product4.jpg" alt=""> </div>
+                              <div class="product-details">
+                                <div class="product-name">Missha</div>
+                                <div class="product-category">Cosmética</div>
+                                <div class="product-description">Proteccion solar fusion fluid ultra fluido spf100 50 ml</div>
+                                <div class="product-price">Desde:<span>39.90€</span></div>
+                                <div class="product-pvr">P.V.R:<span>43.00€</span></div>
+                              </div>
+                            </div>
+                            </a> </li>
+                          <li> <a href="#">
+                            <div class="product" data-equalizer-watch>
+                              <div class="product-image"> <img src="assets/images/content/product5.jpg" alt=""> </div>
+                              <div class="product-details">
+                                <div class="product-name">ISDIN</div>
+                                <div class="product-category">Cuerpo</div>
+                                <div class="product-description">Fotoprotector. Proteccion solar fusion fluid ultra fluido spf100 50</div>
+                                <div class="product-price">Desde:<span>59.59€</span></div>
+                                <div class="product-pvr">P.V.R:<span>63.00€</span></div>
+                              </div>
+                            </div>
+                            </a> </li>
+                          <li> <a href="#">
+                            <div class="product" data-equalizer-watch>
+                              <div class="product-image"> <img src="assets/images/content/product6.jpg" alt=""> </div>
+                              <div class="product-details">
+                                <div class="product-name">Guerlain</div>
+                                <div class="product-category">Perfumes</div>
+                                <div class="product-description">Mon Guerlain Bloom of Rose edit. Un perfume que ...</div>
+                                <div class="product-price">Desde:<span>50.45€</span></div>
+                                <div class="product-pvr">P.V.R:<span>84.00€</span></div>
+                              </div>
+                            </div>
+                            </a> </li>
+                          <li> <a href="#">
+                            <div class="product" data-equalizer-watch>
+                              <div class="product-image"> <img src="assets/images/content/product7.jpg" alt=""> </div>
+                              <div class="product-details">
+                                <div class="product-name">Carolina Herrera</div>
+                                <div class="product-category">Perfumes</div>
+                                <div class="product-description">Ch Good Girl Legere Edp. Dualidad femenina hecha</div>
+                                <div class="product-price">Desde:<span>59.59€</span></div>
+                                <div class="product-pvr">P.V.R:<span>63.00€</span></div>
+                              </div>
+                            </div>
+                            </a> </li>
+                          <li> <a href="#">
+                            <div class="product" data-equalizer-watch>
+                              <div class="product-image"> <img src="assets/images/content/product8.jpg" alt=""> </div>
+                              <div class="product-details">
+                                <div class="product-name">Lancome</div>
+                                <div class="product-category">Maquillaje</div>
+                                <div class="product-description">Lancome Absolu Rouge Matte Lancome</div>
+                                <div class="product-price">Desde:<span>35.00€</span></div>
+                                <div class="product-pvr">P.V.R:<span>24.50€</span></div>
+                              </div>
+                            </div>
+                            </a> </li>
+                          <li> <a href="#">
+                            <div class="product" data-equalizer-watch>
+                              <div class="product-image"> <img src="assets/images/content/product9.jpg" alt=""> </div>
+                              <div class="product-details">
+                                <div class="product-name">Missha</div>
+                                <div class="product-category">Cosmética</div>
+                                <div class="product-description">Proteccion solar fusion fluid ultra fluido spf100 50 ml</div>
+                                <div class="product-price">Desde:<span>39.90€</span></div>
+                                <div class="product-pvr">P.V.R:<span>43.00€</span></div>
+                              </div>
+                            </div>
+                            </a> </li>
+                          <li> <a href="#">
+                            <div class="product" data-equalizer-watch>
+                              <div class="product-image"> <img src="assets/images/content/product10.jpg" alt=""> </div>
+                              <div class="product-details">
+                                <div class="product-name">ISDIN</div>
+                                <div class="product-category">Cuerpo</div>
+                                <div class="product-description">Fotoprotector. Proteccion solar fusion fluid ultra fluido spf100 50</div>
+                                <div class="product-price">Desde:<span>59.59€</span></div>
+                                <div class="product-pvr">P.V.R:<span>63.00€</span></div>
+                              </div>
+                            </div>
+                            </a> </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="tabs-panel" id="panel2">
+                      <p>Novedades</p>
+                    </div>
+                    <div class="tabs-panel" id="panel3">
+                      <p>Lo más vendidos</p>
+                    </div>
+                    <div class="tabs-panel" id="panel4">
+                      <p>Sets de tratamiento</p>
+                    </div>
+                    <div class="tabs-panel" id="panel5">
+                      <p>Perfumes</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="our-shops-outer">
+            <div class="row">
+              <div class="medium-12 columns">
+                <div class="our-shops">
+                  <h5>Nuestras tiendas</h5>
+                  <ul>
+                    <li> <a href="#">
+                      <div class="shop-block">
+                        <div class="shop-image">
+                          <div class="image-holder"> <img src="assets/images/content/shop.jpg" alt=""> </div>
+                        </div>
+                        <div class="shop-content">
+                          <h6>Torrevieja </h6>
+                          <p>C/ Ramón Gallud 66, 03180, Torrevieja<br/>
+                            966 700 070</p>
+                          <p>De lunes a viernes<br/>
+                            de 9:00-14:00 y de 17:00-21:00</p>
+                        </div>
+                      </div>
+                      </a> </li>
+                    <li> <a href="#">
+                      <div class="shop-block">
+                        <div class="shop-image">
+                          <div class="image-holder"> <img src="assets/images/content/shop.jpg" alt=""> </div>
+                        </div>
+                        <div class="shop-content">
+                          <h6>Torrevieja </h6>
+                          <p>C/ Ramón Gallud 66, 03180, Torrevieja<br/>
+                            966 700 070</p>
+                          <p>De lunes a viernes<br/>
+                            de 9:00-14:00 y de 17:00-21:00</p>
+                        </div>
+                      </div>
+                      </a> </li>
+                    <li> <a href="#">
+                      <div class="shop-block">
+                        <div class="shop-image">
+                          <div class="image-holder"> <img src="assets/images/content/shop.jpg" alt=""> </div>
+                        </div>
+                        <div class="shop-content">
+                          <h6>Torrevieja </h6>
+                          <p>C/ Ramón Gallud 66, 03180, Torrevieja<br/>
+                            966 700 070</p>
+                          <p>De lunes a viernes<br/>
+                            de 9:00-14:00 y de 17:00-21:00</p>
+                        </div>
+                      </div>
+                      </a> </li>
+                    <li> <a href="#">
+                      <div class="shop-block">
+                        <div class="shop-image">
+                          <div class="image-holder"> <img src="assets/images/content/shop.jpg" alt=""> </div>
+                        </div>
+                        <div class="shop-content">
+                          <h6>Torrevieja </h6>
+                          <p>C/ Ramón Gallud 66, 03180, Torrevieja<br/>
+                            966 700 070</p>
+                          <p>De lunes a viernes<br/>
+                            de 9:00-14:00 y de 17:00-21:00</p>
+                        </div>
+                      </div>
+                      </a> </li>
+                    <li> <a href="#">
+                      <div class="shop-block">
+                        <div class="shop-image">
+                          <div class="image-holder"> <img src="assets/images/content/shop.jpg" alt=""> </div>
+                        </div>
+                        <div class="shop-content">
+                          <h6>Guardamar del Segura</h6>
+                          <p>C/ Ramón Gallud 66, 03180, Torrevieja<br/>
+                            966 700 070</p>
+                          <p>De lunes a viernes<br/>
+                            de 9:00-14:00 y de 17:00-21:00</p>
+                        </div>
+                      </div>
+                      </a> </li>
+                    <li> <a href="#">
+                      <div class="shop-block">
+                        <div class="shop-image">
+                          <div class="image-holder"> <img src="assets/images/content/shop.jpg" alt=""> </div>
+                        </div>
+                        <div class="shop-content">
+                          <h6>La Mata (Torrevieja)</h6>
+                          <p>C/ Ramón Gallud 66, 03180, Torrevieja<br/>
+                            966 700 070</p>
+                          <p>De lunes a viernes<br/>
+                            de 9:00-14:00 y de 17:00-21:00</p>
+                        </div>
+                      </div>
+                      </a> </li>
+                    <li> <a href="#">
+                      <div class="shop-block">
+                        <div class="shop-image">
+                          <div class="image-holder"> <img src="assets/images/content/shop.jpg" alt=""> </div>
+                        </div>
+                        <div class="shop-content">
+                          <h6>Ciudad Quesada (Rojales)</h6>
+                          <p>C/ Ramón Gallud 66, 03180, Torrevieja<br/>
+                            966 700 070</p>
+                          <p>De lunes a viernes<br/>
+                            de 9:00-14:00 y de 17:00-21:00</p>
+                        </div>
+                      </div>
+                      </a> </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="advantages-block-outer">
+            <div class="row align-center">
+              <div class="medium-10 large-9 columns">
+                <div class="advantages-block">
+                  <h3>Ventajas de comprar online</h3>
+                  <div class="advantages-area">
+                    <div class="advantages">
+                      <div class="adv-icon"> <img src="assets/images/advantage-icon1.svg" alt=""> </div>
+                      <div class="adv-text">Pago seguro online</div>
+                    </div>
+                    <div class="advantages">
+                      <div class="adv-icon"> <img src="assets/images/advantage-icon2.svg" alt=""> </div>
+                      <div class="adv-text">Envío gratuito a partir de 19€
+                        Entrega en 48/72 horas*</div>
+                    </div>
+                    <div class="advantages">
+                      <div class="adv-icon"> <img src="assets/images/advantage-icon3.svg" alt=""> </div>
+                      <div class="adv-text">Devolución en 30 días</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="bottom-content-outer">
+            <div class="row">
+              <div class="medium-12 columns">
+                <div class="title">
+                  <h3>Perfumerías Reira. Tu tienda online de perfumes, cosmética, maquillaje y parafarmacia.</h3>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="small-12 medium-6 columns">
+                <div class="bottom-content">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis metus lorem, scelerisque ac congue vel, pretium in urna. Proin dapibus gravida mi, eu feugiat risus sodales nec. Aliquam leo diam, malesuada ac dui id, egestas molestie leo. Vivamus mauris massa, tempus eget hendrerit ut, gravida non tellus. Duis tellus nibh, tristique in rhoncus at, molestie quis augue. Quisque elementum ut est vitae ultricies. Suspendisse nibh nisl, tempor sed erat a, pellentesque tincidunt </p>
+                </div>
+              </div>
+              <div class="small-12 medium-6 columns">
+                <div class="bottom-content">
+                  <p>Sed rutrum varius massa, sed pellentesque justo sodales sodales. Pellentesque molestie lorem quis pellentesque sagittis. Proin finibus mattis tortor, sit amet dignissim eros ornare ut. Quisque vitae est sit amet nisl condimentum tristique at at turpis. Pellentesque condimentum pretium facilisis. Phasellus eleifend fringilla magna, id molestie nibh rhoncus vitae. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec molestie dictum tincidunt. Sed gravida</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!--End Content section--> 
+        
+        <!--Begin Footer section-->
+        <footer class="footer-container">
+          <div class="footer-top">
+            <div class="row">
+              <div class="small-12 medium-3 columns">
+                <div class="footer-logo"> <a href="#"><img src="assets/images/logo.png" alt=""></a> </div>
+              </div>
+              <div class="small-12 medium-7 columns">
+                <div class="footer-links">
+                  <ul>
+                    <li><a href="#">Condiciones generales</a></li>
+                    <li><a href="#">Política de privacidad</a></li>
+                    <li><a href="#">Política de cookies</a></li>
+                    <li><a href="#">Aviso Legal</a></li>
+                    <li><a href="#">Política de envíos</a></li>
+                    <li><a href="#">Devoluciones</a></li>
+                  </ul>
+                  <ul>
+                    <li><a href="#">Perfumes</a></li>
+                    <li><a href="#">Cosmetica</a></li>
+                    <li><a href="#">Maquillaje</a></li>
+                    <li><a href="#">Cabello</a></li>
+                    <li><a href="#">Bronceadores</a></li>
+                    <li><a href="#">Cuerpo</a></li>
+                  </ul>
+                  <ul>
+                    <li><a href="#">Hogar</a></li>
+                    <li><a href="#">Novedades</a></li>
+                    <li><a href="#">Promociones</a></li>
+                    <li><a href="#">Lo más vendido</a></li>
+                    <li><a href="#">Sets de tratamiento</a></li>
+                    <li><a href="#">Nuestras tiendas</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="small-12 medium-2 columns">
+                <div class="online"> <a href="#">Síguenos en linea</a> </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer-bottom">
+            <div class="row">
+              <div class="medium-12 columns">
+                <div class="bottom-inner">
+                  <div class="copyright">&copy; Copyright 2019 Riera perfumerias . Todos los derechos reservados. </div>
+                  <div class="siteby">Diseño Web: <a href="#">BE Creativos</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+        <!--End Footer section--> 
+      </div>
+      <!--End off-canvas section--> 
+    </div>
+  </div>
+</div>
+
+<!-- Le javascript
+    ================================================== --> 
+<!-- Placed at the end of the document so the pages load faster --> 
+<script src="assets/js/vendor/jquery-3.4.1.min.js"></script> 
+<script src="assets/js/vendor/what-input.js"></script> 
+<script src="assets/js/vendor/foundation.min.js"></script> 
+<script src="assets/js/vendor/debouncedresize.js"></script> 
+<script src="assets/js/vendor/imgLiquid.js"></script> 
+<script src="assets/js/vendor/slick.min.js"></script> 
+<script src="assets/js/vendor/languageswitcher.js"></script> 
+<script src="assets/js/main.js"></script>
 </body>
 </html>
