@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Agenda | Helpende Handen</title>
+    <meta name="viewport" content="initial-scale=1.0, width=device-width;" />
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="">
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800" />
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css" />
+    <link href="assets/css/foundation-datepicker.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/sumoselect.css" />
+    <link rel="stylesheet" href="assets/css/foundation.css" />
+    <link rel="stylesheet" href="assets/css/app.css" />
+    <link rel="stylesheet" href="assets/css/layout.css">
+</head>
+
+<body>
+    <div class="main-outercon inner-header">
+        <div class="off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+
+                <!--Begin header section-->
+                <header class="header-container">
+                    <div class="header-inner">
+                        <div class="row">
+                            <div class="medium-12 columns">
+                                <div class="header-content"> <a class="skip-main" href="#content">Skip to main content</a>
+                                    <div class="logo"> <a href="#" aria-label="home" title="Ga naar de homepage van Helpende Handen"><img src="assets/images/logo.png" alt="logo"></a> </div>
+                                    <div class="header-right">
+                                        <div class="size-changer"> <span id="jfontsize-default">A</span> <span id="jfontsize-plus">A</span> <span id="jfontsize-plus-plus">A</span> </div>
+                                        <div class="search-block">
+                                            <div class="search">
+                                                <form>
+                                                    <input id="search-text" aria-label="Zoek" type="text" name="search" class="search-text" placeholder="Zoek">
+                                                    <button type="submit" role="button" aria-label="search button" class="search-btn"></button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <div class="cart-block"> <a href="#" aria-label="cart" class="cart-icon"></a> </div>
+                                        <div class="icon-outer"> <a href="JavaScript:Void(0);" aria-label="Menu" title="Menuicon" class="menuicon" data-toggle="offCanvasTop"> <span>Menu</span> </a> </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- off-canvas left menu -->
+                    <div class="off-canvas position-top" id="offCanvasTop" data-off-canvas>
+                        <aside class="top-off-canvas">
+                            <div class="row">
+                                <div class="medium-12 columns">
+                                    <div class="menu-outer">
+                                        <div class="main-menu">
+                                            <ul>
+                                                <li><a href="#">Home</a></li>
+                                                <li class="sub-menu"> <a href="#">Diensten</a>
+                                                    <ul>
+                                                        <li><a href="#">Belangenbehartiging en beleidsbeïnvloeding</a></li>
+                                                        <li><a href="#">Keukentafelgesprek</a></li>
+                                                        <li><a href="#">Lotgenotencontact</a></li>
+                                                        <li><a href="#">Persoonlijke Dienstverlening</a></li>
+                                                        <li><a href="#">Praktische Thuishulp</a></li>
+                                                        <li><a href="#">Toerusting</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li><a href="#">Agenda</a></li>
+                                                <li><a href="#">Nieuws</a></li>
+                                                <li><a href="#">Over ons</a></li>
+                                                <li><a href="#">Steun ons</a></li>
+                                                <li><a href="#">Contact</a></li>
+                                                <li><a href="#">Webshop</a></li>
+                                                <li><a href="#">Reformatorisch Zorgloket <img src="assets/images/icon1.svg" alt="link-icon"></a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="limitation">
+                                            <h6>BEPERKINGEN</h6>
+                                            <ul>
+                                                <li><a href="#">Autisme</a></li>
+                                                <li><a href="#">Downsyndroom</a></li>
+                                                <li><a href="#">Dementie</a></li>
+                                                <li><a href="#">Epilesie</a></li>
+                                                <li><a href="#">Ernstige meervoudige beperking</a></li>
+                                                <li><a href="#">Gedragsproblemen</a></li>
+                                                <li><a href="#">Lichamelijke beperkingen</a></li>
+                                                <li><a href="#">Niet-aangeboren hersenletsel</a></li>
+                                                <li><a href="#">Parkinson</a></li>
+                                                <li><a href="#">Schisis</a></li>
+                                                <li><a href="#">Spina bifida</a></li>
+                                                <li><a href="#">Syndroom van Turner</a></li>
+                                                <li><a href="#">Visuele beperkingen</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </aside>
+                    </div>
+                    <!-- off-canvas left menu -->
+
+                </header>
+                <!--End header section-->
+
+                <!--Begin off-canvas section-->
+                <div class="off-canvas-content" id="content" data-off-canvas-content>
+                    <!--Begin Content section-->
+                    <div class="content-container">
+                        <section class="banner title-banner">
+                            <div class="banner-content  title-only">
+                                <div class="row align-center">
+                                    <div class="medium-12 large-10 columns">
+                                        <div class="banner-text">
+                                            <h1>Agenda</h1>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="breadcrumb-outer">
+                            <div class="row">
+                                <div class="medium-12 columns">
+                                    <div class="breadcrumb-inner">
+                                        <nav aria-label="You are here:" role="navigation">
+                                            <ul class="breadcrumbs">
+                                                <li><a href="#">Home</a></li>
+                                                <li><span class="show-for-sr">Current: </span><a href="#"> Agenda</a></li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="tab-content-block">
+                            <div class="row">
+                                <div class="medium-12 columns">
+                                    <div class="tab-blk-inner">
+                                        <h5 class="title-head"><img src="assets/images/chart.svg" alt="img">AGENDA</h5>
+                                        <div class="accordion" data-responsive-accordion-tabs="accordion medium-tabs">
+                                            <div class="accordion-item " data-accordion-item> <a href="#" class="accordion-title">Kaartweergave</a>
+                                                <div class="accordion-content" data-tab-content>
+                                                    <div class="intro-content">
+                                                        <div class="left-content">
+                                                            <div id="map"> </div>
+                                                            <div class="map-content">
+                                                                <div class="left-row">
+                                                                    <p><strong>Catechisatie</strong></p>
+                                                                    <span><i class="fas fa-flag"></i> Moerkapelle</span> <span><i class="fas fa-home"></i>Gereformeerde Gemeente</span> <span><i class="fas fa-road"></i>Kerkstraat 14</span>
+                                                                </div>
+                                                                <div class="right-row">
+                                                                    <p><strong>09 februari 2019</strong></p>
+                                                                    <span><i class="far fa-clock"></i>10:00 uur</span>
+                                                                    <p><strong>Den Haag</strong></p>
+                                                                </div>
+                                                                <a href="#" class="btn">Meer informatie</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="accordion-item is-active" data-accordion-item> <a href="#" class="accordion-title">Lijstweergave</a>
+                                                <div class="accordion-content" data-tab-content>
+                                                    <div class="intro-content">
+                                                        <div class="form-block">
+                                                            <form id="common-form">
+                                                                <div class="form-single-row">
+                                                                    <label for="select1">Activiteit</label>
+                                                                    <select class="SelectBox" name="module" id="select1">
+                                                                        <option selected="selected" value="">Alle</option>
+                                                                        <option value="kjerkdiensten">Kerkdiensten</option>
+                                                                        <option value="catechisatie">Catechisatie</option>
+                                                                        <option value="lotgenotencontact">Lotgenotencontact</option>
+                                                                        <option value="club">Club bijeenkomsten</option>
+                                                                        <option value="overige">Overige activiteiten </option>
+                                                                    </select>
+                                                                </div>
+                                                                <div class="form-single-row">
+                                                                    <label for="select2">Regio</label>
+                                                                    <select class="SelectBox" name="module" id="select2">
+                                                                        <option selected="selected" value="">Regio1</option>
+                                                                        <option value="volvo">Regio2</option>
+                                                                        <option value="saab">Regio3</option>
+                                                                        <option value="mercedes">Regio4</option>
+                                                                        <option value="audi">Regio5</option>
+                                                                    </select>
+                                                                </div>
+                                                                <div class="form-single-row date-time">
+                                                                    <label>Datum</label>
+                                                                    <div class="calender-blk">
+                                                                        <div class="start-date">
+                                                                            <label>Van</label>
+                                                                            <div class="input-outer">
+                                                                                <input type="text" class="span2" id="dp1">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="end-date">
+                                                                            <label>Tot</label>
+                                                                            <div class="input-outer">
+                                                                                <input type="text" class="span2" id="dp2">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="btn-div">
+                                                                            <button type="submit" class="btn">RESET</button>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                        <div class="table-content">
+                                                            <div class="table-content-inner">
+                                                                <table id="sorting-div" class="display nowrap">
+                                                                    <thead>
+                                                                        <tr>
+                                                                            <th>Activiteit</th>
+                                                                            <th>Datum / Tijd</th>
+                                                                            <th>Regio</th>
+                                                                        </tr>
+                                                                    </thead>
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td>
+                                                                                <div class="data-div">
+                                                                                    <p><strong>Catechisatie</strong></p>
+                                                                                    <span class="data-block1"><i class="fas fa-flag"></i> Moerkapelle</span> <span class="data-block2"><i class="fas fa-home"></i>Gereformeerde Gemeente</span> <span class="data-block3"><i class="fas fa-road"></i>Kerkstraat 14</span>
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div class="data-div time-div">
+                                                                                    <p><strong>09 februari 2019</strong></p>
+                                                                                    <span class="data-block1"><i class="far fa-clock"></i>10:00 uur</span>
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div class="data-div time-div">
+                                                                                    <p><strong>Den Haag</strong></p>
+                                                                                </div>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>
+                                                                                <div class="data-div">
+                                                                                    <p><strong>Clubmiddag</strong></p>
+                                                                                    <span class="data-block1"><i class="fas fa-flag"></i> Nieuwerkerk</span> <span class="data-block2"><i class="fas fa-home"></i>Gereformeerde Gemeente</span> <span class="data-block3"><i class="fas fa-road"></i>Molenstraat 16</span>
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div class="data-div time-div">
+                                                                                    <p><strong>09 september 2019</strong></p>
+                                                                                    <span class="data-block1"><i class="far fa-clock"></i>10:00 uur</span>
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div class="data-div time-div">
+                                                                                    <p><strong>Flakkee / Schouwen en Tholen</strong></p>
+                                                                                </div>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>
+                                                                                <div class="data-div">
+                                                                                    <p><strong>Zang en vertelmiddag </strong></p>
+                                                                                    <span class="data-block1"><i class="fas fa-flag"></i> Rijssen</span> <span class="data-block2"><i class="fas fa-home"></i>Gereformeerde Gemeente</span> <span class="data-block3"><i class="fas fa-road"></i>Molenstalweg 19</span>
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div class="data-div time-div">
+                                                                                    <p><strong>05 oktober 2019</strong></p>
+                                                                                    <span class="data-block1"><i class="far fa-clock"></i>14:30 uur</span>
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div class="data-div time-div">
+                                                                                    <p><strong>Landelijk</strong></p>
+                                                                                </div>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>
+                                                                                <div class="data-div">
+                                                                                    <p><strong>Clubmorgen</strong></p>
+                                                                                    <span class="data-block1"><i class="fas fa-flag"></i> Middelburg</span> <span class="data-block2"><i class="fas fa-home"></i>Gereformeerde Gemeente</span> <span class="data-block3"><i class="fas fa-road"></i>Willem Teelinckstr..</span>
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div class="data-div time-div">
+                                                                                    <p><strong>09 februari 2019</strong></p>
+                                                                                    <span class="data-block1"><i class="far fa-clock"></i>19:00 uur</span>
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div class="data-div time-div">
+                                                                                    <p><strong>Walcheren &amp; Zeeuws-Vlaanderen </strong></p>
+                                                                                </div>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>
+                                                                                <div class="data-div">
+                                                                                    <p><strong>Catechisatie</strong></p>
+                                                                                    <span class="data-block1"><i class="fas fa-flag"></i> Moerkapelle</span> <span class="data-block2"><i class="fas fa-home"></i>Gereformeerde Gemeente</span> <span class="data-block3"><i class="fas fa-road"></i>Kerkstraat 14</span>
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div class="data-div time-div">
+                                                                                    <p><strong>09 februari 2019</strong></p>
+                                                                                    <span class="data-block1"><i class="far fa-clock"></i>10:00 uur</span>
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div class="data-div time-div">
+                                                                                    <p><strong>Den Haag</strong></p>
+                                                                                </div>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>
+                                                                                <div class="data-div">
+                                                                                    <p><strong>Clubmiddag</strong></p>
+                                                                                    <span class="data-block1"><i class="fas fa-flag"></i> Nieuwerkerk</span> <span class="data-block2"><i class="fas fa-home"></i>Gereformeerde Gemeente</span> <span class="data-block3"><i class="fas fa-road"></i>Molenstraat 16</span>
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div class="data-div time-div">
+                                                                                    <p><strong>09 september 2019</strong></p>
+                                                                                    <span class="data-block1"><i class="far fa-clock"></i>10:00 uur</span>
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div class="data-div time-div">
+                                                                                    <p><strong>Flakkee / Schouwen en Tholen</strong></p>
+                                                                                </div>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>
+                                                                                <div class="data-div">
+                                                                                    <p><strong>Zangavond</strong></p>
+                                                                                    <span class="data-block1"><i class="fas fa-flag"></i> Bodegraven</span> <span class="data-block2"><i class="fas fa-home"></i>Grote Kerk</span> <span class="data-block3"><i class="fas fa-road"></i>Grote Markt 11</span>
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div class="data-div time-div">
+                                                                                    <p><strong>09 november 2019</strong></p>
+                                                                                    <span class="data-block1"><i class="far fa-clock"></i>19:00 uur</span>
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div class="data-div time-div">
+                                                                                    <p><strong>Bodegraven</strong></p>
+                                                                                </div>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </div>
+                                                        <div class="content-table-footer">
+                                                            <nav aria-label="Pagination">
+                                                                <ul class="pagination">
+                                                                    <li class="current"><span class="show-for-sr">You're on page</span> 1</li>
+                                                                    <li><a href="#" aria-label="Page 2">2</a></li>
+                                                                    <li><a href="#" aria-label="Page 3">3</a></li>
+                                                                    <li><a href="#" aria-label="Page 4">4</a></li>
+                                                                    <li><a href="#" aria-label="Page 5">5</a></li>
+                                                                    <li><a href="#" aria-label="Page 6">6</a></li>
+                                                                </ul>
+                                                            </nav>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <div class="footer-push"></div>
+                    </div>
+                    <!--End Content section-->
+
+                    <!--Begin Footer section-->
+                    <footer class="footer">
+                        <div class="footer-top">
+                            <div class="row">
+                                <div class="medium-12 columns">
+                                    <div class="footer-row">
+                                        <div class="footer-col left">
+                                            <p>Helpende Handen Vereniging langdurige zorg van de Gereformeerde Gemeenten, voor reformatorische mensen met een beperking</p>
+                                        </div>
+                                        <div class="footer-col">
+                                            <address>
+                                                <p>Houttuinlaan 7</p>
+                                                <p>Postbus 404</p>
+                                                <p>3440 AK Woerden</p>
+                                            </address>
+                                            <ul>
+                                                <li><a href="tel:0348489970" aria-label="phone number">0348 48 99 70</a></li>
+                                                <li><a href="mailto:info@helpendehanden.nl" aria-label="email address">info@helpendehanden.nl</a></li>
+                                            </ul>
+                                            <a href="#" aria-label="Reformatorisch Zorgloket" class="btn">Reformatorisch Zorgloket </a>
+                                        </div>
+                                    </div>
+                                    <div class="footer-row">
+                                        <div class="footer-col left">
+                                            <ul class="icon-block">
+                                                <li><a href="#" aria-label="footer icon"><img src="assets/images/footer-icon1.svg" alt="Iocn"></a></li>
+                                                <li><a href="#" aria-label="footer icon"><img src="assets/images/footer-icon2.svg" alt="Iocn"></a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="footer-col">
+                                            <p>Altijd op de hoogte van ons laatste nieuws!<br>
+                                                Schrijf je nu in voor de nieuwsbrief</p>
+                                            <div class="newsletter">
+                                                <form>
+                                                    <label for="newsletter">Emailadres *</label>
+                                                    <div class="newsletter-field">
+                                                        <input id="newsletter" type="text" name="newsletter" required>
+                                                        <button type="submit" role="button" aria-label="submit button"></button>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer-btm">
+                            <div class="row">
+                                <div class="medium-12 columns">
+                                    <div class="footer-nav">
+                                        <ul>
+                                            <li>&copy; 2019</li>
+                                            <li><a href="#" aria-label="Helpende Handen">Helpende Handen</a></li>
+                                            <li>Alle rechten voorbehouden</li>
+                                        </ul>
+                                    </div>
+                                    <div class="footer-nav privacy">
+                                        <nav>
+                                            <ul>
+                                                <li><a href="#">Privacy verklaring</a> </li>
+                                                <li><a href="#">Toegankelijkheidsverklaring</a></li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </footer>
+                    <!--End Footer section-->
+                </div>
+                <!--End off-canvas section-->
+            </div>
+        </div>
+    </div>
+    <!--/=== Javascript Start ===/-->
+    <script src="assets/js/vendor/jquery-3.4.0.js"></script>
+    <script src="assets/js/vendor/what-input.js"></script>
+    <script src="assets/js/vendor/foundation.min.js"></script>
+    <script src="assets/js/vendor/debouncedresize.js"></script>
+    <script src="assets/js/vendor/foundation-datepicker.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAwLRJDzLou24N3cyek9qxIyQAVBTfoW9o&callback=initMap"
+  type="text/javascript"></script>
+    <script src="assets/js/vendor/jfontsize-2.0.js"></script>
+    <script src="assets/js/vendor/datatables.min.js"></script>
+    <script src="assets/js/vendor/sumoselect.min.js"></script>
+    <script src="assets/js/app.js"></script>
+    <!--/=== Javascript End ===/-->
+
+</body>
+
+</html>

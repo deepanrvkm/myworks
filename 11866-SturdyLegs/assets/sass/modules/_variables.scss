@@ -1,0 +1,67 @@
+// Variables
+// --------------------------  
+ 
+// Colors and backgrounds
+// --------------------------
+
+$darker:                      #000000!default;
+$lighter: 		              #ffffff!default;
+$text-color:                  #121C26;  
+$link-color:                  #4ECFF2;
+$bg-color:                    #FAFAFA;
+
+$color1:                      #231f20;
+$color2:                      #386173;
+$color3:                      #aaaaaa;
+$color4:                      #161b1f;
+$color5:                      #fafafa;
+$color6:                      #01407E;
+$color7:                      #d3d3d3;
+$color8:                      #AAAAAA;
+$color9:                      #e6e6e6;
+
+
+
+//== Typography
+// --------------------------  
+$main-font: 	'plantin';
+$sub-font: 	    'SegoeUIRegular';
+$sub-font1: 	'BrandonTextBold';
+$sub-font2: 	'BrandonTextRegular';
+$title-font: 	'ObjektivMk3Light';
+$title-font1: 	'ObjektivMk3Thin';
+$title-font2: 	'ObjektivMk3Regular';
+$title-font3: 	'ObjektivMk3Bold';
+
+
+$light:      300;
+$regular:    400;
+$medium:     500;
+$semibold:   600;
+$bold:       700;
+$extrabold:  800;
+$black:      900;
+
+
+$size-base:    16px !default; 
+
+
+$size-h1:                       ceil(($size-base * 5.00)) 		    !default;   // ~80px
+$size-h2:                       ceil(($size-base * 3.5)) 			!default;   // ~56px
+$size-h3:                       ceil(($size-base * 1.875)) 			!default;   // ~30px
+$size-h4:                       ceil(($size-base * 1.5)) 			!default;   // ~24px
+$size-h5:                       ceil(($size-base * 1.375)) 			!default;   // ~22px
+$size-h6:                       ceil(($size-base * 1.25)) 			!default;   // ~20px
+
+
+$text-size:                     ceil(($size-base * 1.125)) 			!default;   // ~18px
+$sm-size:                       ceil(($size-base * 0.875)) 			!default;   // ~14px
+
+
+//== Media queries breakpoints
+$desktop-only:      "(min-width: 768px)";
+$tablet-landscape:  "(min-width: 1024px) and (max-width: 1279px)";  /*@media #{$tablet-landscape} {}*/
+$tablet-portrait:   "(min-width: 768px) and (max-width: 1023px)";
+$mobile-landscape:  "only screen and (max-width : 767px)";
+$mobile-portrait:   "only screen and (max-width : 479px)";  
+

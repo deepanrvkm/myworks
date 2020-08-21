@@ -1,0 +1,71 @@
+// Variables
+// --------------------------  
+ 
+// Colors and backgrounds
+$darker:             #000000 !default;
+$lighter:            #ffffff !default;
+$primary:            #87AD16 !default;
+$secondary:          #1D1D1D !default;
+$tertiary:           #E1442E !default;
+$text-color:         #222222 !default;
+$primary-hover:      #72950B !default;
+$border-color:       #979797 !default;
+$border-color1:      #707070 !default;
+$color1:             #666666 !default;
+$color2:             #C3C3C3 !default;
+$color3:             #e1ecc4 !default;
+$color4:             #777777 !default;
+$color5:             #DDDDDD !default;
+$color6:             #f2f2f2 !default;
+$color7:             #FAFAFA !default;
+$color8:             #272727 !default;
+$color9:             #232900 !default;
+$color10:            #333333 !default;
+$color11:            #E4572E !default;
+$color12:            #F0F0F0 !default;
+$color13:            #4c4c4c !default;
+$color14:            #719508 !default;
+$color15:            #f6f6f6 !default;
+$color16:            #e1e1e1 !default;
+$color17:            #2E2E2E !default;
+
+
+//Typography
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700,800&display=swap');
+
+$main-font:         'Open Sans', sans-serif;
+
+
+$light:      300;
+$regular:    400;
+$medium:     500;
+$semibold:   600;
+$bold:       700;
+$extrabold:  800;
+$black:      900;
+
+
+$size-base:    16px !default; 
+
+$size-h1:                       ceil(($size-base * 3.50)) 		    !default;   // ~56px
+$size-h2:                       ceil(($size-base * 2.50)) 			!default;   // ~40px
+$size-h3:                       ceil(($size-base * 2.25)) 			!default;   // ~36px
+$size-h4:                       ceil(($size-base * 2.00)) 			!default;   // ~32px
+$size-h5:                       ceil(($size-base * 1.50)) 			!default;   // ~24px
+$size-h6:              		    ceil(($size-base * 1.25)) 			!default;   // ~20px
+
+$size-md:              		    ceil(($size-base * 1.125)) 			!default;   // ~18px
+$size-med:              		ceil(($size-base * 1.062)) 			!default;   // ~17px
+$size-xmd:              		ceil(($size-base * 0.875)) 			!default;   // ~14px
+$size-xd:              		    ceil(($size-base * 0.812)) 			!default;   // ~13px
+$size-sm:              		    ceil(($size-base * 0.75)) 			!default;   // ~12px
+
+
+$md-desktop:   "(min-width: 1440px) and (max-width: 1799px)";
+
+@include breakpoint(xlarge only) {} //1200
+@include breakpoint(large only){ }  //1024  
+@include breakpoint(medium only) { } //640
+@include breakpoint(small only) {} //0
+
+

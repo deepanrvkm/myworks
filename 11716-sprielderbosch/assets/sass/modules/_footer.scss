@@ -1,0 +1,315 @@
+// ***********************************
+// FOOTER
+// ***********************************
+.footer-top{
+    background: $darker;
+    padding: 52px 0 50px;
+    @media #{$tablet-landscape} { 
+        padding: 40px 0;
+    }
+    @media #{$tablet-portrait} { 
+        padding: 30px 0;
+    }
+    @media #{$mobile-landscape} { 
+        padding: 40px 0 0;
+    }
+} 
+.footer-links{
+    @media #{$mobile-landscape} { 
+        padding:0 0 30px;
+        text-align: center;
+    }
+    h6{
+        color: $lighter;
+        padding:0 0 26px;
+        @media #{$tablet-landscape} { 
+            font-size: 15px;
+            padding: 0 0 20px;
+        }
+        @media #{$tablet-portrait} { 
+            font-size: 14px;
+            padding: 0 0 15px;
+        }
+        @media #{$mobile-landscape} { 
+            padding: 0 0 10px;
+        }
+    }
+    ul{
+        li{
+            font-family: $sub-font;
+            font-size: $size-base;
+            line-height: 1.75;
+            color: $color4;
+            @media #{$tablet-portrait} { 
+                font-size: 12px;
+            }
+            a{
+                display: inline-block;
+                vertical-align: top;
+                color: $color4;
+                &:hover, &:focus{
+                    color: $lighter;
+                }
+            }
+        }
+    }
+    p{
+       font-family: $sub-font;
+        font-size: $size-base;
+        line-height: 1.75;
+        color: $color4; 
+        @media #{$tablet-portrait} { 
+                font-size: 12px;
+            }
+        a{
+            display: inline-block;
+            vertical-align: top;
+            color: $color4; 
+            &:hover, &:focus{
+                color: $lighter;
+            }
+            &.email{
+                text-decoration: underline;
+            }
+        }
+    }
+}
+.footer-bottom{
+    border-top: solid 1px $color7;
+    padding:20px 0;
+    font-family: $sub-font;
+    font-size: $size-base;
+    line-height: 1.75;
+    color: $color7; 
+    @media #{$tablet-landscape} { 
+        font-size: 14px;
+    }
+    @media #{$tablet-portrait} { 
+        padding:15px 0;
+        font-size: 12px;
+    }
+    @media #{$mobile-landscape} { 
+        padding:15px 0;
+        text-align: center;
+    }
+    @media #{$mobile-portrait} { 
+        font-size: 14px;
+    }
+    a{
+        color: $color8; 
+        &:hover, &:focus{
+            color: $color2;
+        }
+    }
+    .bottom-links{
+        ul{
+            li{
+                display: inline-block;
+                vertical-align: middle;
+                color: $color8;
+                margin-right: 26px;
+                @media #{$tablet-landscape} { 
+                    margin-right: 20px;
+                }
+                @media #{$tablet-portrait} { 
+                    margin-right: 15px;
+                }
+                @media #{$mobile-landscape} { 
+                    margin:0 8px;
+                    &:first-child{
+                        width: 90%;
+                    }
+                }
+            }
+        }
+    }
+    .site-by{
+        color: $color8;
+        text-align: right;
+        @media #{$mobile-landscape} { 
+            padding:10px 0 0;
+            text-align: center;
+        }
+    }
+}
+.footer-mid{
+    padding:45px 0 40px;
+    @media #{$tablet-portrait} { 
+       padding:30px 0; 
+    }
+    @media #{$mobile-landscape} { 
+       padding:40px 0 10px;  
+        text-align: center;
+    }
+    h6{
+        color: $darker;
+        padding:0 0 10px;
+        @media #{$tablet-landscape} { 
+            font-size: 15px;
+        }
+        @media #{$tablet-portrait} { 
+            font-size: 14px;
+        }
+        @media #{$mobile-landscape} { 
+            padding:0 0 20px;
+        }
+    }
+    .news-letter{
+        margin: 25px 0 0;
+        background: $color1;
+        border-radius: 5px;
+        height: 50px;
+        padding: 10px 40px 10px 20px;
+        position: relative;
+        max-width: 250px;
+        @media #{$tablet-landscape} { 
+            padding: 10px 40px 10px 15px;
+            margin: 20px 0 0;
+        }
+        @media #{$tablet-portrait} { 
+            padding: 10px 20px 10px 10px;
+            margin: 15px 0 0;
+        }
+        @media #{$mobile-landscape} { 
+            margin:  0 auto;
+        }
+        input[type="text"]{
+            background: none;
+            border: none;
+            font-family: $sub-fontIt;
+            font-size: $sm-size;
+            color: $darker;
+            width: 100%;
+            &::-moz-placeholder {
+                color: $darker;
+                opacity: 1;
+            }
+            &:-ms-input-placeholder {
+                color: $darker;
+            }
+            &::-webkit-input-placeholder {
+                color: $darker;
+            }
+            @media #{$tablet-landscape} { 
+                font-size: 13px;                
+            }
+            @media #{$tablet-portrait} { 
+                font-size: 10px;
+            }
+        }
+        button{
+            width: 40px;
+            height: 50px;
+            position: absolute;
+            right: 0;
+            top: 0;
+            padding: 0;
+            border-radius: 5px;
+            cursor: pointer;
+            border: none;
+            background: transparent url("../images/angle-right.png") no-repeat left 10px center;
+            @include transition(all 300ms ease-in-out);
+            &:hover{
+                background-position: left 15px center;
+            }
+            @media #{$tablet-portrait} { 
+                width: 20px;
+                background-position: left  center;
+                &:hover{
+                    background-position: left center;
+                }
+            }
+        }
+    }
+}
+.mid-block{
+    padding:0 0 30px;
+}
+.partners{
+    @media #{$tablet-portrait} { 
+        margin-top: -10px;
+    }
+    ul{
+        li{
+            display: inline-block;
+            vertical-align: bottom;
+            margin-right: 25px;
+            @media #{$tablet-landscape} { 
+                margin-right: 15px;
+                max-width: 20%;
+            }
+            @media #{$tablet-portrait} { 
+                margin-right: 10px;
+                max-width: 20%;
+            }
+            @media #{$mobile-landscape} { 
+                margin: 0 8px;
+                max-width: 20%;
+            }
+            @media #{$mobile-landscape} { 
+                margin: 0 5px;
+            }
+            img{
+               @media #{$tablet-landscape} { 
+                   max-width: 95%;
+               }
+                @media #{$tablet-portrait} { 
+                    max-width: 95%;
+                }
+                @media #{$mobile-landscape} { 
+                    max-width: 95%;
+                }
+            }
+        }
+    }
+}
+.social-media{
+    margin-top: 25px;
+    @media #{$tablet-landscape} { 
+       margin-top: 20px; 
+    }
+    @media #{$tablet-portrait} { 
+        margin-top: 15px; 
+    }
+    @media #{$mobile-landscape} { 
+        margin-top: 0;
+    }
+    ul{
+        li{
+            display: inline-block;
+            vertical-align: top;
+            margin-right: 6px;
+            a{
+                @include flexbox;
+                @include align-items(center);
+                @include justify-content(center);
+                width: 50px;
+                height: 50px;
+                border-radius: 4px;
+                background: $darker;
+                @media #{$tablet-portrait} { 
+                    width: 40px;
+                    height: 40px;
+                }
+                &.facebook{
+                    background: #5279bc;
+                    &:hover, &:focus{
+                        background: #2c60b9;
+                    }
+                }
+                &.youtube{
+                    background: #e02a1f;
+                    &:hover, &:focus{
+                        background: #ff0f00;
+                    }
+                }
+                &.linkedin{
+                    background: #007ab6;
+                    &:hover, &:focus{
+                        background: #00557e;
+                    }
+                }
+            }
+        }
+    }
+}

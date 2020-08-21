@@ -1,0 +1,48 @@
+/**********************************************
+   Fonts
+***********************************************/ 
+@font-face {
+    font-family: 'AvenirHeavy';
+    src: url('../fonts/AvenirHeavy/AvenirHeavy.eot');
+    src: url('../fonts/AvenirHeavy/AvenirHeavy.eot') format('embedded-opentype'),
+         url('../fonts/AvenirHeavy/AvenirHeavy.woff2') format('woff2'),
+         url('../fonts/AvenirHeavy/AvenirHeavy.woff') format('woff'),
+         url('../fonts/AvenirHeavy/AvenirHeavy.ttf') format('truetype'),
+         url('../fonts/AvenirHeavy/AvenirHeavy.svg#AvenirHeavy') format('svg');
+}
+@font-face {
+    font-family: 'AvenirBlack';
+    src: url('../fonts/AvenirBlack/AvenirBlack.eot');
+    src: url('../fonts/AvenirBlack/AvenirBlack.eot') format('embedded-opentype'),
+         url('../fonts/AvenirBlack/AvenirBlack.woff2') format('woff2'),
+         url('../fonts/AvenirBlack/AvenirBlack.woff') format('woff'),
+         url('../fonts/AvenirBlack/AvenirBlack.ttf') format('truetype'),
+         url('../fonts/AvenirBlack/AvenirBlack.svg#AvenirBlack') format('svg');
+}
+@font-face {
+    font-family: 'AvenirMedium';
+    src: url('../fonts/AvenirMedium/AvenirMedium.eot');
+    src: url('../fonts/AvenirMedium/AvenirMedium.eot') format('embedded-opentype'),
+         url('../fonts/AvenirMedium/AvenirMedium.woff2') format('woff2'),
+         url('../fonts/AvenirMedium/AvenirMedium.woff') format('woff'),
+         url('../fonts/AvenirMedium/AvenirMedium.ttf') format('truetype'),
+         url('../fonts/AvenirMedium/AvenirMedium.svg#AvenirMedium') format('svg');
+}
+@font-face {
+    font-family: 'AvenirBook';
+    src: url('../fonts/AvenirBook/AvenirBook.eot');
+    src: url('../fonts/AvenirBook/AvenirBook.eot') format('embedded-opentype'),
+         url('../fonts/AvenirBook/AvenirBook.woff2') format('woff2'),
+         url('../fonts/AvenirBook/AvenirBook.woff') format('woff'),
+         url('../fonts/AvenirBook/AvenirBook.ttf') format('truetype'),
+         url('../fonts/AvenirBlack/AvenirBook.svg#AvenirBook') format('svg');
+}
+@font-face {
+    font-family: 'AvenirOblique';
+    src: url('../fonts/AvenirOblique/AvenirOblique.eot');
+    src: url('../fonts/AvenirOblique/AvenirOblique.eot') format('embedded-opentype'),
+         url('../fonts/AvenirOblique/AvenirOblique.woff2') format('woff2'),
+         url('../fonts/AvenirOblique/AvenirOblique.woff') format('woff'),
+         url('../fonts/AvenirOblique/AvenirOblique.ttf') format('truetype'),
+         url('../fonts/AvenirOblique/AvenirOblique.svg#AvenirOblique') format('svg');
+}

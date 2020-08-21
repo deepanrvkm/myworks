@@ -1,0 +1,127 @@
+// ***********************************
+// BANNER
+// ***********************************
+.banner-outer{
+    position: relative;
+    .banner-image{
+        width: 100%;
+        height: 57.553vw;
+        position: relative;
+        &:before{
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 81%;
+            height: 100%;
+            @include linearGradient2(rgba(0,0,0,1), rgba(0,0,0,1), rgba(0,0,0,0));
+            opacity: .5;
+        }
+        @media #{$tablet-portrait} { 
+            height: 500px;
+        }
+        @media #{$mobile-landscape} { 
+            height: 400px;
+        }
+        @media #{$mobile-portrait} { 
+            height: 350px;
+        }
+        img{
+            display: block;
+            width: 100%;
+        }
+    }
+    .banner-content{
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+    }
+    .banner-text{
+        padding:0 0 6.649vw;
+        max-width: 590px;
+        @media #{$mobile-landscape} { 
+            max-width: inherit;
+            padding:0 0 40px;
+        }
+        @media #{$mobile-portrait} { 
+            padding:0 0 30px;
+        }
+        h1{
+            padding: 0 0 30px;
+        }
+        p{
+            font-size: $size-h4;
+            font-weight: $semibold;
+            line-height: 1.41;
+            color: $lighter;
+            padding:0 0 2.979vw;
+            @media #{$tablet-landscape} { 
+                font-size: 20px;
+            }
+            @media #{$tablet-portrait} { 
+                font-size: 18px;
+            }
+            @media #{$mobile-landscape} { 
+                font-size: 14px;
+            }
+            @media #{$mobile-portrait} { 
+                font-size: 12px;
+            }
+        }
+    }
+}
+.home-banner{
+    .banner-text {
+       h1{
+           font-size: 5.319vw;
+           padding: 0 0 5.479vw;
+           @media #{$mobile-landscape} { 
+               font-size: 36px;
+           }
+           @media #{$mobile-portrait} { 
+               font-size: 24px;
+           }
+       } 
+    }
+}
+
+.innerpage-banner {
+    .banner-image{
+        position: relative;
+    }
+    
+    .banner-text{
+        padding: 0 0 134px;
+        @media #{$tablet-landscape} { 
+            padding: 0 0 80px;
+        }
+        @media #{$tablet-portrait} { 
+            padding: 0 0 40px;
+        }
+        @media #{$mobile-landscape} { 
+            padding: 0 0 20px;
+        }
+        h1{
+            @media #{$tablet-landscape} { 
+              font-size: 60px;  
+            }
+            @media #{$tablet-portrait} { 
+                font-size: 40px;
+            }
+           @media #{$mobile-landscape} { 
+               font-size: 36px;
+           }
+           @media #{$mobile-portrait} { 
+               font-size: 24px;
+           }
+       } 
+    }
+}
+
+.projecten-banner{
+    .banner-text{
+        padding: 0 0 306px;
+    }
+}
+

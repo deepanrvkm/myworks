@@ -1,0 +1,306 @@
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video     {
+    margin: 0;  
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+body {
+    font-family: $main-font;
+    font-weight: $regular;
+    font-size: $size-base;
+    line-height: 1.63;
+    color: $text-color;
+    margin: 0px;
+	padding: 0px;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-style: normal;
+	font-weight: normal;
+	margin: 0px;
+	padding: 0px;
+}
+h1{
+   font-family: $main-font;
+   font-weight: $bold;
+   font-size: $size-h1;
+   line-height: 1.27;
+   color: $darker;
+   @include breakpoint(large only) {
+      font-size: 46px;
+   } 
+   @include breakpoint(medium only) {
+      font-size: 34px;
+   } 
+   @include breakpoint(small only) {
+      font-size: 30px;
+   } 
+}
+h2{
+   font-family: $main-font;
+   font-weight: $bold;
+   font-size: $size-h2;
+   line-height: 1.50;
+   color: $darker;
+    
+   @include breakpoint(large only) {
+      font-size: 34px;
+   } 
+   @include breakpoint(medium only) {
+      font-size: 32px;
+   } 
+    
+   @include breakpoint(small only) {
+      font-size: 23px;
+   } 
+}
+h3{
+   font-family: $main-font;
+   font-weight: $bold; 
+   font-size: $size-h3;
+   line-height: 1.26;
+   color: $darker; 
+}
+h4{
+   font-family: $main-font;
+   font-weight: $bold;
+   font-size: $size-h4;
+   line-height: 1.23;
+   color: $darker; 
+   @include breakpoint(medium only) {
+      font-size: 25px;
+   } 
+   @include breakpoint(small only) {
+      font-size: 24px;
+   } 
+    
+}
+h5{
+   font-family: $main-font;
+   font-weight: $bold;
+   font-size: $size-h5;
+   line-height: 1.15;
+   color: $darker; 
+}
+h6{
+   font-family: $main-font;
+   font-weight: $bold;
+   font-weight: $regular;
+   font-size: $size-h6;
+   line-height: 1.18;
+   color:  $darker; 
+}
+p {
+	font-family: $main-font;
+    font-weight: $regular;
+    font-size: $size-base;
+    line-height: 1.63;
+    color: $text-color;
+    margin: 0px;
+	padding: 0 0 26px;
+    @include breakpoint(medium only) {
+        font-size: 13px;
+    }
+}
+ul {
+	background: none;
+	margin: 0px;
+	padding: 0px;
+	list-style-image: none;
+	list-style-type: none;
+}
+ul li {
+	background: none;
+	margin: 0px;
+	padding: 0px;
+	list-style-image: none;
+	list-style-type: none;
+}
+a{
+	@include transition (all .3s ease-in-out);
+}
+a, a:hover, a:focus {
+	text-decoration: none;
+	outline: 0px none !important;
+}
+img, a img {
+	max-width: 100%;
+	margin: 0px;
+	padding: 0px;
+	border: none 0;
+	outline: 0px none !important;
+}
+input:focus, textarea:focus, a:focus {
+	outline: 0px none !important;
+}
+input[type="text"], 
+input[type="email"],
+input[type="password"]{
+	width: 100%;
+	font-family: $main-font;
+    font-weight: $regular;
+    font-size: $size-base;
+    line-height: 1;
+    color: $color4;
+    font-style: italic;
+	height: 50px;
+	border: solid 2px $color5;
+	border-radius: 0;
+	padding: 0 14px;
+	box-shadow: none;
+	background: none;
+	margin: 0;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+}
+input[type="text"]:focus, 
+input[type="email"]:focus,
+input[type="password"]:focus {
+	box-shadow: none;
+	background: none;
+	font-style: normal;
+	color: $color4;
+    box-shadow: none;
+	background: none;
+    font-style: italic;
+    border: solid 2px $color5;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+}
+input[type="text"]::-moz-placeholder, 
+input[type="email"]::-moz-placeholder, 
+textarea::-moz-placeholder, 
+input[type="password"]::-moz-placeholder {
+ color: $color4;
+ opacity: 1;
+}
+input[type="text"]::-webkit-input-placeholder, 
+input[type="email"]::-webkit-input-placeholder, 
+textarea::-webkit-input-placeholder, 
+input[type="password"]::-webkit-input-placeholder {
+    color: $color4;
+}
+input[type="text"]:-ms-input-placeholder, 
+input[type="email"]:-ms-input-placeholder, 
+textarea:-ms-input-placeholder, 
+input[type="password"]:-ms-input-placeholder {
+    color: $color4;
+}
+.btn{    
+    font-family: $main-font;
+    font-weight: $semibold;
+    font-size: $size-sm;
+    line-height: 1.42;
+    color: $lighter;
+    text-transform: uppercase;
+    letter-spacing: 1.1px;    
+    min-width: 190px;
+    margin: 0;
+    border-radius: 0;
+    padding:21px 15px 21px 35px;
+    background: $darker;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+    border: none;
+    outline: none !important;
+    display: inline-block;
+    box-shadow: none!important;
+    @include transition (all .3s ease-in-out);
+    span{
+        position: relative;
+        &:before{
+            content: "";
+            position: absolute;
+            width: 12px;
+            height: 5px;
+            left: -20px;
+            top: 6px;
+            background-position: left center;
+            background-repeat: no-repeat;            
+            @include transition(all 300ms ease-in-out);
+        }
+    }
+    &:hover, &:focus{
+        background: $primary-hover;
+        color: $lighter;
+        span:before{
+            left: -15px;
+        }
+    }
+    &.primary{
+        background: $primary;        
+        span{
+            &:before{
+                left: -20px;
+                background-image:  url("../images/arrow-white.svg");
+            }
+        }
+        &:hover, &:focus{
+            background: $primary-hover;
+        }
+    }
+    &.secondary{
+        background: $primary;
+        border: solid 1px $border-color;
+        padding:15px 15px 15px 35px; 
+        background: none;
+        color: $darker;
+        span{
+            &:before{
+                background-image:  url("../images/arrow-orange.svg");
+            }
+        }
+    }
+    &.tertiary{
+        background: $primary;
+        border: solid 1px rgba(255,255,255,.5);
+        padding:15px 15px 15px 35px; 
+        background: none;
+        color: $darker;
+        span{
+            &:before{
+                background-image:  url("../images/arrow-white.svg");
+            }
+        }
+    }
+}
+.wrapper{
+    max-width: 1440px;
+    margin: auto;
+    position: relative;
+    @include breakpoint(xlarge down) { 
+        max-width: 1260px;
+    }
+    &.dark-bg{
+      background: $secondary;
+      &:before{
+        position: absolute;
+        content: "";
+        width: 2000px;
+        height: 100%;
+        background: $secondary;
+        top: 0;
+        right: 100%;
+      }
+      &.right-color{
+        &:before{
+          right: inherit;
+          left: 100%;
+        }
+      }
+    }
+    &.white-bg{
+      background: $lighter;
+      &:before{
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 100%;
+        background: $lighter;
+        top: 0;
+        right: 100%;
+      }
+    }
+}

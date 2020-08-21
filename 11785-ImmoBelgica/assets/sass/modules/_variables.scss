@@ -1,0 +1,101 @@
+// Variables
+// --------------------------  
+
+
+// Colors and backgrounds
+// --------------------------
+
+$darker:                      #000000!default;
+$lighter: 		              #ffffff!default;
+$text-color:                  #4A4A4A;  
+$link-color:                  #7C5BB0;
+$title-color:                 #3B3B3B;
+
+$color1:                      #FCC623;
+$color2:                      #E52726;
+$color3:                      #DB1918;
+$color4:                      #EF3635;
+$color5:                      #193B57;
+$color6:                      #1F1F1F;
+$color7:                      #D9D9D9;
+$color8:                      #2f2f2f;
+$color9:                      #8e8e8e;
+$color10:                     #232122;
+$color11:                     #333333;
+$color12:                     #404040;
+$color13:                     #C6C7CD;
+$color14:                     #0c77c5;
+$color15:                     #E08A17;
+$color16:                     #C91E11;
+$color17:                     #F6F6F6;
+$color18:                     #e2e2e2;
+$color19:                     #242424;
+$color20:                     #171717;
+$color21:                     #f3f3f3;
+$color22:                     #DFDFDF;
+$color23:                     #222222;
+$color24:                     #4B4B4B;
+$color25:                     #7C241D;
+$color26:                     #EFEFEF;
+$color27:                     #979797;
+$color28:                     #D7DADE;
+$color29:                     #EBEBEB;
+$color30:                     #3B5998;
+$color31:                     #00ACEE;
+$color32:                     #25D366;
+$color33:                     #E92728;
+
+
+
+
+//== Typography
+// -------------------------- 
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,500,600,700,800,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap');
+
+$main-font: 	'Work Sans', sans-serif;
+$sub-font:  	'Montserrat', sans-serif;
+$icon-font:  	'FontAwesome';
+
+$thin:       100;
+$exlight:    200;
+$light:      300;
+$regular:    400;
+$medium:     500;
+$semibold:   600;
+$bold:       700;
+$extrabold:  800;
+$black:      900;
+
+
+$size-base:    16px !default; 
+
+$size-h1:                       ceil(($size-base * 2.00)) 		    !default;   // ~32px
+$size-h2:                       ceil(($size-base * 1.75)) 			!default;   // ~28px
+$size-h3:                       ceil(($size-base * 1.63)) 			!default;   // ~26px
+$size-h4:                       ceil(($size-base * 1.50)) 			!default;   // ~24px
+$size-h5:                       ceil(($size-base * 1.375)) 			!default;   // ~22px
+$size-h6:              		    ceil(($size-base * 1.25)) 			!default;   // ~20px
+
+$sm-title:              	   	ceil(($size-base * 1.125)) 	    	!default;   // ~18px
+$md-text:               	   	ceil(($size-base * 0.937)) 	    	!default;   // ~15px
+$md-size:              	    	ceil(($size-base * 0.875)) 			!default;   // ~14px
+$xmd-size:              	   	ceil(($size-base * 0.75)) 			!default;   // ~12px
+$xsm-size:              	    ceil(($size-base * 0.687)) 			!default;   // ~11px
+
+
+//== Media queries breakpoints
+$desktop-only:      "(min-width: 768px)";/*@media #{$desktop-only} {}*/
+$sm-desktop-only:   "(min-width: 992px)";
+$medium-desktop:    "(min-width: 1440px) and (max-width: 1590px)"; 
+$small-desktop:     "(min-width: 1280px) and (max-width: 1439px)"; 
+$tablet-landscape:  "(min-width: 1024px) and (max-width: 1279px)";  
+$tablet-portrait:   "(min-width: 768px) and (max-width: 1023px)";
+$sm-screen:         "only screen and (max-width : 991px)";
+$mobile-landscape:  "only screen and (max-width : 767px)";
+$mobile-portrait:   "only screen and (max-width : 479px)";  
+
+
+
+
+ 

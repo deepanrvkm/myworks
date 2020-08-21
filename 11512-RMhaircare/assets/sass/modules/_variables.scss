@@ -1,0 +1,101 @@
+// Variables
+// --------------------------  
+ 
+// Colors and backgrounds
+// --------------------------
+
+$darker:                      #000000!default;
+$lighter: 		              #ffffff!default;
+$text-color:                  #868787;  
+$link-color:                  #C23636;
+$title-color:                 #585B5D;
+$menu-color:                  #646B6F;
+$btn-color:                   #506976;
+$border-color:                #ECECEC;
+
+$color1:                      #9AA9B1;
+$color2:                      #222222;
+$color3:                      #A6A6A6;
+$color4:                      #D51E1E;
+$color5:                      #92A1A9;
+$color6:                      #315E75;
+$color7:                      #313131;
+$color8:                      #b1bec4;
+$color9:                      #7d8e95;
+$color10:                     #D17070;
+$color11:                     #d8d8d8;
+$color12:                     #4B4C4E;
+$color13:                     #F7FBFD;
+$color14:                     #B5C5CD;
+$color15:                     #555555;
+$color16:                     #F5F5F5;
+$color17:                     #E5E4E4;
+$color18:                     #7C7C7C;
+$color19:                     #F3F6F7;
+$color20:                     #696969;
+$color21:                     #516068;
+$color22:                     #C2C3C3;
+$color23:                     #B0B0B0;
+
+
+
+//== Typography
+// --------------------------  
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,400i,700,900');
+@import url('https://fonts.googleapis.com/css?family=PT+Serif:400,400i,700,700i');
+
+$main-font: 	'Lato', sans-serif;
+$sub-font: 	    'LatoMedium';
+$sub-font1: 	'LatoSemibold';
+$sub-font2: 	'PT Serif', serif;
+$title-font: 	'LatoHeavy';
+
+
+
+$light:      300;
+$regular:    400;
+$medium:     500;
+$semibold:   600;
+$bold:       700;
+$extrabold:  800;
+$black:      900;
+
+
+$size-base:         16px !default; 
+$size-h1:                       ceil(($size-base * 1.875)) 		    !default;   // ~30px
+$size-h2:                       ceil(($size-base * 1.625)) 			!default;   // ~26px
+$size-h3:                       ceil(($size-base * 1.50)) 			!default;   // ~24px
+$size-h4:                       ceil(($size-base * 1.437)) 			!default;   // ~23px
+$size-h5:                       ceil(($size-base * 1.25)) 			!default;   // ~20px
+$size-h6:              		    ceil(($size-base * 1.125)) 			!default;   // ~18px
+
+$base-linehight:    26px !default;
+$lineheight-h1:                 ceil(($size-base * 2.25)) 		    !default;   // ~36px
+$lineheight-h2:                 ceil(($size-base * 2.00)) 			!default;   // ~32px
+$lineheight-h3:                 ceil(($size-base * 1.812)) 			!default;   // ~29px
+$lineheight-h4:                 ceil(($size-base * 1.75)) 			!default;   // ~28px
+$lineheight-h5:                 ceil(($size-base * 1.50)) 			!default;   // ~24px
+$lineheight-h6:                 ceil(($size-base * 1.375)) 			!default;   // ~22px
+
+$md-size:                       ceil(($size-base * .937)) 			!default;   // ~15px
+$sm-size:                       ceil(($size-base * .75)) 			!default;   // ~12px
+$mode-size:                     ceil(($size-base * .875)) 			!default;   // ~14px
+$large-title:                   ceil(($size-base * 4.125)) 			!default;   // ~66px
+$medium-title:                  ceil(($size-base * 3)) 				!default;   // ~48px
+$thin-size:                     ceil(($size-base * .687)) 			!default;   // ~11px
+$extra-thin:                    ceil(($size-base * .625)) 			!default;   // ~10px
+
+
+//== Media queries breakpoints
+$desktop-only:      "(min-width: 1024px)";
+$mobile-only:       "(max-width: 1023px)";
+$desktop-medium:    "(min-width: 1280px) and (max-width: 1400px)";
+$tablet-landscape:  "(min-width: 1024px) and (max-width: 1279px)";  
+$tablet-portrait:   "(min-width: 768px) and (max-width: 1023px)";
+$mobile-landscape:  "only screen and (max-width : 767px)";
+$mobile-portrait:   "only screen and (max-width : 479px)";  
+
+
+
+
+ 

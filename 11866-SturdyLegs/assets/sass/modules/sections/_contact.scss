@@ -1,0 +1,312 @@
+// ***********************************
+// Contact
+// ***********************************
+
+
+.contact-block-outer{
+    width: 100%;
+    height: auto;
+    background: $bg-color;
+    padding: 160px 0 80px;
+
+    @media #{$tablet-portrait} { 
+        padding: 75px 0 70px;
+    }
+    @media #{$mobile-landscape} { 
+        padding: 50px 0 15px;
+    }
+    
+    .contact-innerblk{
+        width: 100%;
+        height: auto;
+        float: right;
+        background: #FFF;
+        max-width: 1080px; 
+        padding: 70px 0;
+        @include box-shadow(0, 0, 12px, -4px, rgba(0, 0, 0, 0.6));
+        @include flexbox;
+        @include justify-content(space-between);
+
+         @media #{$mobile-landscape} {
+            display: block;
+            padding: 0 0 30px;
+         }
+        
+            h4 {
+                font-family: $title-font2;
+                padding-bottom: 25px; 
+            }
+        .address-blk{
+            width: 100%;
+            height: auto;
+            float: left;
+            max-width: 440px; 
+            margin-left: -100px;
+            background-blend-mode: multiply;
+            background-image: url(../images/content/person_img.png);
+            background-color:  rgba(1,64,126,.9);
+            background-size: cover;
+            padding: 102px 20px 46px 100px;
+            @include box-shadow(0, 0, 30px, -4px, rgba(0, 0, 0, 0.9));
+
+            @media #{$tablet-landscape} { 
+                max-width: 370px;
+                margin-left: -30px;
+                padding: 102px 20px 46px 75px;
+            }
+            @media #{$tablet-portrait} {
+                margin-left: -16px;
+                max-width: 360px;
+                padding: 102px 20px 46px 70px;
+            }
+            @media #{$mobile-landscape} {
+                margin-left: 0;
+                max-width: none; 
+                padding: 25px 20px 30px 70px;
+            }
+            
+            h4{ 
+                color: $lighter;
+
+                @media #{$mobile-landscape} {
+                    word-break: break-all;
+                    padding-bottom: 15px;
+                }       
+                @media #{$mobile-portrait} {
+                    font-size: 16px;
+                    padding-bottom: 12px;
+                }         
+            }
+            p{
+                font-family: $title-font2;
+            }
+            ul{
+                padding-top: 23px;
+
+                 @media #{$mobile-landscape} {
+                    padding-top: 0;
+                 }
+                li{
+                    font-size:$text-size ;
+                    font-family: $title-font2;
+                    padding: 18px 0;
+
+                    @media #{$tablet-portrait} {
+                        padding: 10px 0;
+                        font-size: 16px;
+                    }
+                    @media #{$mobile-landscape} {
+                        padding: 6px 0;
+                        font-size: 15px;
+                    }
+
+                    i{
+                        width: 37px;
+                        height: 36px;
+                        background-size: 37px 36px;
+                        float: left;
+                        margin-left: -60px;
+
+                        @media #{$tablet-portrait} {
+                            width: 30px;
+                            height: 30px;
+                            margin-left: -48px;
+                        }
+                        @media #{$mobile-landscape} {
+                            margin-left: -40px;
+                            width: 25px;
+                            height: 30px;
+                        }
+                    }
+                    .map-icon{
+                        background: url(../images/map_icon.svg) no-repeat center center;
+                    }
+                    .phone-icon{
+                       background: url(../images/phone_icon.svg) no-repeat center center ;
+                    }
+                    .mail-icon{
+                        background: url(../images/envelope_icon.svg) no-repeat center center;
+                    }
+                }
+            }
+
+            .social-icons{
+                width: 100%;
+                height: auto;
+                float: left;
+                margin-top: 83px;
+
+                @media #{$mobile-landscape} {
+                    margin-top: 25px;
+                }
+
+                ul{
+                    width: 100%;
+                    height: auto;
+                    float: left;
+
+                    li{
+                        float: left;
+                        margin: 0 42px 0 0;
+                        padding: 0;
+
+                        @media #{$mobile-landscape} {
+                            margin: 0 23px 0 0;
+                        }
+
+                        a img{
+                            width: 27px;
+                            height: 27px;
+
+                            @media #{$mobile-landscape} {
+                                width: 25px;
+                                height: 25px;
+                            }
+                        }
+                    }
+                }
+            }
+            
+        }
+        .forms-blk{
+            width: 100%;
+            height: auto;
+            float: left;
+            max-width: 700px;
+            background: $lighter;
+            padding: 103px 100px 0 19px;
+
+            @media #{$tablet-landscape} {
+                max-width: 565px;
+                padding: 50px 40px 0 19px;
+            }
+            @media #{$tablet-portrait} {
+                padding: 30px 25px 0 25px;
+                max-width: 345px;
+            }
+            @media #{$mobile-landscape} {
+                padding: 25px 20px 0 20px;
+             }
+
+            h4{
+                padding-bottom: 66px;
+
+                @media #{$tablet-portrait} {
+                    padding-bottom: 20px;
+                }
+                @media #{$mobile-landscape} {
+                    padding-bottom: 15px;
+                    font-size: 20px;
+                }
+            }
+
+            .btn.blue{
+                margin-top: 20px;
+                background: transparent;
+
+                @media #{$mobile-landscape} {
+                    margin-top: 5px;
+                }
+            }
+
+            .field-left{
+                float: left;
+                width: 48.2%;
+
+                @media #{$tablet-portrait} {
+                     width: 100%;
+                }
+                @media #{$mobile-landscape} {
+                    width: 100%;
+                }
+            }
+            .field-right{
+                float: right;
+                width: 48.2%;
+
+                @media #{$tablet-portrait} {
+                     width: 100%;
+                }
+                @media #{$mobile-landscape} {
+                    width: 100%;
+                }
+            }
+
+            .field-single{
+                float: left;
+                width: 100%;
+                margin-bottom: 21px;
+
+                @media #{$mobile-landscape} {
+                    margin-bottom: 15px;
+                }
+
+                label{
+                    float: left;
+                    width: 100%;
+                    text-transform: uppercase;
+                    color: $text-color;
+                    font-size: $text-size;
+                    font-family: $title-font;
+                    padding-bottom: 14px;
+
+                    @media #{$mobile-landscape} {
+                        padding-bottom: 5px;
+                        font-size: 16px;
+                    }
+                }
+                .mainfield{
+                    float: left;
+                    width: 100%;
+                    border: 0;
+                    background: $color9;
+                    height: 60px;
+                    padding: 19px 20px 20px;
+                    line-height: 26px;
+                    border-radius: 0;
+                }
+            }
+
+            .mandatory-fields{
+                float: left;
+                width: 100%;
+                color: $text-color;
+                font-size: $sm-size;
+                font-family: $title-font2;
+                padding-top: 50px;
+
+                @media #{$mobile-landscape} {
+                    padding-top: 15px;
+                }
+            }
+        }
+    } 
+
+    .view-more{
+        float: left;
+        width: 100%;
+        text-align: center;
+        padding: 67px 0 5px;
+        color: $text-color;
+        font-size: $size-h4;
+        font-family: $main-font;
+
+         @media #{$mobile-landscape} {
+            padding: 40px 0 25px;
+            font-size: 20px;
+            line-height: 27px;
+         }
+
+        a{
+            color: $color6;
+            text-decoration: underline;
+            font-style: italic;
+            @include transition (all .3s ease-in-out);
+
+            &:hover{
+                text-decoration: none;
+            }
+        }
+    }
+}
+

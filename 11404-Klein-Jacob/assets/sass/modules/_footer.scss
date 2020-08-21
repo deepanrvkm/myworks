@@ -1,0 +1,126 @@
+// ***********************************
+// FOOTER
+// ***********************************
+ 
+.footer-container{
+    width: 100%;
+    padding: 10px 0 52px;
+    @include radial-gradient($color2, $color8);
+    @media #{$tablet-portrait} {
+        padding-bottom: 30px;
+    }
+    @media #{$mobile-landscape} {
+        padding: 15px 0 20px;
+    }
+    .footer-top{
+        @include flexbox;
+        @include justify-content(flex-end);
+        width: 100%;
+        padding-bottom: 92px;
+        @media #{$tablet-landscape} {
+            padding-bottom: 60px;
+        }
+        @media #{$tablet-portrait} {
+            padding-bottom: 40px;
+        }
+        @media #{$mobile-landscape} {
+            padding-bottom: 30px;
+            text-align: center;
+        }
+        ul{
+            float: right;
+            margin-right: 5px;
+            @media #{$mobile-landscape} {
+                width: 100%;
+            }
+            li{
+                display: inline-block;
+                position: relative;
+                padding: 0 2px 0 10px;
+                &:before{
+                    content: ".";
+                    position: absolute;
+                    color: $title-color;
+                    left: 0;
+                }
+                &:first-child{
+                    padding-left: 0;
+                    &:before{
+                        display: none;
+                    }
+                }
+                a{
+                    color: $title-color;
+                    letter-spacing: 0.5px;
+                    &:hover,&:focus{
+                        color: $hover-color;
+                    }
+                    @media #{$tablet-portrait} {
+                        font-size: $size-lx-small;
+                        line-height: $size-title;
+                    } 
+                    @media #{$mobile-landscape} {
+                        font-size: $size-lx-small;
+                        line-height: $size-title;
+                    }
+                }
+            }
+        }
+    }
+    .footer-logo{
+        margin-bottom: 42px;
+        @media #{$tablet-landscape} {
+            margin-bottom: 30px;
+        }
+        @media #{$tablet-portrait} {
+            margin-bottom: 20px;
+        }
+        @media #{$mobile-landscape} {
+            margin-bottom: 10px;
+        }
+        img{
+            @media #{$tablet-landscape} {
+                max-width: 180px;
+            }
+            @media #{$tablet-portrait} {
+                max-width: 140px;
+            }
+            @media #{$mobile-landscape} {
+                max-width: 140px;
+            }
+        }
+    }
+    .footer-bottom{
+        width: 100%;
+        text-align: center;
+        ul{
+            li{
+                display: inline-block;
+                position: relative;
+                color: $lighter;
+                padding: 0 2px 0 10px;
+                letter-spacing: 0.7px;
+                @media #{$tablet-portrait} {
+                    font-size: $size-lx-small;
+                    line-height: $size-title;
+                } 
+                @media #{$mobile-landscape} {
+                    font-size: $size-lx-small;
+                    line-height: $size-title;
+                }
+                &:before{
+                    content: ".";
+                    position: absolute;
+                    color: $lighter;
+                    left: 0;
+                }
+                &:first-child{
+                    padding-left: 0;
+                    &:before{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}

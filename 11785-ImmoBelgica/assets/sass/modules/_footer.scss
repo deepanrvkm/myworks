@@ -1,0 +1,113 @@
+/**********************************************
+    Footer
+***********************************************/
+.footer-container{
+    background: $color6;
+}
+.footer-top{
+    @include flexbox;
+    @include flex-wrap(wrap);
+    padding:52px 0 5px;
+    @media #{$mobile-landscape} { 
+        padding:40px 0;
+    }
+    h5{
+        font-weight: $regular;
+        color: $lighter;
+        padding: 0 0 20px;
+        @media #{$tablet-portrait} { 
+            font-size: 20px;
+        }
+        @media #{$mobile-landscape} { 
+            padding: 0 0 15px;
+        }
+    }
+    p{
+        font-size: $md-size;
+        line-height: 1.42;
+        color: $color7;
+        padding:  0 0 20px;
+        a{
+           color: $color7; 
+        }
+    }
+}
+.address{
+    width: 42%;
+    @media #{$mobile-landscape} { 
+        width: 100%;
+        margin: 0 0 15px;
+    }
+    h5{
+        font-weight: $bold;
+    }
+}
+.sitemap{
+    width: 35%;
+    @media #{$mobile-landscape} { 
+        width: 100%;
+        margin: 0 0 30px;
+    }
+    ul{
+        @include multipleColumns(2, 10px);
+        max-width: 220px;
+        li{
+            font-size: $md-size;
+            line-height: 1.42;
+            color: $color7;
+            padding:0 0 4px;
+            a{
+               color: $color7;  
+                &:hover,
+                &:active,
+                &:focus{
+                    color: $color2;
+                }
+            }
+        }
+    }
+}
+.online{
+    width: 23%;
+    @media #{$mobile-landscape} { 
+        width: 100%;
+    }
+    ul{
+        margin-top: -2px;
+        li{
+            display: inline-block;
+            vertical-align: top;
+            margin-right: 9px;
+            @media #{$tablet-portrait} { 
+                margin-right: 5px;
+            }
+            a{
+                display: block;
+                i{
+                    display: block;
+                    width: 28px;
+                    height: 28px;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: center top;
+                    &.linkedin{
+                        background-image: url("../images/linkedin.svg");
+                    }
+                    &.facebook{
+                        background-image: url("../images/facebook.svg");
+                    }
+                }
+                &:hover{
+                    opacity: .6;
+                }
+            }
+        }
+    }
+}
+.copyright{
+    font-size: $md-size;
+    line-height: 1.42;
+    color: $color7;
+    border-top: solid 2px $color8;
+    padding: 25px 0;
+}

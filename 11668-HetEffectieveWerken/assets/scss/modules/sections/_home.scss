@@ -1,0 +1,1140 @@
+.main-outercon{
+    position: relative;
+}
+.content-container{
+    @include breakpoint(medium down) {
+        margin: 70px 0 0;
+    }
+}
+.slick-arrow{
+    position: absolute;
+    top: 50%;
+    @include transform-translatey(-50%);
+    cursor: pointer;
+    z-index: 9;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: solid 1px $color5;
+    background-position:  center center;
+    background-repeat: no-repeat;
+    font-size: 0;
+    @include transition(all 300ms ease-in-out);
+    &.slick-prev{
+        left: 0;
+        background-image: url("../images/arrow-left.svg")
+    }
+    &.slick-next{
+        right: 0;
+        background-image: url("../images/arrow-right.svg")
+    }
+    &.slick-disabled{
+        opacity: 0.3;
+        cursor: default;
+        &:hover{
+            border-color: $color5;
+        }
+    }
+    &:hover{
+        border-color: $tertiary;
+    }
+}
+.slick-slide{
+    text-align: center;
+    a{
+        width: auto!important;
+    }
+}
+.slick-track{
+    @include flexbox;
+}
+.slick-slide{
+    float: none;
+}
+.slick-initialized .slick-slide{
+    height: auto;
+    @include flexbox;
+    @include justify-content(center);
+    @include align-items(center);
+}
+.slick-dots{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    text-align: center;
+    li{
+        display: inline-block;
+        vertical-align: middle;
+        font-size: 0;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: $color1;
+        @include transition(all 300ms ease-in-out);
+        margin: 0 4px;
+        cursor: pointer;
+        &.slick-active{
+            background: $lighter;
+            cursor: default;
+        }
+        button{
+            display: none;
+        }
+    }
+}
+
+.logo-slider{
+    max-width: 1440px;
+    margin: auto;
+    padding: 60px;
+    position: relative;
+    @include breakpoint(medium down) {
+        padding: 40px 60px;
+    }
+    .slick-list{
+        max-width: 1230px;
+        margin: auto;
+        @include breakpoint(xlarge down) { 
+            max-width: 1120px;
+        }        
+    }
+}
+.grid-block-outer{
+    background: $color7;
+    padding:110px 0 155px;
+    @include breakpoint(large only) { 
+        padding:90px 0 120px;
+    }
+    @include breakpoint(medium only) {
+        padding:60px 0 90px;
+    }
+    @include breakpoint(small only) {
+        padding:60px 0 30px;
+    }
+    .grid-block{
+        background: $lighter;
+        @include breakpoint(small only) {
+            margin:0 0 30px;
+        }
+        &:hover{
+            .grid-image img{
+                @include scale(1.05); 
+            }
+        }
+    }
+    .grid-image{
+        overflow: hidden;
+        img{
+            display: block;
+            width: 100%;
+            @include transition(all 300ms ease-in-out);
+        }
+    }
+    .grid-content{
+        padding:32px 32px 22px;
+        @include breakpoint(medium only) {
+            padding:30px 25px 20px;
+        }
+        h6{
+            font-weight: $semibold;
+            font-size: $size-md;
+            line-height: 1.33;
+            color: $darker;
+            padding:0 0 14px;
+            @include breakpoint(medium only) {
+                font-size: 16px;
+            }
+        }
+        p{
+            padding: 0 0 19px;
+        }
+    }
+}
+.title-block{
+    @include flexbox;
+    @include justify-content(space-between);
+    @include align-items(center);
+    padding:0 0 55px;
+    @include breakpoint(medium only) {
+        padding:0 0 40px;
+    }
+    @include breakpoint(small only) {
+        padding:0 0 40px;
+        @include flex-wrap(wrap);
+    }
+    .btn{
+        min-width: 225px;
+        @include breakpoint(small only) {
+            margin: 20px 0 0;
+        }
+    }
+    h5{
+        @include breakpoint(small only) {
+            width: 100%;
+        }
+    }
+}
+.more{
+    font-weight: $semibold;
+    font-size: $size-sm;
+    line-height: 1.17;
+    color: $darker;
+    display: inline-block;
+    vertical-align: top;
+    text-transform: uppercase;
+    padding-left: 20px;
+    position: relative;
+    &:hover{
+       color: $primary;
+        &:before{
+           left: 5px; 
+        }
+    }
+    &:before{
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 5px;
+        width: 12px;
+        height: 5px;
+        background: url("../images/green-arrow.svg") no-repeat left top;
+        @include transition(all 300ms ease-in-out);
+    }
+}
+.about-course {
+    padding: 235px 0 0;
+    
+    @include breakpoint(large only) {
+        padding: 210px 0 0;
+    }
+    @include breakpoint(medium only) {
+        padding: 70px 0 0;
+    }
+    @include breakpoint(small only) {
+        padding: 40px 0 0;
+    }
+
+    h2 {
+        text-align: center;
+        letter-spacing: -2px;
+        line-height: 1.10;
+        padding: 0 0 63px;
+        
+        @include breakpoint(medium down) {
+            padding: 0 0 35px;
+        }
+    }
+
+    .course-steps {
+
+        .single-block {
+            @include flexbox;
+
+            .grid-icon {
+                margin: 0 17px 0 0;
+                @include breakpoint(medium only) {
+                     width: 48px;
+                     height: 48px;
+                }
+                img{
+                    width: 30px;
+                    @include breakpoint(medium only) {
+                        width: 25px;
+                    }
+                }
+            }
+
+            .text-div {
+                width: 75%;
+                 @include breakpoint(medium only) {
+                     width: 50%;
+                }
+
+                h6 {
+                    font-size: $size-md;
+                    font-weight: $semibold;
+                    padding: 0 0 12px;
+                }
+
+                p {
+                    line-height: 1.38;
+                }
+            }
+        }
+
+    }
+}
+
+
+.home-content-blk {
+    width: 100%;
+    padding: 103px 0 120px;
+    @include breakpoint(large only) {
+       padding: 25px 0 85px;
+    }
+    @include breakpoint(medium only) {
+       padding: 25px 0 50px;
+    }
+    @include breakpoint(small only) {
+       padding: 15px 0 30px;
+    }
+}
+
+.inner-content {
+    width: 100%;
+    @include flexbox; 
+    @include flex-direction(row);
+    @include breakpoint(medium down) {
+       @include flex-direction(column);
+    }
+    
+    .left-content-grid {
+        width: 51.19%;
+        padding: 150px 138px 0 160px;
+         
+        @include breakpoint(xlarge only) {
+           padding: 150px 75px 0 130px;
+        } 
+        @include breakpoint(large only) {
+           padding: 78px 35px 0 60px;
+        }
+         @include breakpoint(medium only) {
+            width: 100%;
+            padding: 63px 35px 50px 60px;
+        }
+         @include breakpoint(small only) {
+            width: 100%;
+            padding: 5px 30px 35px 30px;
+        }
+        h2{
+            letter-spacing: -2px;
+            line-height: 1.10;
+            padding: 0px 0 15px;
+        }
+        .btn{
+            min-width: 165px;
+            margin: 5px 0 0;
+            @include breakpoint(medium only) {
+                padding: 13px 15px 13px 35px;
+            }
+        }
+    }
+
+    .right-content-grid {
+        width: 48.81%;
+        background: $secondary;
+        padding: 65px 0px 49px 64px;
+        position: relative;
+        
+        
+        @include breakpoint(xlarge only) {
+            padding: 65px 0px 49px 45px;
+        }  
+        @include breakpoint(large only) {
+            padding: 65px 0px 49px 20px;
+        } 
+        @include breakpoint(medium down) {
+             width: 100%;
+             padding: 35px 25px;
+        }
+
+        &:after {
+            background: $secondary;
+            position: absolute;
+            left: 100%;
+            width: 500%;
+            height: 100%;
+            top: 0;
+            content: "";
+            @include breakpoint(medium only) {
+               display: none;
+            }
+        }
+
+        > p {
+            letter-spacing: -0.3px;
+            color: $lighter;
+            padding: 0 0 16px;
+        }
+
+    }
+}
+
+ul {
+    &.time-management {
+        width: 100%;
+         @include breakpoint(medium down) {
+           margin: 0;
+        }
+
+        li {
+            width: 100%;
+            padding: 16px 9px 16px 10px;
+            border-top: 1px solid rgba($lighter,0.1);
+            @include flexbox;
+            @include align-items(center);
+            @include flex-wrap(wrap);
+            color: $lighter;
+         
+            
+            &:first-child{
+                border: none;
+            }
+            p {
+                padding: 0;
+            }
+
+            .date {
+                width:24.325%;
+                @include flexbox;
+                @include justify-content(flex-start);
+                position: relative;
+                padding: 0 0px 0 49px;
+                
+                @include breakpoint(xlarge only) {
+                  padding: 0 0px 0 32px;
+                }
+  
+                @include breakpoint(large only) {
+                    width: 23.325%;
+                    padding: 0 0px 0 29px;
+                }
+                   
+                @include breakpoint(small only) {
+                    width:50%;
+                    margin: 0 0 24px;
+                }
+                
+
+                span {
+                    color: $primary;
+                    font-size: $size-h4;
+                    line-height: 32px;
+                    letter-spacing: -1.5px;
+                    font-weight: $bold;
+                    margin: 0 14px 0 0;
+                    @include breakpoint(large only) {
+                      font-size: 25px;
+                    }
+
+                }
+
+                p {
+                    color: $lighter;
+                    font-size: $size-xmd;
+                    line-height: 18px;
+                    
+                    @include breakpoint(large only) {
+                      font-size: 12px;
+                    }
+                    strong {
+                        font-size: $size-base;
+                        line-height: 16px;
+                        letter-spacing: -0.75px;
+                        font-weight: $semibold;
+                         
+                        @include breakpoint(large only) {
+                          font-size: 14px;
+                        }
+                    }
+                }
+
+                &:first-child {
+                    padding: 0 37px 0 0px;
+
+                    &:after {
+                        position: absolute;
+                        content: "";
+                        right: -14px;
+                        top: 4px;
+                        background: url("../images/line.png") no-repeat left center;
+                        width: 14px;
+                        height: 39px;
+                    }
+                }
+            }
+
+            .location {
+                width: 29.3%;
+                padding: 0 25px 0 41px;
+                
+                @include breakpoint(xlarge only) {
+                   padding: 0 14px 0 30px;
+                }
+                @include breakpoint(large only) {
+                   padding: 0 25px 0 28px;
+                }
+                @include breakpoint(small only) {
+                    width:50%;
+                }
+
+                p {
+                    font-size: $size-sm;
+                    line-height: 14px;
+                    color: $lighter;
+                }
+            }
+
+            .link {
+                width: 22.05%;
+                @include breakpoint(small only) {
+                    width:50%;
+                }
+                .btn {
+                    min-width: 100%;
+                    color: $lighter;
+                    @include breakpoint(xlarge only) {
+                       padding: 15px 12px 15px 29px;
+                    }
+                    @include breakpoint(large only) {
+                       padding: 15px 11px 15px 24px;
+                        letter-spacing: 0;
+                    }
+                }
+            }
+
+        }
+
+    }
+}
+
+
+.video-block-outer{
+    width: 100%;
+    padding: 0 0 125px;
+    @include breakpoint(large only) {
+       padding: 0 0 98px;
+    }
+    @include breakpoint(medium only) {
+       padding: 0 0 25px;
+    }
+     @include breakpoint(small only) {
+      padding: 0 0 10px;
+    }
+    .text-content-blk {
+        padding: 86px 48px 0px 66px;
+        
+        @include breakpoint(medium only) {
+           padding: 25px 25px 0;
+        } 
+        @include breakpoint(small only) {
+           padding: 30px 0;
+        }
+        h4{
+            padding: 0 0 18px;
+            letter-spacing: -1.5px;
+        }
+        p{
+            padding:  0 0 31px;
+        }
+    }
+}
+
+
+.video_wrapper {
+	width: 100%;
+	position: relative;
+	background-color: $darker;
+	min-height: 360px;
+    @include breakpoint(large only) {
+        min-height: 318px;
+    }
+	
+    @include breakpoint(medium only) {
+        min-height: 190px;
+    }
+	
+    @include breakpoint(small only) {
+        min-height: 190px;
+    }
+	
+}
+
+.videoIframe {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: transparent;
+	border: none;
+}
+.videoPoster {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;	
+	background: url("../images/content/video-banner.jpg") no-repeat left center;
+	background-size: 100%;
+	border: none;
+	text-indent: -999em;
+	overflow: hidden;
+	opacity: 1;
+	-webkit-transition: opacity 800ms, height 0s;
+	-moz-transition: opacity 800ms, height 0s;
+	transition: opacity 800ms, height 0s;
+	-webkit-transition-delay: 0s, 0s;
+	-moz-transition-delay: 0s, 0s;
+	transition-delay: 0s, 0s;
+    
+    &:hover {
+        cursor: pointer;
+    }
+    &:before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 64px;
+        height: 64px;
+        background: url("../images/play-btn.png") no-repeat left center;
+        border-radius: 100%;
+        @include translate(-50%, -50%);
+        @include transition (all .3s ease-in-out);
+        background-size: 100%;
+        @include breakpoint(medium only) {
+            background-size: 78%;
+        }
+    }
+}
+
+.videoWrapperActive .videoPoster {
+	opacity: 0;
+	height: 0;
+	-webkit-transition-delay: 0s, 800ms;
+	-moz-transition-delay: 0s, 800ms;
+	transition-delay: 0s, 800ms;
+}
+.newsletter-out{
+  width: 100%;
+  padding: 128px 0 66px;
+  @include breakpoint(large only){
+    padding: 90px 0 60px;
+  }
+  @include breakpoint(medium only) {
+    padding: 70px 0 40px;
+  }
+  @include breakpoint(small only) {
+    padding: 35px 0;
+  }
+}
+.newsletter-left{
+  width: 100%;
+  max-width: 448px;
+  padding-top: 28px;
+  @include breakpoint(medium only) {
+    max-width: 330px;
+    padding-top: 20px;
+  } 
+  @include breakpoint(small only) {
+    max-width: 100%;
+    padding-top: 0px;
+  }
+  .newsletter-block{
+    h4{
+      line-height: 1.06;
+      letter-spacing: -1.5px;
+      padding-bottom: 17px;
+      @include breakpoint(medium only) {
+        font-size: $size-h5;
+      }
+      @include breakpoint(small only) {
+        font-size: $size-h5;
+        padding-bottom: 12px;
+      }
+    }
+    p{
+      font-size: $size-base;
+      line-height: 1.63;
+      color: $text-color;
+      letter-spacing: -0.5px;
+      padding-bottom: 23px;
+      @include breakpoint(medium only) {
+        font-size: $size-xmd;
+      }
+      @include breakpoint(small only) {
+        font-size: $size-xmd;
+      }
+    }
+    .newsletter-data{
+      padding-top: 8px;
+    }
+    .newsletter-bottom{
+      @include breakpoint(small only) {
+        @include flex-direction(column);
+      }
+      .btn{
+        height: 59px;
+        padding: 0 15px;
+        @include breakpoint(medium only) {
+          height: 50px;
+          font-size: 11px;
+        }
+        @include breakpoint(small only) {
+          height: 50px;
+          min-width: 100%;
+          margin-top: 15px;
+        }
+      }
+      p{
+        padding: 0px;
+        font-size: $size-xd;
+        color: $darker;
+        @include breakpoint(medium only) {
+          font-size: $size-sm;
+        }
+      }
+    }
+  }
+}
+.newsletter-right{
+  width: 100%;
+  @include breakpoint(small only) {
+    padding-top: 35px;
+  }
+  ul{
+    @include flexbox;
+    @include justify-content(space-between);
+    @include flex-wrap(wrap);
+    width: 100%;
+    list-style: none;
+    li{
+      width: 50%;
+      margin-bottom: 38px;
+      padding: 0 15px 0 0;
+      @include breakpoint(large only){
+        margin-bottom: 25px;
+      }
+      @include breakpoint(medium only) {
+        margin-bottom: 15px;
+      }
+      @include breakpoint(small only) {
+        margin-bottom: 15px;
+      }
+      .icon-blk{
+        @include flexbox;
+        @include align-items(center);
+        @include justify-content(center);
+        width: 64px;
+        height: 64px;
+        text-align: center;
+        background: $primary;
+        @include border-radius(100%);
+        margin-bottom: 16px;
+        img{
+          display: block;
+          width: 32px;
+        }
+      }
+      .content-blk{
+        width: 100%;
+        p{
+          font-size: $size-base;
+          line-height: 24px;
+          letter-spacing: -0.9px;
+          @include breakpoint(medium only) {
+            font-size: $size-xmd;
+          }
+          @include breakpoint(small only) {
+            font-size: $size-xmd;
+            padding-bottom: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+.management-out{
+  width: 100%;
+  position: relative;
+  margin-top: -64px;
+  @include breakpoint(large down) {
+    margin-top: 0px;
+  }
+  .wrapper{
+    padding-bottom: 66px;
+    @include breakpoint(large only){
+      padding-bottom: 35px;
+    }
+    @include breakpoint(medium only) {
+      padding-bottom: 35px;
+    }
+    @include breakpoint(small only) {
+      padding-bottom: 25px;
+    }
+  }
+}
+.management-title{
+  width: 100%;
+  padding: 128px 0 67px;
+  @include breakpoint(large only){
+    padding: 85px 0 40px;
+  }
+  @include breakpoint(medium only) {
+    padding: 60px 0 40px;
+  }
+  @include breakpoint(small only) {
+    padding: 40px 0;
+  }
+  h2{
+    line-height: 1.35;
+    color: $lighter;
+    letter-spacing: -1.88px;
+    @include breakpoint(medium only) {
+      font-size: $size-h4;
+      line-height: 1.25;
+    }
+    @include breakpoint(small only) {
+      font-size: 28px;
+    }
+    br{
+      @include breakpoint(small only) {
+        display: none;
+      }
+    }
+  }
+}
+.list-box{
+  width: 100%;
+  margin-bottom: 63px;
+  @include breakpoint(medium only) {
+    margin-bottom: 40px;
+  }
+  @include breakpoint(small only) {
+    margin-bottom: 30px;
+  }
+  h6{
+    width: 100%;
+    font-size: $size-md;
+    line-height: 1.22;
+    color: $lighter;
+    padding-bottom: 10px;
+    letter-spacing: -0.84px;
+    font-weight: $semibold;
+    @include breakpoint(medium only) {
+      font-size: $size-base;
+    }
+  }
+  ul{
+    width: 100%;
+    list-style: none;
+    li{
+      width: 100%;
+      position: relative;
+      font-size: $size-base;
+      line-height: 1.63;
+      color: $lighter;
+      letter-spacing: -0.3px;
+      margin-bottom: 15px;
+      padding-left: 17px;
+      @include breakpoint(medium only) {
+        font-size: $size-xmd;
+      }
+      @include breakpoint(small only) {
+        font-size: $size-xmd;
+        margin-bottom: 10px;
+      }
+      &:before{
+        position: absolute;
+        content: "";
+        left: 0;
+        top: 6px;
+        width: 12px;
+        height: 12px;
+        background: url('../images/tick-green.svg') no-repeat;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+.training-out{
+  width: 100%;
+}
+.training-top{
+  width: 100%;
+  padding: 132px 0 65px;
+  @include breakpoint(large only){
+    padding: 90px 0 50px;
+  }
+  @include breakpoint(medium only) {
+    padding: 55px 0 40px;
+  }
+  @include breakpoint(small only) {
+    padding: 45px 0;
+  }
+  .list-box{
+    margin-bottom: 0px;
+    h6{
+      text-align: center;
+      color: $darker;
+      padding-bottom: 17px;
+      @include breakpoint(small only) {
+        font-size: $size-base;
+      }
+    }
+    ul{
+      @include multiple-col(2, 30px); 
+      @include breakpoint(small only) {
+        @include multiple-col(1, 30px); 
+      } 
+      li{
+        font-size: $size-xmd;
+        line-height: 2.29;
+        color: $color10;
+        margin-bottom: 0px;
+        @include breakpoint(large only){
+          line-height: 2.00;
+        }
+        @include breakpoint(small only) {
+          line-height: 2.00;
+        }
+        &:before{
+          top: 11px;
+        }
+      }
+    }
+  }
+}
+.training-head{
+  width: 100%;
+  text-align: center;
+  padding-bottom: 40px;
+  @include breakpoint(medium only) {
+    padding-bottom: 30px;
+  }
+  @include breakpoint(small only) {
+    padding-bottom: 10px;
+  }
+  h2{
+    color: $darker;
+    line-height: 1.15;
+    letter-spacing: -1.88px;
+    padding-bottom: 21px;
+    @include breakpoint(medium only) {
+      font-size: $size-h4;
+    }
+    @include breakpoint(small only) {
+      font-size: 28px;
+    }
+  }
+  p{
+    display: inline-block;
+    max-width: 735px;
+    font-size: $size-base;
+    line-height: 1.63;
+    letter-spacing: -0.3px;
+    color: $color10;
+    letter-spacing: -0.3px;
+    @include breakpoint(small only) {
+      font-size: $size-xmd;
+    }
+  }
+}
+.training-bottom{
+  width: 100%;
+  background: $color7;
+  max-width: 928px;
+  padding: 65px 65px 127px 0;
+  position: relative;
+  @include breakpoint(large down) {
+    padding: 65px 65px 65px 0;
+    max-width: 870px;
+  }
+  @include breakpoint(medium only) {
+    max-width: 550px;
+    padding: 40px 50px 40px 0;
+  }
+  @include breakpoint(small only) {
+    max-width: none;
+    padding: 40px 25px 50px 0;
+  }
+  p{
+    font-size: $size-base;
+    line-height: 1.63;
+    color: $color10;
+    padding: 0px;
+    @include breakpoint(medium down) {
+      font-size: $size-xmd;
+      line-height: 1.71;
+    }
+    a{
+      color: $color11;
+      &:hover, &:focus{
+        color: $color10;
+      }
+    }
+  }
+  &:before{
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 100%;
+    width: 200%;
+    height: 100%;
+    background: $color7;
+  }
+  &:after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 100%;
+    width: 200%;
+    height: 100%;
+    background: $color7;
+    display: none;
+    @include breakpoint(small only) {
+      display: block;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+.about-block-out{
+  width: 100%;
+}
+.about-blk-wrap{
+  width: 100%;
+  padding: 125px 0 0 0;
+  position: relative;
+  @include breakpoint(medium only){
+    padding-top: 60px;
+  }
+  @include breakpoint(small only) {
+    padding-top: 50px;
+  }
+}
+.about-top{
+  width: 100%;
+  max-width: 640px;
+  padding-bottom: 128px;
+  @include breakpoint(medium only){
+    padding-bottom: 100px;
+  }
+  @include breakpoint(small only) {
+    padding-bottom: 70px;
+  }
+  h2{
+    color: $lighter;
+    padding-bottom: 14px;
+    letter-spacing: -1.88px;
+    @include breakpoint(medium only) {
+      font-size: $size-h4;
+    }
+    @include breakpoint(small only) {
+      font-size: 28px;
+      line-height: 1.20;
+    }
+  }
+  p{
+    color: rgba($lighter, 0.8);
+    letter-spacing: -0.3px;
+    @include breakpoint(small only) {
+      font-size: $size-xmd;
+    }
+    &.first{
+      color: $lighter;
+      font-size: $size-h6;
+      line-height: 1.60;
+      padding-bottom: 16px;
+      @include breakpoint(medium only){
+        font-size: $size-md;
+        line-height: 1.50;
+      }
+      @include breakpoint(small only) {
+        font-size: $size-base;
+        line-height: 1.30;
+      }
+    }
+  }
+  .secondary{
+    margin-top: 5px;
+    min-width: 160px;
+    span{
+      color: $lighter;
+    }
+  }
+}
+
+.about-bottom{
+  width: 100%;
+  padding: 40px 0 22px;
+  border-top: 1px solid rgba($border-color, 0.10);
+  @include breakpoint(medium only){
+    padding: 25px 0 22px;
+  }
+  @include breakpoint(small only) {
+    padding: 22px 0;
+  }
+  .banner-top-block{
+    @include flexbox;
+    @include justify-content(space-between);
+    max-width: 545px;
+    @include breakpoint(medium only){
+      max-width: 245px;
+      @include flex-direction(column); 
+    }
+    @include breakpoint(small only) {
+      max-width: 245px;
+      @include flex-direction(column); 
+    }
+    .left-div{
+      @include breakpoint(medium only){
+        margin-bottom: 15px;
+      }
+      @include breakpoint(small only) {
+        margin-bottom: 15px;
+      }
+    }
+  }
+}
+
+.about-img{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  @include breakpoint(small only) {
+      right: -15px;
+    }  
+  img{
+    display: block;
+    @include breakpoint(large only){
+      max-width: 320px;
+    } 
+    @include breakpoint(medium only){
+      max-width: 180px;
+    }
+    @include breakpoint(small only) {
+      max-width: 130px;
+    }
+  }
+}

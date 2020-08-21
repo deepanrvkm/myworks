@@ -1,0 +1,226 @@
+// ***********************************
+// Brochure
+// ***********************************
+ .brochure-blockouter {
+     width: 100%;
+     height: auto;
+ padding: 50px 0 70px 0;
+     
+     ul{
+         width: 100%;
+         height: auto;
+         float: left;
+         li{
+             font-size: $size-h6;
+             padding-left: 34px;
+             &:before {
+                 font-size: 42px;
+                 margin-right: 10px;
+                 top: -2px;
+             }
+         }
+         
+     }
+     .form-outer{
+         width: 100%;
+         height: auto;
+         .hdr-block{
+             p{
+                padding: 20px 0;
+                 max-width: 530px;
+             }
+         }
+             >p{
+                 color:$color2;
+                 font-family:$main-fontIt;
+                 font-size: $sm-size;
+                 font-style: italic;
+                 padding-bottom: 10px; 
+                 width: 100%;
+                 float: left;
+             }
+         .single-row{
+             width: 100%;
+             height: auto;
+             float: left;
+             @include flexbox;
+             @include justify-content (space-between);
+             padding-bottom: 10px;
+                 @media #{$mobile-landscape} {width: 100%; @include flex-direction (column); padding: 0;}
+             .single-blk{
+                 width: 49%;
+                 height: auto;
+                 float: left;
+                 @include flexbox;
+                 @include justify-content (space-between);
+                 
+                 @media #{$mobile-landscape} {width: 100%; @include flex-direction (column); padding-bottom: 10px;}
+                 
+                 .single-blk{
+                     width: 48%; 
+                     @media #{$mobile-landscape} {width: 100%; float: left; &:last-child{padding: 0;}}
+                 }
+             }
+             &.check-outercont{
+                 padding: 5px 0 15px 0;
+                     @media #{$mobile-landscape} {padding: 10px 0;}
+             }
+         }
+         .check-outercont{
+             width: 100%;
+             height: auto;
+             float: left;
+             padding: 3px 0 25px 0;
+                     @media #{$mobile-landscape} {padding: 10px 0;}
+             .checkbox-outer{
+                 width: auto;
+                 float: left;
+                 padding-right: 20px;
+             }
+                 h6{
+                     width: auto;
+                     float: left;
+                     padding-right: 10px;
+                     font-size: $size-base;
+                     line-height: 30px;
+                 }
+         }
+         ::placeholder {
+             color: $darker;
+             opacity: 1;
+         }
+
+         :-ms-input-placeholder {
+             color: $darker;
+         }
+
+         ::-ms-input-placeholder {
+             color: $darker;
+         }
+        }
+ }
+
+
+.SumoSelect > .CaptionCont{ 
+     width: 100%;
+     height: 50px;
+     font-family:$main-font ;
+     font-size:$size-base ;
+     color: $darker;
+     background: $color11;
+     border: none;
+    @include border-radius(5px);
+     &:focus{
+     background: $color11;
+         box-shadow: none;
+         
+} 
+    
+}
+
+.SumoSelect > .CaptionCont > span{
+     height: 40px;
+    color: $darker;
+    line-height: 40px;
+}
+.SumoSelect.open > .optWrapper{top: 55px;}
+.SumoSelect > .CaptionCont > label > i{width: 10px;height: 50px; background: url(../images/select_arrow.png) no-repeat center center;}
+.SumoSelect > .CaptionCont > label {right: 15px;}
+.SumoSelect > .optWrapper{
+   background: $color11; 
+}
+
+.SumoSelect > .optWrapper > .options li label { color: $darker;font-size: $sm-size;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+										
+.checkbox-outer [type="checkbox"]:checked,
+.checkbox-outer [type="checkbox"]:not(:checked) {
+    position: absolute;
+    left: -9999px
+}
+.checkbox-outer [type="checkbox"]:checked + label,
+.checkbox-outer [type="checkbox"]:not(:checked) + label {
+    position: relative;
+    padding-left: 28px;
+    cursor: pointer;
+    line-height: 20px;
+    display: inline-block;
+    color: #666;
+    
+                 color:$color2;
+                 font-family:$main-fontIt;
+                 font-size: $sm-size;
+    font-weight: normal;
+        
+}
+
+.checkbox-outer [type="checkbox"]:checked + label:before,
+.checkbox-outer [type="checkbox"]:not(:checked) + label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+     top: 1px;
+    width: 20px;
+    height: 20px; 
+    background:url(../images/check_bg.png) no-repeat center center;
+    @include border-radius(5px);
+}
+
+.checkbox-outer [type="checkbox"]:not(:checked) + label:before {
+    
+	background: #e2e1df;
+}
+.checkbox-outer [type="checkbox"]:checked + label:after,
+.checkbox-outer [type="checkbox"]:not(:checked) + label:after {
+    content: '';
+    width: 20px;
+    height: 20px;
+    background:url(../images/check_active.png) no-repeat center center;
+    position: absolute;
+    top: 1px;
+    left: 0; 
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+   @include border-radius(5px);
+}
+.checkbox-outer [type="checkbox"]:not(:checked) + label:after {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0)
+}
+.checkbox-outer [type="checkbox"]:checked + label:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1)
+}
+
+
+

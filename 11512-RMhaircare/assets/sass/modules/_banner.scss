@@ -1,0 +1,251 @@
+/**********************************************
+    Banner
+***********************************************/
+.slick-slider{
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -ms-touch-action: pan-y;
+    touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list{
+    position: relative;
+    overflow: hidden;
+    display: block;
+    margin: 0;
+    padding: 0;
+    &:focus{
+        outline: none;
+    }
+    &.dragging{
+        cursor: pointer;
+    }
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list{
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+.slick-track{
+    position: relative;
+    left: 0;
+    top: 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    &:before,
+    &:after{
+        content: "";
+        display: table;
+    }
+    &:after{
+        clear: both;
+    }
+    .slick-loading &{
+        visibility: hidden;
+    }
+}
+
+.slick-slide{
+    float: left;
+    height: 100%;
+    min-height: 1px;
+    [dir="rtl"] &{
+        float: right;
+    }
+    img{
+        display: block;
+    }
+    &.slick-loading img{
+        display: none;
+    }
+    display: none;
+    &.dragging img{
+        pointer-events: none;
+    }
+    .slick-initialized &{
+        display: block;
+    }
+    .slick-loading &{
+        visibility: hidden;
+    }
+    .slick-vertical &{
+        display: block;
+        height: auto;
+        border: 1px solid transparent;
+    }
+}
+
+
+
+
+.banner-container{
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+.banner-block{
+    width: 100%;
+}
+.banner-slider{
+    width: 100%;
+    .banner-single{
+        width: 100%;
+        position: relative;
+        .banner-image{
+            width: 100%;
+            height: 100vh;
+            @media #{$tablet-portrait} {
+                height: 440px;
+            }
+            @media #{$mobile-landscape} {
+                height: 299px;
+            }
+        }
+        .banner-content{
+            position: absolute;
+            left: 21.5%;
+            top: 50%;
+            width: 100%;
+            max-width: 620px;
+            text-align: center;
+            @include translate(-21.5%, -50%);
+            opacity: 0;
+            @include transition (opacity 1000ms ease-in);
+            @media #{$tablet-landscape} {
+                max-width: 510px;
+            }
+            @media #{$tablet-portrait} {
+                max-width: 380px;
+                left: 16.5%;
+                top: 58%;
+            }
+            @media #{$mobile-landscape} {
+                left: 0;
+                bottom: 21px;
+                top: inherit;
+                @include translate(0, 0);
+                max-width: none;
+            }
+            h2{
+                font-family: $main-font;
+                font-weight: $bold;
+                color: $lighter;
+                font-size: $large-title;
+                line-height: 66px;
+                text-transform: uppercase;
+                padding-bottom: 4px;
+                @media #{$tablet-landscape} {
+                    font-size: 50px;
+                    line-height: 50px;
+                }
+                @media #{$tablet-portrait} {
+                    font-size: 40px;
+                    line-height: 40px;
+                }
+                @media #{$mobile-landscape} {
+                    font-size: 26px;
+                    line-height: 26px;
+                }
+            }
+            h3{
+                font-family: $sub-font2;
+                font-size: $medium-title;
+                line-height: 48px;
+                font-weight: $bold;
+                font-style: italic;
+                color: $color4;
+                padding-bottom: 23px;
+                @media #{$tablet-landscape} {
+                    font-size: 38px;
+                    line-height: 38px;
+                    padding-bottom: 15px;
+                }
+                @media #{$tablet-portrait} {
+                    font-size: 30px;
+                    line-height: 30px;
+                    padding-bottom: 9px;
+                }
+                @media #{$mobile-landscape} {
+                    font-size: 21px;
+                    line-height: 21px;
+                    padding-bottom: 0px;
+                }
+            }
+            span{
+                font-size: $lineheight-h4;
+                font-weight: $black;
+                color: $color5;
+                text-transform: uppercase;
+                @media #{$tablet-landscape} {
+                    font-size: 24px;
+                }
+                @media #{$tablet-portrait} {
+                    font-size: 20px;
+                }
+                @media #{$mobile-landscape} {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+    .slick-slide{
+        &.active-slide{
+            .banner-content{
+                opacity: 1;
+            }
+        }
+    }
+    .slick-dots{
+        position: absolute;
+        bottom: 27px;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        li{
+            display: inline-block;
+            margin: 0 6px;
+            button{
+                font-size: 0px;
+                width: 10px;
+                height: 10px;
+                background: $lighter;
+                @include border-radius(100%);
+                cursor: pointer;
+                border: none;
+                outline: none;
+            }
+            &.slick-active{
+               button{
+                    background: $color6;
+               } 
+            }
+        }
+    }
+}
+.height-block{
+    display: block;
+    width: 100%;
+    height: 100vh;
+    @media #{$tablet-portrait} {
+        height: 440px;
+    }   
+    @media #{$mobile-landscape} {
+        height: 299px;
+    }
+}

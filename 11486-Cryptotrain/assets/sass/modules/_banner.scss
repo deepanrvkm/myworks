@@ -1,0 +1,199 @@
+/**********************************************
+    Banner
+***********************************************/
+.banner-slider {
+    width: 100%;
+}
+
+.single-slider {
+    width: 100%;
+    position: relative;
+    @include transition (all .3s ease-in-out);
+    height: 669px;
+    overflow: hidden;
+    @media #{$tablet-landscape} {
+        height: 600px;
+    }
+
+    @media #{$tablet-portrait} {
+        height: 500px;
+    }
+
+    @media #{$mobile-landscape} {
+        height: 530px;
+    }
+
+    .slider-image {
+        width: 100%;
+        height: 669px;
+        z-index: 9;
+
+        @media #{$tablet-landscape} {
+            height: 600px;
+        }
+
+        @media #{$tablet-portrait} {
+            height: 500px;
+        }
+
+        @media #{$mobile-landscape} {
+            height: 530px;
+        }
+    }
+
+    .slider-content {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        max-width: 760px;
+        width: 100%;
+        text-align: center;
+        @include transform-translatey(-50%);
+        z-index: 999;
+
+        @media #{$tablet-portrait} {
+            max-width: 675px;
+        }
+
+        @media #{$mobile-landscape} {
+            padding: 0 25px;
+            top: 56%;
+        }
+
+        h1 {
+            font-size: 37px;
+            color: $lighter;
+            text-transform: uppercase;
+            padding-bottom: 27px;
+
+            @media #{$tablet-landscape} {
+                font-size: $size-h2;
+                padding-bottom: 20px;
+            }
+
+            @media #{$tablet-portrait} {
+                font-size: $lineheight-h4;
+                padding-bottom: 15px;
+            }
+
+            @media #{$mobile-landscape} {
+                font-size: $size-h4;
+                line-height: 32px;
+                padding-bottom: 15px;
+            }
+        }
+
+        p {
+            line-height: 29px;
+            color: $color14;
+            text-align: justify;
+            padding-bottom: 46px;
+
+            @media #{$tablet-landscape} {
+                line-height: 26px;
+                padding-bottom: 30px;
+            }
+
+            @media #{$tablet-portrait} {
+                font-size: $sm-size;
+                line-height: 22px;
+                padding-bottom: 25px;
+            }
+
+            @media #{$mobile-landscape} {
+                font-size: $sm-size;
+                line-height: 22px;
+                padding-bottom: 15px;
+            }
+        }
+
+        .btn {
+            min-width: 196px;
+        }
+    }
+
+    .slick-slide {
+        overflow: hidden;
+    }
+
+    &:before {
+        position: absolute;
+        content: "";
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(5, 5, 5, 0.4);
+        z-index: 999;
+    }
+}
+
+.banner-slider.slick-slider .slick-slide {
+    @include transition (all .3s ease-in-out);
+}
+
+.banner-slider.slick-slider .slick-slide.slick-active .slider-image {
+    @include zoom-animation(sliderMove 8s 1 ease-in-out);
+}
+
+@keyframes sliderMove {
+    from {
+        transform: scale(1.0, 1.0);
+        transform-origin: 50% 50%;
+    }
+
+    to {
+        transform: scale(1.1, 1.1);
+        transform-origin: 50% 0%;
+    }
+}
+
+@-webkit-keyframes sliderMove {
+    from {
+        -webkit-transform: scale(1.0, 1.0);
+        -webkit-transform-origin: 50% 50%;
+    }
+
+    to {
+        -webkit-transform: scale(1.1, 1.1);
+        -webkit-transform-origin: 50% 0%;
+    }
+}
+
+@-o-keyframes sliderMove {
+    from {
+        -o-transform: scale(1.0, 1.0);
+        -o-transform-origin: 50% 50%;
+    }
+
+    to {
+        -o-transform: scale(1.1, 1.1);
+        -o-transform-origin: 50% 0%;
+    }
+}
+
+@-moz-keyframes sliderMove {
+    from {
+        -moz-transform: scale(1.0, 1.0);
+        -moz-transform-origin: 50% 50%;
+    }
+
+    to {
+        -moz-transform: scale(1.1, 1.1);
+        -moz-transform-origin: 50% 0%;
+    }
+}
+
+@-ms-keyframes sliderMove {
+    from {
+        -ms-transform: scale(1.0, 1.0);
+        -ms-transform-origin: 50% 50%;
+    }
+
+    to {
+        -ms-transform: scale(1.1, 1.1);
+        -ms-transform-origin: 50% 0%;
+    }
+}

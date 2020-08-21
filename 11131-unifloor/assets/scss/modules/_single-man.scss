@@ -1,0 +1,25 @@
+.single-man-in{
+	position: relative;
+	@media #{$screen-small} {
+		margin-top: -98px;
+	}
+	@media #{$screen-extrasmall} {
+		margin-top: -95px;
+	}
+	.single-man-image{
+		position: absolute;
+		right: 0;
+		top: -134px;
+		@media #{$screen-medium} {
+			max-width: 260px;
+			top: -85px;
+		}
+		@media #{$screen-small} {
+			position: relative;
+			text-align: center;
+			max-width: 300px;
+			margin: 0 auto;
+			top: 0;
+		}
+	}
+}

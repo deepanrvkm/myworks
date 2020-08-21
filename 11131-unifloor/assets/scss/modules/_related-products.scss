@@ -1,0 +1,27 @@
+.related-products{
+    padding:113px 0 65px;
+    @media #{$screen-large} {
+        padding:60px 0 35px;
+    }
+    @media #{$screen-medium} {
+        padding:50px 0 10px;
+    }
+    @media #{$screen-small} {
+        padding:40px 0 20px;
+    }
+}
+.related-text{
+    padding:0 0 28px;
+    text-align: center;
+    h4{
+        font-size: $size-h3;
+        line-height: $line-height-h3;
+        padding:0 0 26px;
+        @media #{$screen-medium} {
+            padding:0 0 15px;
+        }
+        @media #{$screen-small} {
+            padding:0 0 15px;
+        }
+    }
+}

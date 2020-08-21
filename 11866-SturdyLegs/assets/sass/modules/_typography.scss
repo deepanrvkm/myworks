@@ -1,0 +1,209 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    color: $lighter;
+}
+body {
+    font-family: $main-font;
+    font-weight: 400;
+    font-size: $text-size;
+    line-height: 2;
+    color: $text-color;
+    background: $bg-color;
+	margin: 0px;
+	padding: 0px;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-style: normal;
+	font-weight: normal;
+	margin: 0px;
+	padding: 0px;
+}
+h1{
+   font-family: $title-font1;
+   font-size: $size-h1;
+   line-height: 1;
+   color: $lighter; 
+}
+h2{
+   font-family: $title-font2;
+   font-size: $size-h2;
+   line-height: 1;
+   color: $text-color; 
+}
+h3{
+   font-family: $title-font2;
+   font-size: $size-h3;
+   line-height: 1.2;
+   color: $text-color; 
+}
+h4{
+   font-family: $title-font2;
+   font-size: $size-h4;
+   line-height: 1.34;
+   color: $text-color; 
+}
+h5{
+   font-family: $title-font3;
+   font-size: $size-h5;
+   line-height: 1.27;
+   color: $text-color; 
+}
+h6{
+   font-family: $sub-font;
+   font-size: $size-h6;
+   line-height: 1.35;
+   color: $text-color; 
+}
+p {
+	font-family: $main-font;
+    font-weight: 400;
+    font-size: $text-size;
+    line-height: 2;
+    color: $text-color;
+    margin: 0px;
+	padding: 0 0 36px;
+}
+ul {
+	background: none;
+	margin: 0px;
+	padding: 0px;
+	list-style-image: none;
+	list-style-type: none;
+}
+ul li {
+	background: none;
+	margin: 0px;
+	padding: 0px;
+	list-style-image: none;
+	list-style-type: none;
+}
+a{
+	@include transition (all .3s ease-in-out);
+}
+a, a:hover, a:focus {
+	text-decoration: none;
+	outline: 0px none !important;
+}
+img, a img {
+	max-width: 100%;
+	margin: 0px;
+	padding: 0px;
+	border: none 0;
+	outline: 0px none !important;
+}
+input:focus, textarea:focus, a:focus {
+	outline: 0px none !important;
+}
+.btn{
+    display: inline-block;
+    font-family: $title-font2;
+    font-size: $size-h6;
+    line-height: 1;
+    color: $lighter;
+    border: solid 1px $lighter;
+    border-radius: 7px;
+    padding:19px 50px 19px 19px;
+    position: relative;
+    text-align: left;
+    min-width: 280px;
+    outline: inherit;
+    @media #{$tablet-landscape} { 
+        font-size: 18px;
+        padding:17px 65px 17px 17px;
+        min-width: 250px;
+    }
+    @media #{$tablet-portrait} { 
+        font-size: 16px;
+        padding:15px 50px 15px 15px;
+        min-width: 220px;
+    }
+    @media #{$mobile-landscape} { 
+        font-size: 16px;
+        padding:15px 50px 15px 15px;
+        min-width: 220px;
+    }
+    @media #{$mobile-portrait} { 
+        font-size: 14px;
+        padding:12px 40px 13px 12px;
+        min-width: 180px;
+    }
+    &:before{
+        content: "";
+        position: absolute;
+        right: 17px;
+        top: 50%;
+        @include transform-translatey(-50%);
+        width: 28px;
+        height: 28px;
+        background: url("../images/arrow-right.svg") no-repeat left center;
+        @include transition(all 300ms ease-in-out);
+        @media #{$tablet-landscape} { 
+            width: 24px;
+            height: 24px;
+            background-size: 24px;
+        }
+        @media #{$tablet-portrait} { 
+            width: 20px;
+            height: 20px;
+            background-size: 20px;
+        }
+        @media #{$mobile-landscape} { 
+            width: 20px;
+            height: 20px;
+            background-size: 20px;
+        }
+        @media #{$mobile-portrait} { 
+            width: 15px;
+            height: 15px;
+            background-size: 15px;
+        }
+    }
+    &:hover, &:focus{
+        outline: none;
+        color: $lighter;
+        &:before{
+            right: 12px;
+        }
+    }
+    &.blue{
+        color: $text-color;
+        border-color: $text-color;
+        &:before{
+            background: url("../images/arrow-right-blue.svg") no-repeat left center;
+             @media #{$tablet-landscape} { 
+                width: 24px;
+                height: 24px;
+                background-size: 24px;
+            }
+            @media #{$tablet-portrait} { 
+                width: 20px;
+                height: 20px;
+                background-size: 20px;
+            }
+            @media #{$mobile-landscape} { 
+                width: 20px;
+                height: 20px;
+                background-size: 20px;
+            }
+            @media #{$mobile-portrait} { 
+                width: 15px;
+                height: 15px;
+                background-size: 15px;
+            }
+        }
+        &:hover, &:focus{
+            color: $text-color;
+        }
+    }
+}
+.container {
+    @media #{$mobile-landscape} { 
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+}

@@ -1,0 +1,144 @@
+.block {
+	color: #FFF;
+	text-align: center;
+	height: 30px;
+	margin: 5px 0;
+	background: #030;
+	clear: both;
+}
+.grid-container{
+    @media #{$screen-large} {
+        padding: 0 26px;
+    }
+    @media #{$screen-medium} {
+        padding: 0 23px;
+    }
+    @media #{$screen-small} {
+        padding: 0 15px;
+    }
+}
+.content-container{
+	@media #{$screen-small} {
+		padding: 70px 0 0;
+	}
+	@media #{$screen-extrasmall} {
+		padding: 55px 0 0;
+	}
+}
+
+.page-content{
+    padding:93px 0 120px;
+    border-bottom: solid 1px $bg-color;
+    @media #{$screen-large} {
+        padding: 60px 0;
+    }
+    @media #{$screen-medium} {
+        padding: 50px 0;
+    }
+    @media #{$screen-small} {
+        padding: 30px 0;
+    }
+    .grid-x{
+        @include flexbox();
+        @include flex-wrap(nowrap);
+        width: calc(100% + 20px); 
+        @media #{$screen-small} {
+           @include flex-wrap(wrap); 
+        }
+    }
+    .cell{
+        @include flex(initial);
+    }
+    .medium-3{
+        min-width: 23.21%;
+    }
+    .medium-6{
+        width: 100%;
+    }
+}
+
+/* selectbox */
+.selectbox{
+	width: 100%;
+	max-width: 265px;
+	@media #{$screen-medium} {
+		max-width: 200px;
+	}
+}
+.sbHolder{
+	font-size: 16px;
+	color: $text-color;
+	font-family: $main-font;
+	height: 40px;
+	position: relative;
+	width: 100%;
+    border:0;
+	background: $lighter;
+}
+.sbSelector{
+	display: block;
+	height: 100%;
+	left: 0;
+	line-height: 36px;
+	outline: none;
+	overflow: hidden;
+	position: absolute;
+	text-indent: 10px;
+	top: 0;
+	width: 100%;
+	font-size: $size-h6;
+	color: $text-color;
+	@media #{$screen-medium} {
+		font-size: $small-title;
+	}
+}
+.sbToggle{
+	display: block;
+	height:100%;
+	outline: none;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 40px;
+	&:after{
+		width: 10px;
+		height: 6px;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		margin: auto 0;
+		right: 9px;
+		content: "";
+		background: url("../images/svg/arrow-down.svg") no-repeat;
+	}
+}
+.sbOptions{
+	background: $lighter;
+	list-style: none;
+	left: 0;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: 100%!important;
+	width: 100%;
+	z-index: 1;
+	overflow-y: auto;
+    width: 100%;
+	li{
+		padding: 0px!important;
+		a{
+			border-top: 1px solid $bg-color;
+			display: block;
+			outline: none;
+			padding: 7px 7px 7px 11px;
+			font-family: $main-font;
+			font-size: $size-h6;
+			color: $text-color;
+			text-decoration: none;
+			@media #{$screen-medium} {
+				font-size: $small-title;
+			}
+		}
+	}
+}
+/* selectbox */

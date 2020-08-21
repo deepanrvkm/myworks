@@ -1,0 +1,31 @@
+.actions{
+    position: relative;
+}
+.actions-inner{
+    padding: 70px 0 100px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    @media #{$screen-large} {
+        padding:60px 0;
+    }
+    @media #{$screen-medium} {
+       padding:50px 0; 
+    }
+    @media #{$screen-small} { 
+        padding:40px 0 110px;
+    }
+    h2{
+        font-weight: $light;
+        font-size: $size-h5;
+        line-height: $line-height-h4;
+        color: $text-color;
+        padding:0 0 40px;
+        @media #{$screen-small} {
+            padding:0 0 20px;
+        }
+    }
+    .button{
+        margin: 14px 8px 0;
+    }
+}

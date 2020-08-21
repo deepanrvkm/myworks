@@ -1,0 +1,290 @@
+/**********************************************
+    Location Page 
+***********************************************/
+
+.inner-page {
+    .newsletter-container {
+        margin: 0;
+    }
+}
+
+.no-gutter {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+//Intro Content Style
+
+.location {
+    .page-intro-container {
+        padding: 0 0 50px 0;
+
+        @media #{$tablet-landscape} {
+            padding: 0 0 40px 0;
+        }
+
+        @media #{$tablet-portrait} {
+            padding: 0 0 30px 0;
+        }
+
+        @media #{$mobile-landscape} {
+            padding: 0 0 30px 0;
+        }
+
+        .page-title {
+            margin: 57px 0 50px 0;
+
+            @media #{$tablet-portrait} {
+                margin: 40px 0;
+            }
+
+            @media #{$mobile-landscape} {
+                margin: 30px 0;
+            }
+        }
+
+        .intro-content {
+            padding: 0 5% 0 0;
+
+            @media #{$mobile-landscape} {
+                padding: 0;
+            }
+
+            p {
+                padding: 0 0 26px;
+
+                @media #{$tablet-portrait} {
+                    padding: 0 0 20px 0;
+                }
+
+                @media #{$mobile-landscape} {
+                    padding: 0 0 20px 0;
+                }
+            }
+        }
+
+        .intro-image-wrap {
+            padding: 5px 0 0 0;
+
+            @media #{$mobile-landscape} {
+                padding: 0 0 20px 0;
+            }
+
+            .single-slider {
+
+                height: auto;
+
+                .slider-image {
+                    height: 400px;
+
+                    @media #{$mobile-landscape} {
+                        height: 300px;
+                    }
+                }
+
+                &:before {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .intro-content-outer {
+        .row {
+            .columns {
+                &:first-child {
+                    @media #{$mobile-landscape} {
+                        order: 2;
+                    }
+                }
+
+                &:last-child {
+                    @media #{$mobile-landscape} {
+                        order: 1;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//Category Container Style
+.category-container {
+    width: 100%;
+    background: $color12;
+    padding: 60px 0 70px 0;
+
+    @media #{$tablet-landscape} {
+        padding: 40px 0;
+    }
+
+    @media #{$tablet-portrait} {
+        padding: 30px 0;
+    }
+
+    @media #{$mobile-landscape} {
+        padding: 30px 0;
+    }
+
+    .content-wrap {
+        width: 100%;
+        max-width: 1030px;
+        margin: 0 auto;
+    }
+
+    .page-title {
+        margin: 0 0 70px 0;
+
+        @media #{$tablet-landscape} {
+            margin: 0 0 40px 0;
+        }
+
+        @media #{$tablet-portrait} {
+            margin: 0 0 40px 0;
+        }
+
+        @media #{$mobile-landscape} {
+            margin: 0 0 30px 0;
+        }
+    }
+
+    .category-list {
+        width: 100%;
+        float: left;
+        padding: 0 0 70px 0;
+
+        @media #{$tablet-landscape} {
+            padding: 0 0 40px 0;
+        }
+
+        @media #{$tablet-portrait} {
+            padding: 0 0 30px 0;
+        }
+
+        @media #{$mobile-landscape} {
+            padding: 0 0 20px 0;
+        }
+
+        ul {
+            width: 100%;
+            @include flexbox;
+            @include justify-content(space-between);
+            @include align-items(center);
+
+            @media #{$mobile-landscape} {
+                display: block;
+                text-align: center;
+            }
+
+            li {
+                width: 131px;
+                display: block;
+                text-align: center;
+
+                @media #{$mobile-landscape} {
+                    display: inline-block;
+                    width: 48%;
+                    padding: 15px 0;
+                }
+
+                img {
+                    max-width: 100px;
+
+                    @media #{$tablet-landscape} {
+                        max-width: 80px;
+                    }
+
+                    @media #{$tablet-portrait} {
+                        max-width: 80px;
+                    }
+
+                    @media #{$mobile-landscape} {
+                        max-width: 60px;
+                    }
+                }
+
+                h6 {
+                    font-weight: $regular;
+                    color: $color10;
+                    padding: 20px 0 0 0;
+
+                    @media #{$tablet-landscape} {
+                        padding: 10px 0 0 0;
+                        font-size: $size-base;
+                    }
+
+                    @media #{$tablet-portrait} {
+                        padding: 10px 0 0 0;
+                        font-size: $size-base;
+                    }
+
+                    @media #{$mobile-landscape} {
+                        padding: 10px 0 0 0;
+                        font-size: $size-base;
+                    }
+                }
+            }
+        }
+    }
+
+    .category-content {
+        width: 100%;
+        float: left;
+        padding: 0 45px;
+
+        @media #{$tablet-portrait} {
+            padding: 0 30px;
+        }
+
+        @media #{$mobile-landscape} {
+            padding: 0;
+        }
+
+        p {
+            @media #{$mobile-landscape} {
+                padding: 0 0 20px 0;
+            }
+        }
+    }
+}
+
+//Gallery Container
+.gallery-container {
+    width: 100%;
+
+    ul {
+        width: 100%;
+
+        li {
+            width: 25%;
+            height: 315px;
+            display: block;
+            float: left;
+            position: relative;
+            @include transition(all 0.3s ease-in-out);
+
+            @media #{$tablet-landscape} {
+                height: 200px;
+            }
+
+            @media #{$tablet-portrait} {
+                width: 33.33%;
+                height: 200px;
+            }
+
+            @media #{$mobile-landscape} {
+                width: 50%;
+                height: 200px;
+            }
+
+            @media #{$mobile-portrait} {
+                height: 150px;
+            }
+
+            &:hover {
+                z-index: 9;
+                @include box-shadow(0, 0, 40px, 0, rgba(0, 0, 0, 0.95));
+            }
+        }
+    }
+}

@@ -1,0 +1,531 @@
+.sm-wrapper {
+    display: block;
+    margin: 0 auto;
+    max-width: 880px;
+    padding: 80px 0;
+}
+.block1 .sm-wrapper{
+   min-height: 825px; 
+}
+.sm-wrapper h3{
+    font-size: 60px;
+    line-height: 1.25;
+    text-align: center;
+    padding: 0 0 65px;
+}
+.sm-wrapper p{
+    font-size: 25px;
+    line-height: 1.68;
+}
+.block2 .sm-wrapper{
+   max-width: 1000px; 
+   min-height: 660px; 
+   padding: 40px 0; 
+}
+.block2 .sm-wrapper h2{
+    font-size: 75px;
+    line-height: 1.25;
+    text-align: center;
+    padding: 0 0 45px;
+}
+.icon-outer{
+    text-align: center;
+    padding:0 0 40px;
+}
+.block2 .sm-wrapper p{
+    color: #FFF;
+}
+.block3 .sm-wrapper{
+   max-width: 1240px; 
+   min-height: 1500px; 
+   padding: 40px 0; 
+    display: -webkit-box;      
+    display: -moz-box;         
+    display: -ms-flexbox;       
+    display: -webkit-flex;      
+    display: flex;
+    -webkit-box-align: center; 
+    -moz-box-align: center; 
+    -webkit-align-items: center; 
+    -ms-flex-align: center; 
+    align-items: center;
+}
+.block3 .sm-wrapper h2{
+    font-size: 85px;
+    line-height: 1.41;
+    text-align: center;
+    padding: 0 0 40px;
+    color: #FFF;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
+}
+
+.block4 .sm-wrapper{
+   max-width: 1020px; 
+   min-height: 680px; 
+   padding: 80px 0; 
+}
+.block4 .sm-wrapper h2{
+    font-size: 70px;
+    line-height: 1.25;
+    text-align: center;
+    color: #39b54a;
+    padding: 0 0 50px;
+}
+.block4 .sm-wrapper p{
+    color:  #FFF;
+    line-height: 2.00;
+}
+.block5 .sm-wrapper{
+   max-width: 1020px; 
+   min-height: 1270px; 
+   padding: 40px 0; 
+    display: -webkit-box;      
+    display: -moz-box;         
+    display: -ms-flexbox;       
+    display: -webkit-flex;      
+    display: flex;
+    -webkit-box-align: center; 
+    -moz-box-align: center; 
+    -webkit-align-items: center; 
+    -ms-flex-align: center; 
+    align-items: center;
+    -webkit-justify-content: center; 
+    -ms-flex-pack: center; 
+    justify-content: center;
+}
+.contact-block {
+    width: 100%;
+    background: rgba(109,111,113,.75);
+    padding:100px 50px 120px;
+    text-align: center;
+    -webkit-box-shadow: 0px 0px 3px 0px rgba(255, 255, 255, 1);
+-moz-box-shadow:    0px 0px 3px 0px rgba(255, 255, 255, 1);
+box-shadow:         0px 0px 3px 0px rgba(255, 255, 255, 1);
+}
+.contact-block h6{
+    font-family: 'Rockwell';
+    color: #f1f2f2;
+    font-size: 36px;
+    line-height: 1;
+    background: #8cc63f;
+    padding:27px 50px;
+    text-align: center;
+    display: inline-block;
+    margin:0 0 40px;
+}
+.ctext{
+    font-family: 'Arial';
+    font-weight: bold;
+    font-size: 38px;
+    line-height: 1;
+    color: #FFF;
+    margin:0 0 25px;
+}
+.contact-block a{
+    font-family: 'RockwellBold';
+    font-size: 85px;
+    line-height: 1;
+    color: #FFF;
+}
+.footer {
+    background: #414142;
+    border-top: solid 25px #8cc63f;
+    padding:30px 0 50px;
+}
+.footer-wrapper{
+   display: block;
+   margin: auto;
+   max-width: 1390px;
+}
+.footer-inner{
+    display: -webkit-box;      
+    display: -moz-box;         
+    display: -ms-flexbox;       
+    display: -webkit-flex;      
+    display: flex;
+    -webkit-justify-content: space-between; 
+    -ms-flex-pack: space-between; 
+    justify-content: space-between;
+    position: relative;
+}
+.footer-inner h5{
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-family: 'RockwellBold';
+    font-size: 37px;
+    line-height: 1;
+    color: #FFF;
+}
+.scroll-top{
+    display: none;
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    background: #8cc63f url("../images/up-arrow.png") no-repeat center center;
+    position: absolute;
+    right: 0;
+    left: 0;
+    margin: auto;
+    top: -95px;
+    cursor: pointer;
+}
+.footer-logo {
+    min-width: 13%;
+    padding:35px 15px 0 0;
+}
+.footer-menu{
+    min-width: 14.5%;
+    padding:16px 0 0;
+}
+.footer-menu ul{
+    max-width: 120px;
+}
+.footer-menu ul li{
+    font-family: 'AvenirRoman';
+    font-size: 17px;
+    line-height: 1.18;
+    color: #babcbe;
+    border-top: solid 2px #323131;
+    padding:5px 10px 8px 20px;
+}
+.footer-menu ul li a{
+    color: #babcbe;
+}
+.footer-menu ul li a:hover,
+.footer-menu ul li a:focus{
+    color: #FFF;
+}
+.footer-menu ul li:first-child{
+    border: none;
+}
+.contact-details{
+    min-width: 35%;
+    font-family: 'AvenirLight';
+    font-size: 18px;
+    line-height: 1.72;
+    color: #FFF;
+    padding:5px 0 0 28px;
+}
+.contact-details h6{
+    font-family: 'AvenirLight';
+    font-size: 21px;
+    line-height: 1.71;
+    color: #FFF;
+    padding:0 0 5px;
+}
+.contact-details a{
+    color: #FFF;
+}
+.contact-details div{
+    position: relative;
+    margin:0 0 15px;
+}
+.contact-details div:before{
+    content: "";
+    position: absolute;
+    left: -25px;
+    top: 3px;
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: cover;
+}
+.location:before{
+    background-image: url("../images/marker.png");
+}
+.email:before{
+    background-image: url("../images/globe.png");
+}
+.footer-right{
+    text-align: right;    
+}
+.copyright{
+    font-family: 'AvenirLight';
+    font-size: 20px;
+    line-height: 1.4;
+    color: #f3f3f3;
+    padding: 75px 0 0;
+}
+.copyright a{
+    color: #f3f3f3;
+}
+.copyright a:hover,
+.copyright a:active,
+.copyright a:focus,{
+    color: #006738;
+}
+.social-icons{
+    text-align: center;
+    padding:10px 0 0;
+    display: none;
+}
+.social-icons ul li{
+    display: inline-block;
+    margin:0 4px;
+}
+.social-icons ul li a{
+    display: block;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.7);
+-moz-box-shadow:    0px 0px 10px 0px rgba(0, 0, 0, 0.7);
+box-shadow:         0px 0px 10px 0px rgba(0, 0, 0, 0.7);
+}
+.social-icons ul li a img{
+    display: block;
+}
+
+.header{
+    overflow: hidden;
+}
+.header-top-outer{
+    background: url("../images/drops.png") no-repeat left top 40px;
+}
+.header-top{
+    width: 100%;
+    width: 85%;
+}
+.logo{
+    position: relative;
+    z-index: 99;
+    margin:0 0 -280px;
+    display: inline-block;
+    vertical-align: top;
+    padding: 20px 0 0;
+}
+.menu-icon{
+    display: none;
+    position: absolute;
+    right: 45%;
+    top: 90px;
+    cursor: pointer;
+    z-index: 999;
+}
+.banner-outer {
+    height: 705px;
+    background: url("../images/content/banner.jpg") no-repeat center top;
+    background-size: cover;
+    position: relative;
+}
+.sub-banner .banner-outer {
+    background: url("../images/content/sub-banner.jpg") no-repeat center top;
+    background-size: cover;
+    position: relative;
+}
+.@media only screen and (min-width: 2560px){
+    .sub-banner .banner-outer {
+        height: 530px;
+    }
+    .sub-banner .right-block {
+        height: 815px
+    }
+    .sub-banner .right-content {
+        padding: 70px 0 0;
+    }
+    .sub-banner .header-top{
+        width: 82.5%;
+    }
+}
+.right-block {
+    width: 33.4%;
+    height: 960px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background: url("../images/banner-image.png") no-repeat left bottom;
+    background-size: 100%;
+}
+
+.payment{
+    display: inline-block;
+    vertical-align: top;
+    padding:25px 0 0;
+    position: relative;
+    z-index: 99;
+}
+.payment a{
+    font-family: 'RockwellBold';
+    font-size: 28px;
+    line-height: 30px;
+    color: #FFF;
+    display: inline-block;
+    background: #414142;
+    border-radius: 10px;
+    padding: 7px 40px 8px;
+}
+.payment a:hover{
+    background: #1e1e1e;
+}
+
+.work-hours {
+    display: inline-block;
+    font-family: 'RockwellBold';
+    font-size: 38px;
+    line-height: 1;
+    color: #39b54a;
+    padding: 15px 0 0 80px;
+    position: relative;
+    margin: 17px 80px 0 20px;
+}
+.work-hours a{
+   color: #39b54a; 
+}
+.work-hours:before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 66px;
+    height: 66px;
+    background: url("../images/call.png") no-repeat left top;
+    background-size: cover;
+}
+.work-time {
+    display: inline-block;
+    font-family: 'RockwellBold';
+    font-size: 23px;
+    line-height: 1;
+    color: #39b54a;
+    padding: 15px 0 0 70px;
+    position: relative;
+    margin: 7px 70px 0 0;
+}
+.work-time span{
+    font-family: 'Rockwell';
+    display: block;
+    font-size: 22px;
+   color: #58595b; 
+}
+.work-time:before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 10px;
+    width: 55px;
+    height: 55px;
+    background: url("../images/time.png") no-repeat left top;
+    background-size: cover;
+}
+
+
+.main-menu {
+    width: 49.6%;
+    margin: 0 0 0 auto;
+    position: relative;
+    z-index: 999;
+}
+.main-menu:before{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: -2px;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #006738;
+    -moz-transform: skewX(-20deg);
+-webkit-transform: skewX(-20deg);
+-o-transform: skewX(-20deg);
+-ms-transform: skewX(-20deg);
+transform: skewX(-20deg);
+}
+.main-menu ul{
+    width: 100%;
+    padding:24px 15px 21px;
+    text-align: center;
+}
+.main-menu ul li{
+    display: inline-block;
+    font-family: 'Rockwell';
+    font-size: 32px;
+    line-height: 1;
+    color: #FFF;
+    padding:0 20px;
+    position: relative;
+}
+.main-menu ul li:before{
+    content: "";
+    position: absolute;
+    left: -3px;
+    top: 2px;
+    width: 3px;
+    height: 100%;
+    background: #FFF;
+}
+.main-menu ul li:first-child:before{
+    display: none;
+}
+.main-menu ul li a{
+    color: #FFF;
+}
+.main-menu ul li a:hover,
+.main-menu ul li a:focus{
+    color: #50b851;
+}
+
+
+.right-inner {
+    max-width: 600px;
+    text-align: right;
+    float: right;
+    padding-right: 120px;
+    margin-top: 110px;
+}
+
+.social-media ul li{
+    display: inline-block;
+    margin-right: 20px;
+}
+.social-media ul li a:hover{
+    opacity: .7;
+}
+.right-content {
+    padding:135px 0 0;
+}
+.right-content h4{
+    font-size: 50px;
+    line-height: 1.18;
+    color: #8dc63f;
+    padding:0 0 20px;
+}
+.right-content h4 span{
+    display: inline-block;
+    position: relative;
+}
+.right-content h4 span:before{
+    content: "";
+    position: absolute;
+    left: -20px;
+    top: -35px;
+    width: 42px;
+    height: 42px;
+    background: url("../images/star.png") no-repeat left top;
+    background-size: cover;
+}
+.right-content h5{
+    font-family: 'Rockwell';
+    font-size: 44px;
+    line-height: 1.18;
+    color: #f1f2f2;
+    padding:0 0 90px;
+}
+.quote-btn{
+    display: inline-block;
+    vertical-align: top;
+    font-family: 'Rockwell';
+    font-size: 44px;
+    line-height: 1;
+    color: #FFF;
+    border: solid 1px #FFF;
+    background: #8cc63f;
+    text-transform: uppercase;
+    padding:25px 50px;
+}
+.quote-btn:hover,
+.quote-btn:focus{
+    color: #FFF;
+    background: #598f12;
+}

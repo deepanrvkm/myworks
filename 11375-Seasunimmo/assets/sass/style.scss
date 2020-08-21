@@ -1,0 +1,17 @@
+@import 'foundation/util/util';
+@import 'foundation/global'; 
+//framework changes
+	
+
+//import modules 
+    @import  "modules/_mixins";
+    @import  "modules/_typography";
+    @import  "modules/_header";
+    @import  "modules/_footer";
+    @import  "modules/_fancybox";
+
+// pages 
+	@import  "modules/sections/_home";
+	@import  "modules/sections/_detail";
+   
+ 

@@ -1,0 +1,20 @@
+
+    @import  "vendor/select";
+//import modules
+    @import  "modules/_fonts";
+    @import  "modules/_mixins";
+    @import  "modules/_typography";
+    @import  "modules/_header";
+    @import  "modules/_banner";
+    @import  "modules/_footer";
+
+// pages
+	  @import  "modules/sections/_home";
+	  @import  "modules/sections/_property";
+	  @import  "modules/sections/_faq";
+	  @import  "modules/sections/_over";
+	  @import  "modules/sections/_brochure";
+	  @import  "modules/sections/_references";
+	  @import  "modules/sections/_general";
+	  @import  "modules/sections/_details";
+		

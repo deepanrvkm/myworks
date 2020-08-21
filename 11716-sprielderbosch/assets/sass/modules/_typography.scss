@@ -1,0 +1,148 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    color: $lighter;
+}
+body {
+    font-family: $main-font;
+    font-size: $size-base;
+    line-height: 1.63;
+    color: $darker;
+	margin: 0px;
+	padding: 0px;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-style: normal;
+	font-weight: normal;
+	margin: 0px;
+	padding: 0px;
+}
+h1{
+   font-family: $title-lg;
+   font-size: $size-h1;
+   line-height: 1;
+   color: $darker; 
+}
+h2{
+   font-family: $title-lg;
+   font-size: $size-h2;
+   line-height: 1.11;
+   color: $darker; 
+}
+h3{
+   font-family: $sub-font;
+   font-size: $size-h3;
+   line-height: 1.11;
+   color: $darker; 
+}
+h4{
+   font-family: $title-sm;
+   font-size: $size-h4;
+   line-height: 1.13;
+   color: $darker; 
+}
+h5{
+   font-family: $title-sm;
+   font-size: $size-h5;
+   line-height: 1.08;
+   color: $darker; 
+}
+h6{
+   font-family: $sub-font;
+   font-size: $size-h6;
+   line-height: 1.20;
+   color: $darker;
+}
+p {
+	font-family: $main-font;
+    font-size: $size-base;
+    line-height: 1.63;
+    color: $darker;
+    margin: 0px;
+	padding: 0 0 26px;
+}
+ul {
+	background: none;
+	margin: 0px;
+	padding: 0px;
+	list-style-image: none;
+	list-style-type: none;
+}
+ul li {
+	background: none;
+	margin: 0px;
+	padding: 0px;
+	list-style-image: none;
+	list-style-type: none;
+}
+a{
+	@include transition (all .3s ease-in-out);
+}
+a, a:hover, a:focus {
+	text-decoration: none;
+	outline: 0px none !important;
+}
+img, a img {
+	max-width: 100%;
+	margin: 0px;
+	padding: 0px;
+	border: none 0;
+	outline: 0px none !important;
+}
+input:focus, textarea:focus, a:focus {
+	outline: 0px none !important;
+}
+.container{
+    @media #{$mobile-landscape} { 
+        max-width: 740px;
+    }
+}
+.btn {
+    font-size: $size-base;
+    font-family: $sub-font;
+    color: $darker;
+    border: 1px solid $darker;
+    @include border-radius(5px);
+    padding: 12px 23px;
+    text-transform: uppercase;
+    background: $lighter;
+    &:hover,
+    &:focus{
+        background: $link-color;
+        color: $lighter;
+        border: 1px solid $link-color;
+        box-shadow: none;
+    }
+    &.black {
+        background: $darker;
+        color: $lighter;
+        &:hover,
+        &:focus{
+            background: $link-color;
+            color: $lighter;
+            border: 1px solid $link-color;
+        }
+    }
+    &.white {
+        border: 1px solid $lighter;
+        &:hover,
+        &:focus{
+            border: 1px solid $link-color;
+        }
+    }
+    &.orange {
+        border: 1px solid $link-color;
+        background: $link-color;
+        color: $lighter;
+        &:hover,
+        &:focus{
+            border: 1px solid $lighter;
+            background: $lighter;
+            color: $link-color;
+        }
+    }
+}

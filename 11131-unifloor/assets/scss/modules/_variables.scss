@@ -1,0 +1,64 @@
+// Variables
+// --------------------------  
+ 
+// Colors and backgrounds
+$darker:             #000000 !default;
+$bg-color:           lighten($darker, 93) !default;  //eeeeee
+$lighter:            lighten($darker, 100) !default; 
+
+$heading-color:      #009e49 !default;
+$text-color:         #757575 !default;
+$link-color:         #ea9c0c !default;
+$bg-color1:          #08512a !default;
+$bg-color2:          #fafafa !default;
+$text-color1:        #212121 !default;
+$border-color:       #9e9e9e !default;
+$border-color1:      #26ac64 !default;
+$red-color:          #d12c2a !default;
+$blue-color:         #3266CB !default;
+
+//Typography
+@import url('https://fonts.googleapis.com/css?family=Barlow:200,200i,300,300i,400,400i,500,500i,600,700,700i,800');
+
+$main-font:         'Barlow', sans-serif;
+
+$extralight:   200   !default;
+$light:        300   !default;
+$regular:      400   !default;
+$medium:       500   !default;
+$semibold:     600   !default;
+$bold:         700   !default;
+$extrabold:    900   !default;
+
+
+$size-base:    16px !default;
+$size-h1:      ceil(($size-base * 3))    !default;  // ~48px
+$size-h2:      ceil(($size-base * 2.25)) !default;  // ~36px
+$size-h3:      ceil(($size-base * 2))    !default;  // ~32px
+$size-h4:      ceil(($size-base * 1.5))  !default;  // ~24px
+$size-h5:      ceil(($size-base * 1.25)) !default;  // ~20px
+$size-h6:      ceil(($size-base * 1))    !default;  // ~16px
+$small-title:  ceil(($size-base * .87))  !default;  // ~14px
+$small-size:   ceil(($size-base * .75))  !default;  // ~12px
+$medium-size:  ceil(($size-base * 1.75)) !default;  // ~28px
+$medium-head:  ceil(($size-base * 1.125))!default;  // ~18px
+
+
+$line-height-base:    24px !default;
+$line-height-h1:      ceil(($size-base * 3.75)) !default;  // ~60px
+$line-height-h2:      ceil(($size-base * 2.62)) !default;  // ~42px
+$line-height-h3:      ceil(($size-base * 2.12)) !default;  // ~34px
+$line-height-h4:      ceil(($size-base * 1.87)) !default;  // ~30px
+$line-height-h5:      ceil(($size-base * 1.37)) !default;  // ~22px
+$line-height-h6:      ceil(($size-base * 1.12)) !default;  // ~18px
+
+
+//Media Queries
+$screen-large:        "only screen and (min-width: 1024px) and (max-width: 1279px)";
+$screen-medium:       "only screen and (min-width: 768px) and (max-width: 1023px)";
+$screen-smallup:      "only screen and (min-width: 768px)";
+$screen-small:        "only screen and (max-width: 767px)";
+$screen-extrasmall:   "only screen and (max-width: 479px)";
+
+
+

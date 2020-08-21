@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21" height="21" viewBox="0 0 21 21">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Clip_6" data-name="Clip 6" d="M0,0H21V21H0Z" transform="translate(0)" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Instagram" transform="translate(0)">
+    <path id="Fill_1" data-name="Fill 1" d="M2.282,0H2.218A2.161,2.161,0,0,0,.712.62,2.361,2.361,0,0,0,0,2.31,2.311,2.311,0,0,0,2.309,4.62a2.333,2.333,0,0,0,2.31-2.328A2.118,2.118,0,0,0,2.282,0" transform="translate(8.257 8.156)" fill="#d0d0d0"/>
+    <path id="Fill_3" data-name="Fill 3" d="M8.895,12.2H2.907A2.91,2.91,0,0,1,0,9.294V2.907A2.91,2.91,0,0,1,2.907,0H8.895A2.908,2.908,0,0,1,11.8,2.9V9.294A2.911,2.911,0,0,1,8.895,12.2ZM5.809,1.8A4.107,4.107,0,0,0,2.935,2.976a4.345,4.345,0,0,0-1.309,3.1A4.28,4.28,0,0,0,5.9,10.351,4.217,4.217,0,0,0,8.914,9.1a4.354,4.354,0,0,0,1.264-3,4.162,4.162,0,0,0-1.067-3A4.4,4.4,0,0,0,5.929,1.8Zm4.147-.715a.923.923,0,1,0,.924.923A.924.924,0,0,0,9.956,1.084Z" transform="translate(4.665 4.385)" fill="#d0d0d0"/>
+    <g id="Group_7" data-name="Group 7">
+      <path id="Clip_6-2" data-name="Clip 6" d="M0,0H21V21H0Z" transform="translate(0)" fill="none"/>
+      <g id="Group_7-2" data-name="Group 7" clip-path="url(#clip-path)">
+        <path id="Fill_5" data-name="Fill 5" d="M19.489,21H1.511A1.512,1.512,0,0,1,0,19.49V1.511A1.513,1.513,0,0,1,1.511,0H19.489A1.513,1.513,0,0,1,21,1.511V19.49A1.512,1.512,0,0,1,19.489,21ZM7.572,2.774A4.519,4.519,0,0,0,3.058,7.288V13.68A4.52,4.52,0,0,0,7.572,18.2H13.56a4.52,4.52,0,0,0,4.514-4.515V7.288A4.52,4.52,0,0,0,13.56,2.774Z" transform="translate(0 0)" fill="#d0d0d0"/>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,207 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    color: $lighter;
+}
+body {
+    font-family: $main-font;
+	font-weight: $regular;
+    font-size: $size-base;
+    line-height: $base-linehight;
+    color: $text-color;
+	margin: 0px;
+	padding: 0px;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-style: normal;
+	font-weight: normal;
+	margin: 0px;
+	padding: 0px;
+}
+h1{
+   font-family: $main-font;
+   font-weight: $bold; 
+   font-size: $size-h1;
+   line-height: $lineheight-h1;
+   color: $title-color; 
+}
+h2{
+   font-family: $main-font;
+   font-weight: $semibold;
+   font-size: $size-h2;
+   line-height: $lineheight-h2;
+   color: $title-color; 
+}
+h3{
+   font-family: $main-font;
+   font-weight: $bold;
+   font-size: $size-h3;
+   line-height: $lineheight-h3;
+   color: $title-color; 
+}
+h4{
+   font-family: $main-font;
+   font-weight: $semibold; 
+   font-size: $size-h4;
+   line-height: $lineheight-h4;
+   color: $title-color; 
+}
+h5{
+   font-family: $main-font;
+   font-weight: $bold; 
+   font-size: $size-h5;
+   line-height: $lineheight-h5;
+   color: $title-color; 
+}
+h6{
+   font-family: $main-font;
+   font-weight: $semibold;
+   font-size: $size-h6;
+   line-height: $lineheight-h6;
+   color: $title-color; 
+}
+p {
+	font-family: $main-font;
+    font-size: $size-base;
+    line-height: $base-linehight;
+    color: $text-color;
+    margin: 0px;
+	padding: 0 0 26px;
+}
+ul {
+	background: none;
+	margin: 0px;
+	padding: 0px;
+	list-style-image: none;
+	list-style-type: none;
+}
+ul li {
+	background: none;
+	margin: 0px;
+	padding: 0px;
+	list-style-image: none;
+	list-style-type: none;
+}
+a{
+	@include transition (all .3s ease-in-out);
+}
+a, a:hover, a:focus {
+	text-decoration: none;
+	outline: 0px none !important;
+}
+img, a img {
+	max-width: 100%;
+	margin: 0px;
+	padding: 0px;
+	border: none 0;
+	outline: 0px none !important;
+}
+input:focus, textarea:focus, a:focus {
+	outline: 0px none !important;
+}
+
+.main-field{
+	width: 100%;
+	box-shadow: none;
+	border: 2px solid $border-col2;
+	@include border-radius(3px);
+	font-size: $size-base;
+	color: $text-col3;
+	margin-bottom: 8px;
+	padding: 10px 30px 10px 12px;
+	height: 42px;
+	background: $lighter;
+	
+	&:active,
+	&:focus{
+		border: 2px solid $border-col2;
+	}
+	
+	&.is-invalid-input:not(:focus){
+		border-color: $link-color;
+		background-color:$lighter;
+		color: $text-col6;
+	}
+}
+.main-field::-webkit-input-placeholder {
+   	opacity:1;
+	color: $text-col3;
+}
+.main-field:-moz-placeholder { 
+   	opacity:1;
+	color: $text-col3;
+}
+.main-field::-moz-placeholder {
+   	opacity:1;
+	color: $text-col3;
+}
+.main-field:-ms-input-placeholder {  
+   	opacity:1;
+	color: $text-col3;
+}
+
+.main-field.is-invalid-input::-webkit-input-placeholder {
+   	opacity:1;
+	color: $text-col6;
+}
+.main-field.is-invalid-input:-moz-placeholder { 
+   	opacity:1;
+	color: $text-col6;
+}
+.main-field.is-invalid-input::-moz-placeholder {
+   	opacity:1;
+	color: $text-col6;
+}
+.main-field.is-invalid-input:-ms-input-placeholder {  
+   	opacity:1;
+	color: $text-col6;
+}
+
+
+textarea.main-field{
+	resize: none;
+	height: 90px;
+	margin-bottom: 10px;
+	padding: 7px 30px 10px 12px;
+}
+.more-btn{
+	color: $link-color;
+	font-size: $size-base;
+	text-transform: uppercase;
+	font-weight: $regular;
+	border: 3px solid $link-color;
+	@include border-radius(3px);
+	padding: 13px 59px;
+	cursor: pointer;
+	@include transition (all .3s ease-in-out);
+	background: transparent;
+	
+	&:hover,
+	&:active,
+	&:focus{
+		background: $link-color;
+		color: $lighter;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

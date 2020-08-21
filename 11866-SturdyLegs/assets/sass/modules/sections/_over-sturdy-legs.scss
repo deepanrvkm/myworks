@@ -1,0 +1,189 @@
+// ***********************************
+// Over Sturdy Legs
+// ***********************************
+.innerpage-video{
+    img{
+        width: 100%;
+        height: 640px;
+        object-fit: cover;
+        @media #{$tablet-landscape} { 
+            height: 550px;
+        }
+        @media #{$tablet-portrait} { 
+            height: 450px;
+        }
+        @media #{$mobile-landscape} {
+            height: 300px;
+        }
+        @media #{$mobile-portrait} { 
+            height: 250px;
+        }
+    }
+}
+.content-container{
+    padding: 161px 0 45px;
+    
+    @media #{$tablet-landscape} {
+        padding: 50px 0 0;
+    }
+    @media #{$tablet-portrait} {
+        padding: 50px 0 0;
+    }
+    
+    @media #{$mobile-landscape} {
+        padding: 35px 0 0;
+    }
+    
+    h4{
+        margin-bottom: 20px;
+    }
+    
+    a{
+        min-width: 300px;
+        margin-top: 35px;
+        
+        @media #{$tablet-landscape} {
+            margin: 0;
+        }
+        
+        @media #{$tablet-portrait} {
+            margin: 0;
+        }
+        
+        @media #{$mobile-landscape} {
+             margin: 0;
+        }
+    
+    }
+}
+.innerpage-image-holder{
+    width: 100%;
+    height: 590px;
+    @media #{$tablet-landscape} { 
+        height: 550px;
+    }
+    @media #{$tablet-portrait} { 
+        height: 450px;
+    }
+    @media #{$mobile-landscape} {
+        height: 300px;
+    }
+    @media #{$mobile-portrait} { 
+        height: 250px;
+    }
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    @media #{$mobile-landscape} {
+         height: 300px;
+    }
+}
+.quick-links-outer{
+    padding: 160px 0;
+    
+    @media #{$tablet-landscape} {
+        padding: 50px 0;
+    }
+    
+    @media #{$tablet-portrait} {
+        padding: 50px 0;
+    }
+    
+    @media #{$mobile-landscape} {
+         padding: 30px 0;
+    }
+}
+.quick-links-wrap{
+    width: 100%;
+    line-height: 0;
+}
+
+.quick-link{
+    position: relative;
+    width: 100%;
+    @include transition (all .3s ease-in-out);
+    
+    h3{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        color: $lighter;
+        font-size: 26px;
+        padding-bottom: 18px;
+        padding-left: 21px;
+        letter-spacing: -0.4px;
+        word-spacing: 6px;
+        z-index: 9;
+        
+        @media #{$tablet-portrait} {
+            font-size: 20px;
+        }
+        
+        @media #{$mobile-landscape} {
+            font-size: 20px;
+        }
+    }
+    
+    a{
+        top: 0;
+        left: 0;
+
+        &:after{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 92px;
+            content: "";
+            @include linearGradient(rgba(22,32,42,0), rgba(22,32,42,1));
+            @include transition(all 300ms ease-in-out);
+        }
+
+        &:hover:after{
+            width: 100%;
+            height: 100%;
+            @include linearGradient1(rgba(22,32,42,.1), rgba(22,32,42,.3), rgba(22,32,42,.1));
+        }
+    }
+    
+    @media #{$mobile-landscape} {
+        margin-bottom: 30px;
+    }
+}
+.quick-link-image{
+    width: 100%;
+    height: 400px;
+    @media #{$tablet-landscape} { 
+        height: 350px;
+    }
+    @media #{$tablet-portrait} { 
+        height: 300px;
+    }
+    @media #{$mobile-landscape} {
+        height: 300px;
+    }
+    @media #{$mobile-portrait} { 
+        height: 250px;
+    }
+}
+.over-sturdy{
+    .button-outer{
+        margin-top: 80px;
+        
+        @media #{$tablet-landscape} {
+            margin-top: 50px;
+        }
+        
+        @media #{$tablet-portrait} {
+            margin-top: 50px;
+        }
+        
+        @media #{$mobile-landscape} {
+            margin-top: 0;
+        }
+    }
+}

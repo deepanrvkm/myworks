@@ -1,0 +1,455 @@
+/*--- Ambassador Style Starts ---*/
+.ambassador-container{
+    background: #ffffff;
+    padding: 95px 0 0;
+}
+.ambassador-left{
+    width: 100%; 
+    padding: 0 40px 0 0;
+}
+.ambassador-right{
+    width: 100%;
+    padding: 25px 0 0;
+}
+.left-inner{
+    height: 100%;
+    background: #2c7fb1;
+    padding: 75px 60px 0 25px;
+}
+.ambassador-left h2{
+    font-size: 11.667vw;
+    line-height:6.99vw;
+    color: #ffffff;
+}
+.ambassador-left h5{
+    font-family: 'BebasNeue';
+    font-size: 4.375vw;
+    line-height:4.063vw;
+    color: #ffffff;
+    padding: 0 0 95px;
+}
+.ambassador-left p{
+    line-height:1.875vw;
+    color: #ffffff;
+}
+.ambassador-right h2{
+    font-size: 7.448vw;
+    line-height: 5.5vw;
+}
+.ambassador-right p{
+    line-height:1.719vw;
+    padding: 0 0 40px;
+}
+.image-row{
+    display: -webkit-box;     
+    display: -moz-box;         
+    display: -ms-flexbox;     
+    display: -webkit-flex;    
+    display: flex;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: space-between;
+    justify-content: space-between;
+}
+.image-col{
+    width: 39%;
+    height: 415px;
+}
+.image-col:last-child{
+    width: 59%;
+}
+/*--- Ambassador Style Ends ---*/
+
+/*--- Instagram Gallery Style Starts ---*/
+.insta-gallery{
+    background: #ffffff;
+    padding: 75px 0 180px;
+    text-align: center;
+}
+.insta-gallery h5{
+    font-family: 'BebasNeue';
+    font-size: 4.271vw;
+    line-height: 5.104vw;
+    color: #004169;
+    text-transform: uppercase;
+    display: -webkit-box;     
+    display: -moz-box;         
+    display: -ms-flexbox;     
+    display: -webkit-flex;    
+    display: flex; 
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 0 0 30px;
+}
+.insta-gallery h5 i{
+    color: #ffffff;
+    font-size: 46px;
+    height: 65px;
+    width: 65px;
+    background: #004169;
+    border-radius: 100%;
+    display: -webkit-box;     
+    display: -moz-box;         
+    display: -ms-flexbox;     
+    display: -webkit-flex;    
+    display: flex; 
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: 0 10px 0 0;
+    position: relative;
+    top: -4px;
+}
+.insta-gallery ul{
+    width: 101.5%;
+    display: -webkit-box;     
+    display: -moz-box;         
+    display: -ms-flexbox;     
+    display: -webkit-flex;    
+    display: flex; 
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+.insta-gallery li{
+    width: 15%;
+    height: 250px;
+    margin: 0 1.5% 1.5% 0;
+    overflow: hidden;
+}
+.more-btn{
+    width: 95px;
+    height: 95px;
+    background: #cbf1f4;
+    border-radius: 100%;
+    font-family: 'BebasNeue';
+    font-size: 1.61vw;
+    line-height: 1.51vw;
+    color: #004169;
+    text-transform: uppercase;
+    display: -webkit-box;     
+    display: -moz-box;         
+    display: -ms-flexbox;     
+    display: -webkit-flex;    
+    display: flex; 
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+.more-btn:hover,
+.more-btn:active,
+.more-btn:focus{
+    background: #004169;
+     color: #cbf1f4;
+}
+/*--- Instagram Gallery Style Ends ---*/
+
+/*--- Contact Style Starts ---*/
+.contact-container{
+    padding: 80px 0 160px;
+    background: #ffffff;  
+}
+.contact-container .menu-blk{
+    padding: 20px 0 0;
+}
+.contact-form{
+    width: 100%;
+    display: inline-block;
+    background: #cbf1f4;
+    padding: 25px;
+}
+.contact-form h6{
+    text-transform: uppercase;
+    padding: 0 0 20px;
+}
+.contact-form .primary-btn{
+    float: right;
+}
+.contact-form span{
+    font-family: 'Abel', sans-serif;
+    font-size: 1.2vw;
+    line-height: 1.9vw;
+    color: #707070;
+}
+.form-inner{
+    display: -webkit-box;     
+    display: -moz-box;         
+    display: -ms-flexbox;     
+    display: -webkit-flex;    
+    display: flex; 
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: space-between;
+    justify-content: space-between;
+}
+.form-inner-left{
+    width: 43%;
+}
+.form-inner-right{
+    width: 54%;
+}
+/*primary button*/
+.primary-btn{
+    display: inline-block;
+    height: 45px;
+    font-family: 'Abel', sans-serif;
+    font-size: 1.250vw;
+    line-height: 45px;
+    letter-spacing: 1px;
+    color: #ffffff;
+    text-transform: capitalize;
+    text-align: center;
+    background: #436ca2;
+    padding: 0 80px 0 25px;
+    position: relative;
+    cursor: pointer;
+    border: 0;
+    -webkit-transition: all 300ms ease-in;
+    -moz-transition: all 300ms ease-in;
+    -ms-transition: all 300ms ease-in;
+    -o-transition: all 300ms ease-in;
+    transition: all 300ms ease-in;
+}
+.primary-btn:before{
+    content: '';
+    content: "";
+    width:20px;
+    height:20px;
+    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIj8+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjUxMnB4IiBoZWlnaHQ9IjUxMnB4IiB2aWV3Qm94PSIwIDAgNDA4IDQwOCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNDA4IDQwODsiIHhtbDpzcGFjZT0icHJlc2VydmUiIGNsYXNzPSIiPjxnPjxnPgoJPGcgaWQ9ImFycm93LWZvcndhcmQiPgoJCTxwb2x5Z29uIHBvaW50cz0iMjA0LDAgMTY4LjMsMzUuNyAzMTEuMSwxNzguNSAwLDE3OC41IDAsMjI5LjUgMzExLjEsMjI5LjUgMTY4LjMsMzcyLjMgMjA0LDQwOCA0MDgsMjA0ICAgIiBkYXRhLW9yaWdpbmFsPSIjMDAwMDAwIiBjbGFzcz0iYWN0aXZlLXBhdGgiIGRhdGEtb2xkX2NvbG9yPSIjZmZmZmZmIiBmaWxsPSIjZmZmZmZmIi8+Cgk8L2c+CjwvZz48L2c+IDwvc3ZnPgo=) !important;
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    background-position:right center;
+    position: absolute;
+    right: 15px;
+    top:50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.primary-btn:hover,
+.primary-btn:active,
+.primary-btn:focus{
+    background: #004169;
+}
+.text-field,.text-area{
+    width: 100%;
+    height: 45px;
+    font-family: 'Abel', sans-serif;
+    font-size: 1.250vw;
+    color: #004169;
+    background: #ffffff;
+    margin: 0 0 25px;
+    padding: 0 15px;
+    border: 0;
+    -webkit-box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.25);
+    -moz-box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.25);
+    box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.25);
+    border-radius: 0;
+}
+.text-area{
+    height: 240px;
+    resize: none;
+    padding: 10px 15px;
+}
+::-webkit-input-placeholder {
+    color: #c6c6c6 !important;
+}
+:-moz-placeholder {
+    color: #c6c6c6 !important;
+}
+::-moz-placeholder {
+    color: #c6c6c6 !important;
+    opacity: 1;
+}
+:-ms-input-placeholder {
+    color: #c6c6c6 !important;
+}
+#map{
+    height: 670px;
+}
+
+/*--- Contact Style Ends ---*/
+
+/*--- Footer Style Starts ---*/
+.footer-top{
+    background: #2c98a2;
+    padding: 50px 0;
+}
+.footer-mid{
+    background: #004169;
+    position: relative;
+    padding: 50px 0;
+}
+.footer-btm{
+    background: #cbf1f4;
+    padding: 40px 0;
+}
+.footer-btm-sml{
+    background: #ffffff;
+    padding: 15px 0;
+}
+.copyright p{
+    font-family: 'Abel', sans-serif;
+/*
+    font-size: 1.458vw;
+    line-height: 1.979vw;
+*/
+    padding: 0;
+}
+.social-nav li{
+    display: inline-block;
+    margin: 0 5px 0 0;
+}
+.social-nav li:last-child{
+    margin: 0;
+}
+.social-nav li a{
+    width: 33px;
+    height: 33px;
+    background:#004169; 
+    border-radius: 100%;
+    display: -webkit-box;     
+    display: -moz-box;         
+    display: -ms-flexbox;     
+    display: -webkit-flex;    
+    display: flex;   
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    color: #ffffff;
+    font-size: 20px;
+}
+.social-nav li a:hover,
+.social-nav li a:active,
+.social-nav li a:focus{
+   background: #4dbdc6;
+}
+.menu-blk h6{
+    text-transform: uppercase;
+    padding: 0;
+}
+.menu-blk ul{
+    padding: 0 0 30px;
+}
+.menu-blk li,.menu-blk p{
+    display: -webkit-box;     
+    display: -moz-box;         
+    display: -ms-flexbox;     
+    display: -webkit-flex;    
+    display: flex; 
+    font-family: 'BebasNeue';
+    font-size: 1.979vw;
+    line-height: 2.135vw;
+    color: #4dbdc6;
+    text-transform: uppercase;
+    padding: 0;
+}
+.menu-blk li span{
+    min-width: 345px;
+}
+.menu-blk li a{
+     color: #4dbdc6;
+}
+.menu-blk li a:hover,
+.menu-blk li a:active,
+.menu-blk li a:focus{
+     color: #004169;
+}
+.order-link{
+    font-family: 'BebasNeue';
+    font-size: 1.979vw;
+    line-height: 2.135vw;
+    color: #004169;
+    text-transform: uppercase;
+    display: -webkit-box;     
+    display: -moz-box;         
+    display: -ms-flexbox;     
+    display: -webkit-flex;    
+    display: flex; 
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.order-link img{
+    padding: 0 15px 0 0;
+}
+.order-link:hover,
+.order-link:active,
+.order-link:focus{
+    color: #4dbdc6;
+}
+.menu-blk.contact{
+    padding: 0 0 0 135px;
+}
+.menu-blk.contact ul{
+    padding: 0 0 20px;
+}
+.footer-logo{
+    text-align: center;
+    padding: 25px 0 0;
+}
+.content-col{
+    text-align: center;
+    padding: 0 230px 0 70px;
+}
+.content-col.right{
+     padding: 0 70px 0 230px;
+}
+.content-col p{
+    font-family: 'Abel', sans-serif;
+    font-size: 1.45vw;
+    line-height: 1.97vw;
+    color: #ffffff;
+}
+.footer-mid .team-image{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -60px;
+    margin: 0 auto;
+    width: 375px;
+    height: 375px;
+    border-radius: 100%;
+    overflow: hidden;
+}
+.footer-wrap{
+    width: 100%;
+    max-width: 1125px;
+    margin: 0 auto;
+    text-align: center;
+}
+.footer-wrap h2{
+    text-transform: uppercase;
+    color: #ffffff;
+}
+.footer-wrap p{
+    font-family: 'Abel', sans-serif;
+    font-size: 1.77vw;
+    line-height: 2.29vw;
+    color: #ffffff;
+}
+
+/*--- Footer Style Ends ---*/

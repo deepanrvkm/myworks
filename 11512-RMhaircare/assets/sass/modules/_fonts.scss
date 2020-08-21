@@ -1,0 +1,30 @@
+/**********************************************
+    Fonts
+***********************************************/
+@font-face {
+	font-family: 'LatoMedium';
+	src: url('../fonts/LatoMedium/LatoMedium.eot');
+	src: url('../fonts/LatoMedium/LatoMedium.woff') format('woff'), 
+         url('../fonts/LatoMedium/LatoMedium.ttf') format('truetype'), 
+         url('../fonts/LatoMedium/LatoMedium.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'LatoSemibold';
+	src: url('../fonts/LatoSemibold/LatoSemibold.eot');
+	src: url('../fonts/LatoSemibold/LatoSemibold.woff') format('woff'), 
+         url('../fonts/LatoSemibold/LatoSemibold.ttf') format('truetype'),
+         url('../fonts/LatoSemibold/LatoSemibold.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'LatoHeavy';
+	src: url('../fonts/LatoHeavy/LatoHeavy.eot');
+	src: url('../fonts/LatoHeavy/LatoHeavy.woff') format('woff'), 
+         url('../fonts/LatoHeavy/LatoHeavy.ttf') format('truetype'), 
+         url('../fonts/LatoHeavy/LatoHeavy.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}

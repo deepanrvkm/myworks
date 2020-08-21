@@ -1,0 +1,1307 @@
+/**********************************************
+    Booking Page 
+***********************************************/
+.innerpage {
+
+    .banner-image {
+        height: 280px;
+
+        @media #{$mobile-landscape} {
+            height: 200px;
+
+            .form-section {
+                margin: -10px 0 0 0;
+            }
+        }
+    }
+
+    @media #{$mobile-landscape} {
+        .form-section {
+            margin: -10px 0 0 0;
+        }
+    }
+}
+
+.no-gutter {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/*Page Title*/
+.page-title {
+    width: 100%;
+    padding: 0 0 40px 0;
+
+    @media #{$mobile-landscape} {
+        padding: 0 0 20px 0;
+    }
+
+    h3 {
+        color: $title-color;
+        position: relative;
+        text-transform: uppercase;
+        padding: 0 0 10px 0;
+
+        @media #{$mobile-landscape} {
+            font-size: $mode-size;
+        }
+
+        &:before {
+            content: '';
+            width: 35px;
+            height: 2px;
+            background: $link-color;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+
+        }
+    }
+}
+
+/*Feature Title*/
+.feature-title {
+    width: 100%;
+    float: left;
+    padding: 0 0 15px 0;
+
+    h4 {
+        float: left;
+        color: $title-color;
+        font-family: $font-heavy;
+
+        @media #{$tablet-portrait} {
+            font-size: $size-base;
+            line-height: $size-h4;
+        }
+
+        @media #{$mobile-landscape} {
+            font-size: $size-base;
+            line-height: $size-h4;
+        }
+
+        @media #{$mobile-portrait} {
+            width: 100%;
+        }
+    }
+
+    strong {
+        width: 100%;
+        float: left;
+        font-family: $main-font;
+        font-size: $sm-size;
+        color: $color8;
+
+        @media #{$tablet-portrait} {
+            font-size: $sm-size;
+            line-height: $size-h4;
+        }
+
+        @media #{$mobile-landscape} {
+            font-size: $sm-size;
+            line-height: $size-h4;
+        }
+    }
+}
+
+/*Information Link*/
+.info-link {
+    float: left;
+    position: relative;
+    margin: 0 0 0 20px;
+    font-family: $main-font;
+    font-size: $exsm-size;
+    color: $color2 !important;
+    text-transform: uppercase;
+    padding: 0 0 0 20px;
+    border: 0;
+    font-weight: $regular;
+    text-decoration: underline;
+
+    @media #{$mobile-portrait} {
+        margin: 0;
+    }
+
+    &:before {
+        content: "";
+        background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAyMi4xLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCINCgkgdmlld0JveD0iMCAwIDUxMiA1MTIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTI7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+DQoJLnN0MHtmaWxsOiM3NTdCOTE7fQ0KPC9zdHlsZT4NCjxnPg0KCTxnPg0KCQk8cGF0aCBjbGFzcz0ic3QwIiBkPSJNMjU2LDBDMTE0LjUsMCwwLDExNC41LDAsMjU2YzAsMTQxLjUsMTE0LjUsMjU2LDI1NiwyNTZjMTQxLjUsMCwyNTYtMTE0LjUsMjU2LTI1NkM1MTIsMTE0LjUsMzk3LjUsMCwyNTYsMHoNCgkJCSBNMjU2LDQ3MmMtMTE5LjQsMC0yMTYtOTYuNi0yMTYtMjE2YzAtMTE5LjQsOTYuNi0yMTYsMjE2LTIxNmMxMTkuNCwwLDIxNiw5Ni42LDIxNiwyMTZDNDcyLDM3NS40LDM3NS40LDQ3MiwyNTYsNDcyeiIvPg0KCTwvZz4NCjwvZz4NCjxnPg0KCTxnPg0KCQk8cGF0aCBjbGFzcz0ic3QwIiBkPSJNMjU2LDEyOC45Yy0xMSwwLTIwLDktMjAsMjB2MTI4LjhjMCwxMSw5LDIwLDIwLDIwYzExLDAsMjAtOSwyMC0yMFYxNDguOUMyNzYsMTM3LjgsMjY3LDEyOC45LDI1NiwxMjguOXoiLz4NCgk8L2c+DQo8L2c+DQo8Zz4NCgk8Zz4NCgkJPGNpcmNsZSBjbGFzcz0ic3QwIiBjeD0iMjU2IiBjeT0iMzQ5LjIiIHI9IjI3Ii8+DQoJPC9nPg0KPC9nPg0KPC9zdmc+DQo=) !important;
+        background-size: 15px 15px;
+        width: 15px;
+        height: 15px;
+        float: left;
+        background-repeat: no-repeat;
+        margin: 0 5px 0 0;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        @include transform-translatey(-50%);
+    }
+}
+
+/*Note Text*/
+.note-text {
+    width: 100%;
+    float: left;
+    font-family: $sub-font;
+    font-size: $sm-size;
+    color: $color18;
+
+    @media #{$tablet-portrait} {
+        line-height: 18px;
+    }
+
+    @media #{$mobile-landscape} {
+        line-height: 18px;
+    }
+}
+
+/*InnerPage Content*/
+.innerpage-outer {
+    width: 100%;
+    background: $lighter;
+    padding: 70px 0 95px 0;
+
+    @media #{$tablet-landscape} {
+        padding: 60px 0;
+    }
+
+    @media #{$tablet-portrait} {
+        padding: 40px 0;
+    }
+
+    @media #{$mobile-landscape} {
+        padding: 30px 0;
+    }
+
+    .booking-block-outer {
+        width: 100%;
+        padding: 0 0 40px 0;
+
+        @media #{$tablet-portrait} {
+            padding: 0 0 30px 0;
+        }
+
+        @media #{$mobile-landscape} {
+            padding: 0 0 30px 0;
+        }
+
+        &:last-child {
+            @media #{$tablet-landscape} {
+                padding: 0;
+            }
+
+            @media #{$tablet-portrait} {
+                padding-bottom: 0;
+            }
+
+            @media #{$mobile-landscape} {
+                padding-bottom: 0;
+            }
+
+            .booking-block {
+                padding-bottom: 0;
+                border: 0;
+            }
+        }
+
+        .booking-block {
+            width: 100%;
+            float: left;
+            border-bottom: 1px solid $color5;
+            padding: 0 0 50px 0;
+
+            @media #{$tablet-portrait} {
+                padding: 0 0 30px 0;
+            }
+
+            @media #{$mobile-landscape} {
+                padding: 0 0 30px 0;
+            }
+
+            h6 {
+                font-family: $font-heavy;
+                font-size: $size-base;
+                line-height: $base-linehight;
+                color: $color6;
+            }
+
+            .form-block {
+                width: 100%;
+                float: left;
+                padding: 30px 25px;
+                max-width: 910px;
+                background: $color1;
+                @include border-radius(0px);
+                display: inline-block;
+                margin: 0 0 30px;
+
+                @media #{$tablet-landscape} {
+                    text-align: center;
+                    max-width: 852px;
+                    padding: 25px 25px 17px;
+                }
+
+                @media #{$tablet-portrait} {
+                    text-align: center;
+                    max-width: 750px;
+                    padding: 20px 15px 12px;
+                }
+
+                @media #{$mobile-landscape} {
+                    padding: 30px 0 20px;
+                }
+
+                .form-field {
+                    &.meduium {
+                        max-width: 159px;
+
+                        @media #{$mobile-landscape} {
+                            max-width: none;
+                        }
+                    }
+
+                    &.small {
+                        max-width: 126px;
+
+                        @media #{$mobile-landscape} {
+                            max-width: none;
+                        }
+                    }
+
+                    &.btnfield {
+                        max-width: 179px;
+
+                        @media #{$tablet-portrait} {
+                            max-width: 165px;
+                        }
+
+                        @media #{$mobile-landscape} {
+                            max-width: none;
+                        }
+                    }
+
+                    .SumoSelect {
+                        background: $lighter;
+                        border: 1px solid $color14;
+                    }
+                }
+
+                &.light {
+                    background: $color7;
+                    max-width: none;
+
+                    @media #{$mobile-landscape} {
+                        padding: 20px;
+                    }
+
+                    form {
+                        width: 100%;
+                        @include flexbox;
+                        @include align-items(center);
+
+                        @media #{$mobile-landscape} {
+                            @include flex-direction(column);
+                        }
+                    }
+
+                    .formcol1 {
+                        width: 48%;
+                        float: left;
+                        border-right: 2px solid $color14;
+
+                        @media #{$tablet-landscape} {
+                            width: 55%;
+                        }
+
+                        @media #{$tablet-portrait} {
+                            width: 60%;
+                        }
+
+                        @media #{$mobile-landscape} {
+                            width: 100%;
+                            border: 0;
+                        }
+
+                        .input-row {
+                            width: 100%;
+                            float: left;
+                            display: inline-block;
+                            margin: 0 0 19px;
+
+                            &:last-child {
+                                margin: 0;
+                            }
+                        }
+                    }
+
+                    .formcol2 {
+                        width: 52%;
+                        float: left;
+                        padding: 25px;
+                        text-align: left;
+
+                        @media #{$tablet-landscape} {
+                            width: 45%;
+                        }
+
+                        @media #{$tablet-portrait} {
+                            width: 40%;
+                        }
+
+                        @media #{$mobile-landscape} {
+                            width: 100%;
+                            padding: 10px 0 0;
+                        }
+
+                        span {
+                            color: $color18;
+                            font-size: $sm-size;
+
+                            @media #{$mobile-landscape} {
+                                display: block;
+                                line-height: 22px;
+                            }
+                        }
+                    }
+
+                    .form-field {
+                        max-width: 126px;
+
+                        @media #{$tablet-portrait} {
+                            max-width: 100px;
+                        }
+
+                        @media #{$mobile-landscape} {
+                            width: 28.3%;
+                            max-width: none;
+                            margin: 0;
+                            padding: 0 0 0 10px;
+                        }
+
+                        @media #{$mobile-portrait} {
+                            width: 100%;
+                            margin: 0 0 10px;
+                            padding: 0;
+                        }
+                    }
+
+                    .form-icon {
+                        width: 78px;
+                        background: $color25;
+                        height: 42px;
+                        float: left;
+                        @include border-radius(2px);
+                        padding: 0 10px;
+                        @include flexbox;
+                        @include align-items(center);
+
+                        @media #{$mobile-landscape} {
+                            width: 15%;
+
+                            img {
+                                width: 20px;
+                            }
+                        }
+
+                        @media #{$mobile-portrait} {
+                            width: 100%;
+                            margin: 0 0 10px;
+
+                            img {
+                                width: 20px;
+                            }
+                        }
+
+                        span {
+                            color: $lighter;
+                            font-size: $size-h4;
+                            font-family: $font-heavy;
+                            margin-left: 12px;
+
+                            @media #{$tablet-portrait} {
+                                font-size: $mode-size;
+                            }
+
+                            @media #{$mobile-landscape} {
+                                font-size: $mode-size;
+                                margin-left: 5px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .short-text {
+                width: 90%;
+                float: left;
+
+                p {
+                    strong {
+                        color: $text-color;
+                        font-family: $font-heavy;
+                        font-weight: $regular;
+                    }
+                }
+            }
+
+            /*Booking Table*/
+            .booking-table {
+                width: 100%;
+                float: left;
+                margin: 0 0 40px 0;
+
+                @media #{$tablet-portrait} {
+                    margin: 0 0 20px 0;
+                }
+
+                @media #{$mobile-landscape} {
+                    margin: 0 0 20px 0;
+                }
+
+                .table-single {
+                    width: 100%;
+                    float: left;
+                    background: $color7;
+
+                    &:last-child {
+                        padding: 0 0 30px;
+                    }
+
+                    .table-title {
+                        width: 100%;
+                        background: $color1;
+                        padding: 20px;
+
+                        @media #{$tablet-landscape} {
+                            padding: 20px;
+                        }
+
+                        @media #{$tablet-portrait} {
+                            padding: 20px;
+                        }
+
+                        @media #{$mobile-landscape} {
+                            padding: 15px;
+                        }
+
+                        h6 {
+                            display: inline-block;
+                            font-size: $size-base;
+                            font-family: $main-font;
+                            color: $color12;
+
+                            @media #{$mobile-landscape} {
+                                font-size: $med-size;
+                            }
+
+                            span {
+                                font-family: $font-heavy;
+                                color: $color12;
+                            }
+                        }
+                    }
+
+                    .table-body {
+                        width: 100%;
+                        float: left;
+                        padding: 0 30px;
+
+                        @media #{$tablet-portrait} {
+                            padding: 0 20px;
+                        }
+
+                        @media #{$mobile-landscape} {
+                            padding: 0 20px;
+                        }
+
+                        .table-row {
+                            width: 100%;
+                            float: left;
+                            @include flexbox;
+                            background: none;
+                            border-bottom: 2px solid $lighter;
+                            padding: 30px 140px 35px 0;
+
+                            @media #{$tablet-landscape} {
+                                padding: 30px 0;
+                            }
+
+                            @media #{$tablet-portrait} {
+                                padding: 20px 0;
+                            }
+
+                            @media #{$mobile-landscape} {
+                                display: block;
+                            }
+
+                            @media #{$mobile-landscape} {
+                                padding: 20px 0 0 0;
+                            }
+
+                            .table-col {
+                                width: auto;
+                                margin: 0 30px 0 0;
+
+                                &:last-child {
+                                    margin: 0;
+                                }
+
+                                @media #{$mobile-landscape} {
+                                    width: 100%;
+                                    float: left;
+                                    margin: 0;
+                                    padding: 0 0 20px 0;
+
+                                }
+
+                                .table-img {
+                                    width: 290px;
+                                    float: left;
+                                    height: 190px;
+                                    @include border-radius(3px);
+
+                                    @media #{$mobile-landscape} {
+                                        width: 100%;
+                                    }
+                                }
+
+                                p {
+                                    font-size: $sm-size;
+                                    line-height: $lineheight-h6;
+                                    color: $color9;
+                                    padding: 0;
+                                }
+
+                                .checkbox-list {
+                                    width: 100%;
+                                    float: left;
+                                    padding: 0 0 20px 0;
+
+                                    @media #{$tablet-portrait} {
+                                        padding: 0 0 10px 0;
+                                    }
+
+                                    li {
+                                        display: inline-block;
+                                        width: 49%;
+
+                                        @media #{$tablet-portrait} {
+                                            display: block;
+                                            width: 100%;
+                                        }
+
+                                        @media #{$mobile-landscape} {
+                                            display: block;
+                                            width: 100%;
+                                        }
+
+                                        label {
+                                            margin: 0;
+
+                                            @media #{$tablet-portrait} {
+                                                font-size: $med-size;
+                                            }
+
+                                            @media #{$mobile-portrait} {
+                                                font-size: $med-size;
+                                            }
+
+                                            strong {
+                                                color: $color9;
+                                                margin: 0 0 0 10px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            /*Submit Block*/
+            .submit-block {
+                width: 100%;
+                float: left;
+
+                ul {
+                    li {
+                        display: block;
+                        font-family: $font-heavy;
+                        font-size: $mode-size;
+                        color: $title-color;
+
+                        @media #{$tablet-portrait} {
+                            font-size: $size-base;
+                        }
+
+                        @media #{$mobile-landscape} {
+                            font-size: $size-base;
+                        }
+
+                        strong {
+                            color: $title-color;
+                            margin: 0 0 0 10px;
+                        }
+                    }
+                }
+
+                p {
+                    font-family: $sub-font;
+                    font-size: $sm-size;
+                    color: $color9;
+                    padding: 0;
+                    @media #{$mobile-landscape} {
+                        line-height: 22px;
+                    }
+                }
+
+                &.sub-total {
+
+                    ul {
+                        li {
+                            font-family: $main-font !important;
+
+                            &:last-child {
+                                font-family: $font-heavy !important;
+                                padding: 10px 0 0 0;
+                                margin: 10px 0 0 0;
+                                position: relative;
+
+                                &:before {
+                                    content: '';
+                                    width: 360px;
+                                    height: 1px;
+                                    background: $color14;
+                                    position: absolute;
+                                    top: 0;
+                                    left: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .personal-data-wrap {
+                width: 100%;
+                float: left;
+                margin: 0 0 35px 0;
+                padding: 10px 0 0 0;
+
+                @media #{$tablet-portrait} {
+                    margin: 0 0 20px 0;
+                }
+
+                @media #{$mobile-landscape} {
+                    margin: 0;
+                }
+
+                .data-card {
+                    width: 100%;
+                    float: left;
+                    background: $color7;
+                    border: 1px solid $color7;
+                    @include border-radius(3px);
+
+                    @media #{$mobile-landscape} {
+                        margin: 0 0 20px 0;
+                    }
+
+                    .card-image {
+                        width: 100%;
+                        height: 240px;
+                        @include border-radius(3px);
+
+                        @media #{$tablet-portrait} {
+                            height: 200px;
+                        }
+
+                        @media #{$mobile-landscape} {
+                            height: 200px;
+                        }
+                    }
+
+                    .card-content {
+                        width: 100%;
+                        background: $color7;
+                        padding: 20px;
+                        @include flexbox;
+                        @include justify-content(space-between);
+                        @include flex-direction(column);
+
+                        @media #{$tablet-portrait} {
+                            padding: 15px;
+                        }
+
+                        .feature-title {
+                            padding: 0 0 10px 0;
+                        }
+
+                        p {
+                            font-family: $sub-font;
+                            font-size: $sm-size;
+                            line-height: $lineheight-h6;
+                            color: $color9;
+                            padding: 0 0 17px 0;
+                        }
+
+                        label {
+                            font-size: $med-size;
+
+                            strong {
+                                font-family: $font-black;
+                                color: $color9;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.innerpage-outer .booking-block-outer .booking-block.formblock {
+    .form-wrap {
+        width: 100%;
+        display: inline-block;
+        padding: 10px 0 0;
+
+        h6 {
+            color: $color13;
+            font-size: $size-h6;
+            padding: 0 0 13px;
+
+            @media #{$tablet-portrait} {
+                line-height: 22px;
+            }
+
+            @media #{$mobile-landscape} {
+                line-height: 22px;
+            }
+        }
+    }
+
+    .float-right {
+        font-size: $size-base;
+        font-family: $main-font;
+        color: $color12;
+
+        @media #{$mobile-landscape} {
+            font-size: $sm-size;
+            float: left !important;
+        }
+
+        strong {
+            color: $color12;
+            font-family: $font-heavy;
+            font-weight: $regular;
+        }
+    }
+
+    .booking-table .table-single {
+        .table-title {
+            @media #{$mobile-landscape} {
+                h6 {
+                    display: block;
+                }
+
+                float: left;
+                padding: 10px 15px;
+            }
+        }
+
+        .table-body {
+            padding: 0 20px;
+
+            .table-row {
+                border: 0;
+                padding: 15px 140px 17px 0;
+
+                @media #{$tablet-portrait} {
+                    padding: 15px 0 17px;
+                }
+
+                @media #{$mobile-landscape} {
+                    padding: 15px 0;
+                }
+
+                .table-col {
+                    width: 100%;
+                    max-width: 435px;
+
+                    @media #{$tablet-portrait} {
+                        margin: 0;
+                    }
+
+                    @media #{$mobile-landscape} {
+                        max-width: none;
+                        padding: 0;
+                    }
+
+                    span {
+                        display: block;
+                        color: $color12;
+                        font-family: $font-heavy;
+                        font-size: $med-size;
+                        line-height: $lineheight-h4;
+                        text-transform: uppercase;
+
+                        @media #{$tablet-portrait} {
+                            font-size: $sm-size;
+                        }
+
+                        @media #{$mobile-landscape} {
+                            font-size: $sm-size;
+                        }
+
+                        @media #{$mobile-portrait} {
+                            font-size: $exsm-size;
+                        }
+
+                        i {
+                            color: $color12;
+                            font-size: $med-size;
+                            font-family: $main-font;
+                            font-style: normal;
+                            width: 40%;
+                            display: inline-block;
+                            line-height: 18px;
+                            text-transform: none;
+
+                            @media #{$tablet-portrait} {
+                                font-size: $sm-size;
+                            }
+
+                            @media #{$mobile-landscape} {
+                                font-size: $sm-size;
+                                width: 55%;
+                            }
+
+                            @media #{$mobile-portrait} {
+                                font-size: $exsm-size;
+                            }
+                        }
+
+                        strong {
+                            color: $color12;
+                            font-size: $med-size;
+                            font-family: $font-heavy;
+                            font-weight: $regular;
+                            line-height: 18px;
+                            text-transform: none;
+
+                            @media #{$tablet-portrait} {
+                                font-size: $sm-size;
+                            }
+
+                            @media #{$mobile-landscape} {
+                                font-size: $sm-size;
+                            }
+
+                            @media #{$mobile-portrait} {
+                                font-size: $exsm-size;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .note-text {
+        margin: 10px 0 0;
+    }
+}
+
+.top-block {
+    width: 100%;
+    display: inline-block;
+    padding: 21px 18px 24px;
+    max-width: 772px;
+    background: $color1;
+    margin: 7px 0 63px;
+
+    @media #{$mobile-landscape} {
+        margin: 5px 0 40px;
+        padding: 15px;
+    }
+
+    form {
+        width: 100%;
+        display: inline-block;
+        @include flexbox;
+        @include justify-content(flex-end);
+
+        @media #{$mobile-landscape} {
+            @include flex-direction(column);
+        }
+    }
+
+    .ipfield-half {
+        width: 50%;
+        padding: 0 6px;
+        @include flexbox;
+        @include flex-direction(column);
+
+        @media #{$mobile-landscape} {
+            width: 100%;
+            margin: 0 0 10px;
+            padding: 0;
+        }
+    }
+
+    .ipfield-quarter {
+        width: 25%;
+        display: inline-block;
+        padding: 0 6px;
+        @include flexbox;
+        @include flex-direction(column);
+        @include justify-content(flex-end);
+
+        @media #{$mobile-landscape} {
+            width: 100%;
+            margin: 0 0 10px;
+            padding: 0;
+        }
+    }
+
+    input[type="submit"] {
+        width: 100%;
+    }
+}
+
+label {
+    color: $color15;
+    font-size: $sm-size;
+    line-height: 17px;
+    display: block;
+    font-family: $font-heavy;
+    margin: 0 0 10px;
+
+    @media #{$mobile-landscape} {
+        margin: 0 0 5px;
+    }
+}
+
+.bottom-block {
+    width: 100%;
+    display: inline-block;
+    padding: 0 0 15px;
+
+    @media #{$tablet-landscape} {
+        padding: 0;
+    }
+
+    @media #{$mobile-landscape} {
+        padding: 0;
+    }
+
+    .input-row {
+        width: 100%;
+        display: inline-block;
+        @include flexbox;
+        @include flex-wrap(wrap);
+        @include align-items(flex-end);
+        @include flex-direction(row);
+
+        @media #{$mobile-landscape} {
+            @include flex-direction(column);
+        }
+
+        span {
+            width: 100%;
+            color: $color9;
+            line-height: 25px;
+            font-size: $mode-size;
+            display: inline-block;
+            font-family: $main-font;
+
+            @media #{$mobile-landscape} {
+                font-size: $size-base;
+            }
+
+            strong {
+                color: $color9;
+                font-family: $font-heavy;
+            }
+        }
+
+        p {
+            color: $color9;
+            font-size: $med-size;
+
+            @media #{$mobile-landscape} {
+                font-size: $sm-size;
+                line-height: 22px;
+            }
+        }
+
+        &.bottm {
+            margin: 27px 0 0;
+
+            @media #{$mobile-landscape} {
+                margin: 20px 0 0;
+            }
+        }
+    }
+
+    .single-field {
+        width: 100%;
+        display: inline-block;
+        margin: 0 0 5px;
+
+        &.half-cols {
+            @include flexbox;
+            @include flex-direction(row);
+
+            @media #{$mobile-landscape} {
+                margin: 5px 0;
+            }
+        }
+    }
+
+    .input-field1 {
+        width: 27%;
+        display: inline-block;
+        padding: 0 38px 0 0;
+
+        @media #{$tablet-landscape} {
+            padding: 0 15px 0 0;
+        }
+
+        @media #{$tablet-portrait} {
+            padding: 0 15px 0 0;
+        }
+
+        @media #{$mobile-landscape} {
+            width: 100%;
+            padding: 0;
+        }
+    }
+
+    .input-field2 {
+        width: 33%;
+        display: inline-block;
+        padding: 0 6px;
+
+        @media #{$mobile-landscape} {
+            width: 100%;
+            padding: 0;
+        }
+    }
+
+    .input-field3 {
+        width: 37%;
+        display: inline-block;
+        padding: 0 6px 0 0;
+
+        @media #{$tablet-portrait} {
+            width: 45%;
+        }
+
+        @media #{$mobile-landscape} {
+            width: 40%;
+        }
+    }
+
+    .input-field4 {
+        width: 63%;
+        display: inline-block;
+        padding: 0 0 0 6px;
+
+        @media #{$tablet-portrait} {
+            width: 55%;
+        }
+
+        @media #{$mobile-landscape} {
+            width: 60%;
+        }
+    }
+
+    .input-field5 {
+        width: 59.5%;
+        display: inline-block;
+        margin: 25px 0 5px;
+
+        @media #{$mobile-landscape} {
+            width: 100%;
+            margin: 5px 0 0;
+        }
+    }
+}
+
+.input-wrap {
+    width: 100%;
+    float: left;
+    display: inline-block;
+}
+
+.required {
+    position: relative;
+
+    &:after {
+        content: "*";
+        color: $color21;
+        font-size: $size-base;
+        font-family: $font-book;
+        position: absolute;
+        right: 20px;
+        margin: 2px 0 0;
+        top: 50%;
+        @include transform-translatey(-50%);
+    }
+
+    .inputbox {
+        padding-right: 35px;
+    }
+}
+
+.bttn-outer {
+    width: 100%;
+    display: inline-block;
+    margin: 22px 0 0;
+}
+
+.datepicker {
+
+    thead,
+    th,
+    tr,
+    td {
+        background: $color12;
+        @include border-radius(0);
+        border: none;
+        border-bottom: 1px solid $lighter;
+    }
+}
+
+//Checkbox
+[type="checkbox"] {
+
+    &:checked,
+    &:not(:checked) {
+        position: absolute;
+        left: -9999px;
+
+        + label {
+            color: $color9;
+            font-size: $med-size;
+            font-family: $main-font;
+            line-height: 20px;
+            position: relative;
+            margin-left: 22px;
+            width: auto;
+            cursor: pointer;
+
+            &:before {
+                content: "";
+                position: absolute;
+                left: -22px;
+                top: 2px;
+                width: 15px;
+                height: 15px;
+                @include border-radius(2px);
+                border: 2px solid $color10;
+            }
+
+            &:after {
+                width: 12px;
+                content: "\2713";
+                text-align: center;
+                position: absolute;
+                top: 4px;
+                line-height: 12px;
+                left: -20px;
+                font-size: 12px;
+                margin: 0 auto;
+                color: $lighter;
+                background: $color10;
+                @include transition (all .3s ease-in-out);
+            }
+
+            a {
+                color: $color9;
+                text-decoration: underline;
+
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+
+[type="checkbox"]:not(:checked) + label:after {
+    opacity: 0;
+}
+
+[type="checkbox"]:checked + label:after {
+    opacity: 1;
+}
+
+//Radio
+[type="radio"] {
+
+    &:checked,
+    &:not(:checked) {
+        position: absolute;
+        left: -9999px;
+    }
+
+    + label {
+        position: relative;
+        display: inline-block;
+        padding-left: 25px;
+        color: $color9;
+        font-size: $med-size;
+        cursor: pointer;
+        font-family: $main-font;
+        cursor: pointer;
+        margin: 0;
+
+        strong {
+            color: $color9;
+            font-family: $font-black;
+            font-weight: $regular;
+        }
+
+        &:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 50%;
+            @include transform-translatey(-50%);
+            width: 14px;
+            height: 14px;
+            border: 1px solid $color10;
+            background: $lighter;
+            @include border-radius(100%);
+        }
+
+        &:after {
+            content: "";
+            width: 8px;
+            height: 8px;
+            background: $color10;
+            position: absolute;
+            top: 50%;
+            @include transform-translatey(-50%);
+            left: 3px;
+            margin: 0 auto;
+            @include border-radius(100%);
+            @include transition (all .3s ease-in-out);
+            margin: -4px 0 0;
+        }
+    }
+}
+
+.checkbox-list [type="radio"]:not(:checked) + label:after {
+    opacity: 0;
+    @include scale(0);
+}
+
+.checkbox-list [type="radio"]:checked + label:after {
+    opacity: 1;
+    @include scale(1);
+}

@@ -1,0 +1,21 @@
+//import modules
+    @import  "modules/_mixins";
+    @import  "modules/_fonts";
+    @import  "modules/_typography";
+    @import  "modules/_header";
+    @import  "modules/_banner";
+    @import  "modules/_footer";
+
+// pages
+	  @import  "modules/sections/_home";
+	  @import  "modules/sections/_over-sturdy-legs";
+	  @import  "modules/sections/_projecten";
+	  @import  "modules/sections/_dealers";
+	  @import  "modules/sections/_tafels";
+	  @import  "modules/sections/_tafels-detail";
+	  @import  "modules/sections/_contact";
+	  @import  "modules/sections/_meubelen";
+	  @import  "modules/sections/_nieuws";
+	  @import  "modules/sections/_nieuws-bericht";
+	  @import  "modules/sections/_business-case";
+		

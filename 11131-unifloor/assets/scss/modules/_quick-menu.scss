@@ -1,0 +1,114 @@
+.quick-menu{
+	position: relative;
+	background: $bg-color;
+    .grid-x{
+        @include flexbox();
+        @include flex-wrap(nowrap);
+        width: calc(100% + 20px); 
+        @media #{$screen-small} {
+           @include flex-wrap(wrap); 
+        }
+    }
+    .cell{
+        @include flex(initial);
+    }
+    .medium-4{
+        width: 100%;
+        &:last-child .quick-block{
+            padding-right: 0;
+        }
+    }
+	.selectbox{
+		@media #{$screen-small} {
+			margin: 0 auto;
+			text-align: left;
+		}
+	}
+}
+.quick-block{
+	position: relative;
+	padding: 113px 40px 71px 0;
+	@media #{$screen-large} {
+		padding: 100px 20px 30px 0;
+	}
+	@media #{$screen-medium} {
+		padding: 60px 0 20px;
+        p{
+            font-size: $small-title;
+            line-height: $line-height-h5;
+        }
+        li p{
+            font-size: $small-size;
+            line-height: $size-h5;
+            a{
+                font-size: 10px;
+            }
+        }
+	}
+	@media #{$screen-small} {
+		max-width: 100%;
+		text-align: center;
+		padding: 0 0 30px;
+		padding: 10px 0 30px;
+	}
+	h3{
+		font-weight: $medium;
+		@media #{$screen-medium} {
+			font-size: $size-h4;
+		}
+		@media #{$screen-small} {
+			padding: 0 0 10px;
+			font-size: $size-h4;
+		}
+	}
+	p{
+		padding: 0 0 14px;
+	}
+	.more-outer{
+		@include flexbox;
+		padding: 17px 0 0;
+		@media #{$screen-medium} {
+			padding: 5px 0 0;
+		}
+		@media #{$screen-small} {
+			@include justify-content(center);
+			padding: 5px 0 0;
+		}
+	}
+	ul{
+		padding: 0;
+		margin: 0;
+		li{
+			padding:3px 0 24px;
+			@media #{$screen-medium} {
+				padding: 3px 0 10px;
+			}
+			@media #{$screen-small} {
+				padding: 3px 0 10px;
+			}
+			h6{
+				font-size:$small-title;
+				display: block;
+				color: $text-color;
+				padding: 0 0 3px;
+			}
+			p{
+				display: inline-block;
+				font-weight: $bold;
+				color: $darker;
+				padding: 0;
+				.more{
+					margin-left: 6px;
+					display: inline-block;
+					@media #{$screen-medium} {
+						display: block;
+						margin-top: 5px;
+					}		
+					@media #{$screen-small} {
+						margin-top: 5px;
+					}
+				}
+			}
+		}
+	}
+}

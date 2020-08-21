@@ -1,0 +1,539 @@
+.js-off-canvas-overlay {
+    background: rgba(0, 0, 0, .5);
+    &.is-visible{
+        @include breakpoint(large up) {
+             display: none!important;
+        }
+    }
+}
+.off-canvas.position-left {
+    background: $lighter;
+    width: 300px;
+	display: none;
+    @include transition(all 0.5s ease-in-out);
+    @include transform-translatex(-300px);
+	@include breakpoint(medium down) {
+		display: block;
+	}
+    &.off-canvas.is-open {
+        @include translate(0, 0);
+        @include breakpoint(large up) {
+            @include transform-translatex(-300px);
+        }
+    }
+}
+.off-canvas.is-transition-overlap.is-open{
+    @include breakpoint(large up) {
+        box-shadow: none;
+    }
+}
+.header-container{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    @include breakpoint(medium down) {
+        position: fixed;
+        background: $lighter;
+    }
+    .header-inner{
+        position: relative;
+        
+    }    
+    .header-top{
+        position: relative;        
+    }
+    .top-inner{
+        position: relative;
+        height: 49px;
+        &:before{
+            content: "";
+            position: absolute;
+            left: -160px;
+            top: 0;
+            width: 3500px;
+            height: 113px;
+            background: $lighter;
+            z-index: -1;            
+        }
+        @media #{$md-desktop} { 
+             &:before{
+                left: -40px;
+            }
+        }
+        @include breakpoint(xlarge down) {
+             &:before{
+                left: -40px;
+            }
+        }
+        @include breakpoint(medium down) {
+            height: auto;
+            &:before{
+                display: none;
+            }
+        }
+    }
+    .logo{
+        width: 250px;
+        position: absolute;
+        left: -160px;
+        top: 0;
+        padding: 21px 31px 0;
+        z-index: 9;
+        background: $lighter;
+        @media #{$md-desktop} { 
+            left: -40px;
+            padding: 21px 20px 0;
+        }
+        @include breakpoint(xlarge down) {
+            width: auto;
+            left: -40px;
+            padding: 21px 10px 0  20px;
+        }
+        @include breakpoint(large only) { 
+            width: auto;
+            left: 0;
+            padding: 21px 10px 0  0;
+        }
+        @include breakpoint(medium down) {
+            width: 120px;
+            left: 0;
+            padding: 10px 0 0;
+            position: inherit;
+        }        
+    }    
+    .call{
+        position: absolute;
+        right: 32px;
+        top: 0;
+        z-index: 9;
+        @media #{$md-desktop} { 
+            right: 20px;
+        }
+        @include breakpoint(xlarge down) {
+            right: 20px;
+        }
+        @include breakpoint(medium down) {
+            right: 70px;
+        }
+        .call-label{
+            font-family: $main-font;
+            font-weight: $semibold;
+            font-size: $size-md;
+            line-height: 1;
+            color: $primary;
+            text-align: right;
+            letter-spacing: -1px;
+            padding:13px 0 0;
+            span{
+                font-size: $size-xmd;
+                color: $tertiary;
+                display: inline-block;
+                vertical-align: middle;
+                padding-left: 7px;
+                letter-spacing: 0px;
+            }
+            @include breakpoint(large only) { 
+                display: none;
+            }
+            @include breakpoint(medium down) {
+                display: none;
+            }
+        }        
+        .call-block{
+            padding: 26px 0 0;
+            @include breakpoint(large only) { 
+                padding: 57px 0 0;
+            }
+            @include breakpoint(medium down) {
+                padding: 17px 0 0;
+            }
+        }
+        .call-icon{
+            display: inline-block;
+            vertical-align: top;
+            width: 40px;
+            height: 40px;
+            line-height: 41px;
+            text-align: center;
+            border-radius: 50%;
+            background: $lighter;
+            margin:4px 0 0;
+            @include breakpoint(medium down) {
+                @include box-shadow(0px, 0px, 3px, 0px, rgba(0, 0, 0, 0.1));
+                margin: 0;
+            }
+        }
+        .call-no{
+            display: inline-block;
+            vertical-align: top;
+            font-family: $main-font;
+            font-weight: $bold;
+            font-size: $size-md;
+            line-height: 1;
+            color: $lighter;
+            letter-spacing: 1.5px;
+            padding: 15px 23px;
+            border-radius: 8px;
+            position: relative;
+            background: $tertiary;
+            margin-left: 20px;            
+            &:before{
+                content: "";
+                position: absolute;
+                right: 100%;
+                top: 50%;
+                @include transform-translatey(-50%);
+                width: 0;
+                height: 0;
+                border-style: solid;
+                border-width: 9px 12px 9px 0;
+                border-color: transparent $tertiary transparent transparent;
+            }
+            @include breakpoint(large only) { 
+                display: none;
+            }
+            @include breakpoint(medium down) {
+                display: none;
+            }
+        }
+    }
+    .main-menu{
+        text-align: right;
+        padding:17px 0 0;
+        @media #{$md-desktop} { 
+            margin-right: 150px;
+        }
+        @include breakpoint(xlarge down) {
+            margin-right: 250px;
+        }
+        @include breakpoint(large only) { 
+            margin-right: 120px;
+        }
+        @include breakpoint(medium down) {
+            display: none;
+        }
+        ul{
+            li{
+                display: inline-block;
+                vertical-align: top;
+                font-family: $main-font;
+                font-weight: $semibold;
+                font-size: $size-sm;
+                line-height: 12px;
+                color: $color1;
+                text-transform: uppercase;
+                margin-left: 29px;
+                @include breakpoint(xlarge down) { 
+                    margin-left: 20px;
+                }
+                @include breakpoint(large only) { 
+                    margin-left: 20px;
+                }
+                a{
+                   color: $color1;
+                    &:hover, &:focus{
+                        color: $darker;
+                    }
+                }
+                &.active a{
+                    color: $darker;
+                }
+            } 
+        }
+    }
+    .menu-icon {
+        display: none;
+        position: absolute;
+        right: 20px;
+        top: 25px;
+        width: 32px;
+        height: 30px;
+        outline: none;
+        z-index: 9;
+        &:focus{
+           outline: none; 
+        }
+        @include breakpoint(medium down) {
+            display: block;
+        }
+        &:after {
+            width: 32px;
+            height: 4px;
+            background: $primary;
+            box-shadow: 0 10px 0 $primary, 0 20px 0 $primary;
+        }
+        &:hover:after {
+            height: 4px;
+            background: $primary;
+            box-shadow: 0 10px 0 $primary, 0 20px 0 $primary;
+        }
+    }
+    .header-bottom{
+        position: relative;
+        @include breakpoint(medium down) {
+            display: none;
+        }
+    }
+    .bottom-inner{
+        position: relative;
+        float: right;
+        &:before{
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 3000px;
+            height: 64px;
+            background: $primary;
+            z-index: -1;
+        }
+    }
+    .green-menu{
+        text-align: right;
+        min-height: 64px;
+        padding:26px 0 0 4px;
+        @media #{$md-desktop} { 
+            margin-right: 150px;
+        }
+        @include breakpoint(xlarge down) {
+            margin-right: 250px;
+        }
+        @include breakpoint(large only) { 
+            margin-right: 120px;
+        }
+        ul{
+            li{
+                display: inline-block;
+                vertical-align: top;
+                font-family: $main-font;
+                font-weight: $semibold;
+                font-size: $size-base;
+                line-height: 16px;
+                color: $lighter;
+                margin-left: 60px;
+                letter-spacing: -1px;
+                position: relative;
+                @media #{$md-desktop} { 
+                    font-size: 15px;
+                    margin-left: 40px;
+                }
+                @include breakpoint(xlarge down) {
+                    font-size: 14px;
+                    margin-left: 25px;
+                }
+                @include breakpoint(large only) { 
+                    font-size: 14px;
+                    margin-left: 25px;
+                }
+                &.active:after{
+                    content: "";
+                    position: absolute;
+                    width: 100%;
+                    left: 0;
+                    bottom: 6px;
+                    width: 100%;
+                    height: 3px;
+                    background: $tertiary;
+                }
+                a{
+                    color: $lighter;
+                    display: block;
+                    padding: 0 0 28px;
+                }                
+                ul{                    
+                    display: none;
+                    position: absolute;
+                    z-index: 9;
+                    left: 0;
+                    top: 41px;
+                    width: 190px;                    
+                    margin: 0;
+                    padding: 14px 0 7px;
+                    text-align: left;
+                    margin-left: -15px;
+                    border-radius: 10px;
+                    background: $lighter;
+                    @include box-shadow(0px, 0px, 10px, 0px, rgba(0, 0, 0, 0.5));
+                    @include breakpoint(large only) { 
+                        margin-left: -10px;
+                        width: 160px;
+                    }
+                    &:before{
+                        content: "";
+                        position: absolute;
+                        top: -9px;
+                        left: 0;
+                        right: 0;
+                        margin: auto;
+                        width: 0;
+                        height: 0;
+                        border-style: solid;
+                        border-width: 0 13px 10px 13px;
+                        border-color: transparent  transparent  $lighter transparent;
+                    }
+                    li{
+                        margin: 0;
+                        display: block;
+                        font-size: $size-xmd;
+                        line-height: 1.36;
+                        color: $color1;
+                        font-weight: $regular; 
+                        @include breakpoint(xlarge down) {
+                            font-size: 13px;
+                        }
+                        @include breakpoint(large only) { 
+                            font-size: 13px;
+                        }
+                        &.sub-menu:before{
+                            content: "";
+                            position: absolute;
+                            right: 16px;
+                            top: 14px;
+                            width: 5px;
+                            height: 10px;
+                            background: url("../images/angle-right.svg") no-repeat left center;
+                        }
+                        a{
+                            color: $text-color; 
+                            min-height: 40px;
+                            padding: 0 16px 0 12px;
+                            border-left: solid 4px transparent;
+                            &:hover{
+                                border-color: $primary;
+                                background: $color3;
+                            }
+                        }
+                        &:hover, &:focus{
+                            > a{
+                                border-color: $primary;
+                                background: $color3;
+                            }
+                        }
+                        ul{
+                            display: none;
+                            top: -4px;
+                            left: 100%; 
+                            margin-left: -10px;
+                            padding: 6px 0 0;
+                            border-radius: 0 10px 10px 0;
+                            z-index: 1;
+                            &:before{
+                                display: none;                                
+                            }
+                        }
+                    }
+                }
+                &:hover{
+                    > ul{
+                        display: block;
+                    }
+                }
+            } 
+        }
+    } 
+    .mlogo{
+        text-align: center;
+        padding: 30px 15px 0;
+        img{
+            width: 150px;
+        }
+    }
+    .canvas-menu{
+        padding: 30px 0;
+        ul{
+            li{
+                display: block;
+                font-family: $main-font;
+                font-weight: $semibold;
+                font-size: $size-xmd;
+                line-height: 17px;
+                color: $color1;
+                text-transform: uppercase; 
+                margin-bottom: 1px;
+                position: relative;
+                a{
+                   display: block;
+                   padding: 10px 25px 10px 15px; 
+                   color: $color1;
+                   border-left: solid 4px transparent;
+                   &:hover{
+                        border-color: $primary;
+                        background: $color3;
+                   }
+                }
+                &:hover{
+                    > a{
+                        border-color: $primary;
+                        background: $color3;
+                    }
+                }
+                &.active > a{
+                    border-color: $primary;
+                    background: $color3;
+                }
+                .trigger{
+                    width: 30px;
+                    height: 36px;
+                    position: absolute;
+                    right: 10px;
+                    top: 0;
+                    cursor: pointer;
+                    &:before{
+                        content: "+";
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        width: 30px;
+                        height: 36px;
+                        line-height: 36px;
+                        text-align: center;
+                        font-size: 20px;
+                    }
+                }
+                &.menuopen{
+                    > .trigger:before{
+                        content: "-";
+                    } 
+                }
+                ul{
+                    margin: 1px 0 0 10px;
+                    display: none;
+                    li{
+                        text-transform: none;
+                        padding-right: 10px;
+                        a:hover{
+                            border-color: transparent;
+                        }
+                        &:hover{
+                            > a{
+                                border-color: transparent;
+                            }
+                        }
+                        ul{
+                            li{
+                                a:hover{
+                                    background: none;
+                                    color: $primary;
+                                }
+                                &:hover{
+                                    > a{
+                                        background: none;
+                                    }
+                                }
+                                &.active a{
+                                   background: none;
+                                   color: $primary;
+                                }
+                            }
+                        }
+                        &.active a{
+                           border-color: transparent;
+                        }
+                    }
+                }
+            } 
+        }
+    }
+}

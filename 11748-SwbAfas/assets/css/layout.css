@@ -1,0 +1,78 @@
+@media only screen and (min-width: 1280px) and (max-width: 1599px) {
+    .banner-inner{height: 300px;}
+    .menu-outer {top: 25px;}
+    .header-text {padding: 30px 0 0 20%;}
+    .text-logo img{width:160px;}
+    .logo-block{top: -20px;}
+    .banner-block{padding-left: 80px;}
+    h1{font-size: 42px;}
+    
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1279px) {
+    .banner-inner{height: 300px;}
+    .menu-outer {top: 25px;}
+    .header-text {padding: 30px 0 0 20%;}
+    .text-logo img{width:130px;}
+    .logo-block{top: -20px;}
+    h1{font-size: 36px;}
+    h2{font-size: 32px;}
+	.grid-image{height: 260px;}
+    .list-image{height: 240px;}
+}
+
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .banner-inner{height: 250px;}
+    .menu-outer {top: 25px;left: 65px;}
+    .menu{width: 220px;}
+    .menu ul {padding: 52px 35px 17px;}
+    .header-text {padding: 30px 0 0 20%;}
+    .text-logo img{width:110px;}
+    .logo-block{top: -20px;right: -20px;}
+    h1{font-size: 32px;}
+    h2{font-size: 24px;}
+    .grid-image{height: 195px;}
+    .banner-block h1{max-width: 300px;}
+    .view-all {font-size: 16px; width: 140px; height: 95px;}
+    .view-all::before {top: 27px;}
+    .list-image{height: 180px;}
+    .list-items ul li {padding: 0 10px;}
+}
+
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 767px) {
+    body{background-size: 800px;}
+    .banner-inner {height: 250px}
+    .menu-outer {top: 20px; left: 0;}
+    .menu-icon{left: 0;}
+    .header {height: 65px; background: #FFF;}
+    .header-text {padding: 25px 0 0 50px;}
+    .header-text h2{font-size: 16px;}
+    .text-logo img{width: 70px;margin: -7px 0 0;}
+    .logo-block {right: 0; top: 0; width: 135px; height: 50px;}
+    .logo {left: 0; bottom: 0;max-width: 90px;}
+    .gildebor {right: 0; bottom: 0; max-width: 40px;}
+	.grid-image{height: 260px;}
+    .banner-block h1 {max-width: 160px;font-size: 18px;}
+    .menu {left: -15px; top: 20px;}
+    .menu ul {padding: 52px 35px 17px;}
+    h2{font-size: 30px;}
+    .content {padding: 0 0 50px;}
+    .list-items {padding: 20px 5px;}
+    .list-items ul li{width: 100%;}
+    .list-image{height: 240px;}
+}
+
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 479px) {
+	.grid-image{height: 170px;}
+    .header-text{display: none;}
+    .list-block ul li {padding: 27px 40px 20px 0px;}
+    .right-block {padding-right: 20px;}
+    .view-all {font-size: 16px; width: 140px; height: 95px;}
+    .view-all::before {top: 27px;}
+    .list-image{height: 150px;}
+}
+

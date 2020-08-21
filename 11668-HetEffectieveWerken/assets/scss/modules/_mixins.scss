@@ -1,0 +1,211 @@
+@import  "_variables"; 
+ 
+// -------------------------- -------------------------- -------------------------- -------------------------- 
+
+@mixin border-radius($radius: 5px){ //@include border-radius(3px);
+    -moz-border-radius:    $radius;
+    -webkit-border-radius: $radius;
+    border-radius:         $radius;
+}
+
+@mixin transition ($transition) { //@include transition (all .3s ease-in-out);
+    -webkit-transition: $transition;  
+    -moz-transition:    $transition;
+    -ms-transition:     $transition; 
+    -o-transition:      $transition;  
+}
+
+@mixin transform-translatey($val){ //@include transform-translatey(-50%);
+    -webkit-transform: translateY($val);
+    -moz-transform   : translateY($val);
+    -o-transform     :translateY($val);
+    -ms-transform    :translateY($val);
+    transform        : translateY($val);
+}
+
+@mixin transform-translatex($val){ //@include transform-translatex(-50%);
+    -webkit-transform: translateX($val);
+    -moz-transform   : translateX($val);
+    -o-transform     :translateX($val);
+    -ms-transform    :translateX($val);
+    transform        : translateX($val);
+}
+
+@mixin translate($val, $val1){ //@include translate(-50%, -50%);
+    -webkit-transform: translate($val, $val1);
+    -moz-transform: translate($val, $val1);
+    -o-transform:translate($val, $val1);
+    transform: translate($val, $val1);
+}
+
+@mixin rotate($val){ //@include rotate(90deg);
+    -webkit-transform: rotate($val);
+    -moz-transform   : rotate($val);
+    -o-transform     : rotate($val);
+    -ms-transform    : rotate($val);
+    transform        : rotate($val);
+}
+@mixin scale($val){ //@include scale(1.5); 
+    -webkit-transform: scale($val);
+    -moz-transform   : scale($val);
+    -o-transform     : scale($val);
+    -ms-transform    : scale($val);
+    transform        : scale($val);
+}
+
+@mixin multiple-col($val1, $val2){ //@include multiple-col(2, 26px);
+    -moz-column-count: $val1;
+    -moz-column-gap: $val2;
+    -webkit-column-count: $val1;
+    -webkit-column-gap: $val2;
+    column-count: $val1;
+    column-gap: $val2;
+}
+@mixin box-shadow($horizontal, $vertical, $blur, $spread, $color, $inset: false) { //@include box-shadow(0px, 7px, 21px, 0px, rgba(222, 222, 222, 0.75));
+    @if $inset {
+        -webkit-box-shadow:inset $horizontal $vertical $blur $spread  $color;
+        -moz-box-shadow:inset $horizontal $vertical $blur $spread  $color;
+        box-shadow:inset $horizontal $vertical $blur $spread $color;
+    } @else {
+        -webkit-box-shadow: $horizontal $vertical $blur $spread  $color;
+        -moz-box-shadow: $horizontal $vertical $blur $spread  $color; 
+        box-shadow: $horizontal $vertical $blur $spread $color;
+    }
+}
+@mixin gradient ($deg, $startcolor, $endcolor) { //@include gradient(45deg, #00ffff 0%, #0000ff 100%); 
+    background: $startcolor;
+    background: -moz-linear-gradient($deg,  $startcolor, $endcolor);
+    background: -webkit-linear-gradient($deg,  $startcolor, $endcolor);
+    background: linear-gradient($deg,  $startcolor, $endcolor);
+}
+@mixin flexbox { 
+  	display: -webkit-box;
+  	display: -webkit-flex;
+  	display: -moz-flex;
+  	display: -ms-flexbox;
+  	display: flex;
+}
+@mixin flexboximp { 
+  	display: -webkit-box !important;
+  	display: -webkit-flex !important;
+  	display: -moz-flex !important;
+  	display: -ms-flexbox !important;
+  	display: flex !important;
+}
+@mixin flex-direction($value: row) {
+  	@if $value==row-reverse {
+  		  -webkit-box-direction: reverse;
+  		  -webkit-box-orient: horizontal;
+  	}
+  	@else if $value==column {
+  		  -webkit-box-direction: normal;
+  		  -webkit-box-orient: vertical;
+  	}
+  	@else if $value==column-reverse {
+  		  -webkit-box-direction: reverse;
+  		  -webkit-box-orient: vertical;
+  	}
+  	@else {
+  		  -webkit-box-direction: normal;
+  		  -webkit-box-orient: horizontal;
+  	}
+  	-webkit-flex-direction: $value;
+  	-moz-flex-direction: $value;
+  	-ms-flex-direction: $value;
+  	flex-direction: $value;
+}
+
+@mixin flex-wrap($value: nowrap) { 
+  	-webkit-flex-wrap: $value;
+  	-moz-flex-wrap: $value;
+  	@if $value==nowrap {
+  		  -ms-flex-wrap: none;
+  	}
+  	@else {
+  		  -ms-flex-wrap: $value;
+  	}
+  	flex-wrap: $value;
+}
+
+@mixin flex-grow($int: 0) { 
+  	-webkit-box-flex: $int;
+  	-webkit-flex-grow: $int;
+  	-moz-flex-grow: $int;
+  	-ms-flex-positive: $int;
+  	flex-grow: $int;
+}
+
+@mixin justify-content($value: flex-start) { 
+  	@if $value==flex-start {
+  		  -webkit-box-pack: start;
+  		  -ms-flex-pack: start;
+  	}
+  	@else if $value==flex-end {
+  		  -webkit-box-pack: end;
+  		  -ms-flex-pack: end;
+  	}
+  	@else if $value==space-between {
+  		  -webkit-box-pack: justify;
+  		  -ms-flex-pack: justify;
+  	}
+  	@else if $value==space-around {
+  		  -ms-flex-pack: distribute;
+  	}
+  	@else {
+  		  -webkit-box-pack: $value;
+  		  -ms-flex-pack: $value;
+  	}
+  	-webkit-justify-content: $value;
+  	-moz-justify-content: $value;
+  	justify-content: $value;
+}
+
+@mixin align-items($value: stretch) { 
+  	@if $value==flex-start {
+  		  -webkit-box-align: start;
+  		  -ms-flex-align: start;
+  	}
+  	@else if $value==flex-end {
+  		  -webkit-box-align: end;
+  		  -ms-flex-align: end;
+  	}
+  	@else {
+  		  -webkit-box-align: $value;
+  		  -ms-flex-align: $value;
+  	}
+  	-webkit-align-items: $value;
+  	-moz-align-items: $value;
+  	align-items: $value;
+}
+
+@mixin align-self($value: auto) { 
+  	-webkit-align-self: $value;
+  	-moz-align-self: $value;
+  	@if $value==flex-start {
+  		  -ms-flex-item-align: start;
+  	}
+  	@else if $value==flex-end {
+  		  -ms-flex-item-align: end;
+  	}
+  	@else {
+  		  -ms-flex-item-align: $value;
+  	}
+  	align-self: $value;
+}
+
+@mixin align-content($value: stretch) { 
+  	-webkit-align-content: $value;
+  	-moz-align-content: $value;
+  	@if $value==flex-start {
+  		  -ms-flex-line-pack: start;
+  	}
+  	@else if $value==flex-end {
+  		  -ms-flex-line-pack: end;
+  	}
+  	@else {
+  		  -ms-flex-line-pack: $value;
+  	}
+  	align-content: $value;
+}
+
+ 

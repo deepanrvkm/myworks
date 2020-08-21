@@ -1,0 +1,157 @@
+@media only screen and (min-width: 1439px) and (max-width: 1919px) {
+    /*Footer*/
+    .footer-top,.footer-mid,.footer-btm{padding: 40px 0;}
+    .menu-blk.contact{padding: 0 0 0 100px;}
+    .menu-blk li span{min-width: 250px;}
+    .footer-logo{padding: 0 40px;}
+    .footer-mid .team-image{width: 280px;height: 280px;top: -50px;}
+    .content-col{padding: 0 180px 0 60px;}
+    .content-col.right{padding: 0 60px 0 180px;}  
+    /*Contact*/
+    .contact-container{padding: 60px 0;}
+    #map{height: 400px;}
+    /*Gallery*/
+    .insta-gallery{padding: 60px 0 80px;}
+    .insta-gallery h5 i{width: 60px;height: 60px;font-size: 36px;}
+    .insta-gallery li{height: 180px;}
+    .more-btn{width: 80px;height: 80px;}
+    /*Ambassador*/
+    .ambassador-container{padding: 80px 0 0;}
+    .ambassador-right{padding: 30px 0 0;}
+    .image-col{height: 300px;}
+    .left-inner{padding: 60px 60px 0 20px;}
+    .ambassador-left h5{padding: 0 0 40px;}
+}
+@media only screen and (min-width: 1024px) and (max-width: 1439px) {
+    /*Footer*/
+    .footer-top,.footer-mid,.footer-btm{padding: 30px 0;}
+    .menu-blk.contact{padding: 0 0 0 100px;}
+    .menu-blk li span{min-width: 200px;}
+    .footer-mid .team-image{width: 200px;height: 200px;top: -30px;}
+    .content-col{padding: 0 180px 0 60px;}
+    .content-col.right{padding: 0 60px 0 180px;}
+    .content-col p,.footer-wrap p{font-size: 18px;line-height:22px;padding: 0 0 20px;}
+    .footer-logo{padding: 0 40px;}
+    /*Contact*/
+    .contact-container{padding: 60px 0;}
+    .text-field, .text-area{height: 40px;margin: 0 0 20px;font-size: 18px;}
+    .text-area{height: 200px;}
+    .primary-btn{font-size: 18px;}
+    .contact-form span{font-size: 16px;}
+    #map{height: 400px;}
+    /*Gallery*/
+    .insta-gallery{padding: 60px 0;}
+    .insta-gallery h5 i{width: 50px;height: 50px;font-size: 32px;}
+    .insta-gallery li{height: 160px;}
+    .more-btn{width: 70px;height: 70px;}
+    /*Ambassador*/
+    .ambassador-container{padding: 60px 0 0;}
+    .ambassador-right{padding: 30px 0 0;}
+    .image-col{height: 280px;}
+    .left-inner{padding: 60px 60px 0 20px;}
+    .ambassador-left h5{padding: 0 0 40px;}
+}
+
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    /*Footer*/
+    .footer-mid,.footer-top,.footer-btm{padding: 20px 0;}
+    .footer-btm-sml{padding: 10px 0;}
+    .menu-blk.contact{padding: 0 0 0 65px;}
+    .menu-blk ul{padding: 0 0 20px;}
+    .menu-blk li span{min-width: auto;margin: 0 5px 0 0;}
+    .social-nav li a{width: 30px;height: 30px;font-size: 18px;}
+    .menu-blk h6,.order-link,.menu-blk li, .menu-blk p{font-size: 18px;line-height:22px;}
+    .footer-mid .team-image{width: 180px;height: 180px;top:50%;-webkit-transform: translateY(-50%);-moz-transform: translateY(-50%);-o-transform: translateY(-50%);transform: translateY(-50%);}
+    .content-col{padding: 0 110px 0 20px;}
+    .content-col.right{padding: 0 20px 0 110px;}
+    .content-col p,.footer-wrap p{font-size: 18px;line-height:22px;padding: 0 0 20px;}
+    .footer-logo{padding: 20px 20px 0;}
+    /*Contact*/
+    .contact-container{padding: 40px 0;}
+    .contact-form{padding: 20px;}
+    .contact-form h6{font-size: 18px;line-height: 22px;}
+    .form-inner{display: block;}
+    .form-inner-left,.form-inner-right{width: 100%;}
+    .text-field, .text-area{height: 40px;margin: 0 0 20px;font-size: 18px;}
+    .text-area{height: 150px;}
+    .contact-form span{font-size: 16px;}
+    .primary-btn{font-size: 18px;}
+    .contact-container .menu-blk{padding: 0;}
+    #map{height: 300px;}
+    /*Gallery*/
+    .insta-gallery{padding: 40px 0;}
+    .insta-gallery h5{font-size: 36px;line-height: 38px;}
+    .insta-gallery h5 i{width: 35px;height: 35px;font-size: 20px;top: -2px;}
+    .insta-gallery li{height: 110px;width: 15.1%;}
+    .more-btn{width: 50px;height: 50px;font-size: 16px;line-height: 16px;}
+    /*Ambassador*/
+    .ambassador-container{padding: 40px 0 0;}
+    .ambassador-left{padding: 0;}
+    .ambassador-right{padding: 20px 0 0;}
+    .image-col{height: 200px;}
+    .left-inner{padding: 40px 40px 0 20px;}
+    .ambassador-left h2{font-size: 90px;line-height: 70px;}
+    .ambassador-left h5{padding: 0 0 20px;font-size: 33px;line-height: 33px;}
+    .ambassador-right h2{font-size: 57px;line-height: 57px;}
+    .ambassador-left p,.ambassador-right p{line-height: 22px;padding: 0 0 30px;}
+}
+
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 767px) {
+    /*Footer*/
+    .footer-top,.footer-btm{padding: 20px 0;}
+    .footer-btm-sml{padding: 10px 0;}
+    .menu-blk.contact{padding: 0;}
+    .menu-blk li span{min-width: auto;margin: 0 5px 0 0;}
+    .footer-logo{padding: 0;max-width: 200px;margin: 0 auto 20px;}
+    .social-nav{text-align: center;}
+    .social-nav li a{width: 30px;height: 30px;font-size: 18px;}
+    .menu-blk h6,.order-link,.menu-blk li, .menu-blk p{font-size: 18px;line-height:22px;}
+    .copyright {padding: 0 0 10px;text-align: center;}
+    .menu-blk ul{padding: 0 0 20px;}
+    .footer-btm .row .col-md-4:first-child{order: 2;}
+    .footer-btm .row .col-md-4:last-child{order: 3;}
+    .menu-blk.contact{padding: 20px 0 0;}
+    .footer-mid{padding: 240px 0 20px;}
+    .footer-mid .team-image{width: 200px;height: 200px;top:20px;}
+    .content-col,.content-col.right{padding: 0 20px;}
+    .content-col p,.footer-wrap p{font-size: 18px;line-height:22px;padding: 0 0 20px;}
+    .footer .menu-blk{text-align: center;}
+    .footer .order-link,.footer .menu-blk li,.footer .menu-blk p{text-align: center; -webkit-justify-content: center;-ms-flex-pack: center;justify-content: center;}
+    /*Contact*/
+    .contact-container{padding: 30px 0;}
+    .contact-form{padding: 20px;}
+    .contact-form h6{font-size: 18px;line-height: 22px;}
+    .form-inner{display: block;}
+    .form-inner-left,.form-inner-right{width: 100%;}
+    .text-field, .text-area{height: 40px;margin: 0 0 20px;font-size: 18px;}
+    .text-area{height: 150px;}
+    .contact-form span{font-size: 14px;line-height: 16px;}
+    .primary-btn{font-size: 18px;padding: 0 40px 0 20px;}
+    .primary-btn::before{width: 15px;height: 15px;background-size: 15px 15px;}
+    .contact-container .menu-blk{padding: 0;}
+    #map{height: 250px;}
+    /*Gallery*/
+    .insta-gallery{padding: 30px 0;}
+    .insta-gallery h5{font-size: 36px;line-height: 38px;}
+    .insta-gallery h5 i{width: 30px;height: 30px;font-size: 18px;top: -2px;}
+    .insta-gallery ul{padding: 0 0 10px;}
+    .insta-gallery li{height: 110px;width: 48%;}
+    .more-btn{width: 45px;height: 45px;font-size: 14px;line-height: 14px;}
+    /*Ambassador*/
+    .ambassador-container{padding: 40px 0 0;}
+    .ambassador-left{padding: 0;}
+    .ambassador-right{padding: 20px 0 0;}
+    .image-col{height: 200px;}
+    .left-inner{padding:40px 20px 0;}
+    .ambassador-left h2{font-size: 80px;line-height: 60px;}
+    .ambassador-left h5{padding: 0 0 20px;font-size: 30px;line-height: 32px;}
+    .ambassador-right h2{font-size: 42px;line-height: 44px;}
+    .ambassador-left p,.ambassador-right p{line-height: 22px;padding: 0 0 30px;}
+}
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 479px) {
+     .insta-gallery h5{font-size: 32px;line-height: 33px;}
+}

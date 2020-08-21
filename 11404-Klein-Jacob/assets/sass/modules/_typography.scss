@@ -1,0 +1,209 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    color: $lighter;
+}
+body {
+    font-family: $main-font;
+	font-weight: $light;
+    font-size: $size-base;
+    line-height: $base-lineheight;
+    color: $darker;
+	margin: 0px;
+	padding: 0px;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-style: normal;
+	font-weight: normal;
+	margin: 0px;
+	padding: 0px;
+}
+h1{
+   font-family: $title-font;
+   font-size: $size-h1;
+   line-height: $lineheight-h1;
+   color: $title-color; 
+   text-transform: uppercase;
+    @media #{$tablet-landscape} {
+        font-size: $size-h2;
+        line-height: $lineheight-h2;
+    }
+}
+h2{
+   font-family: $title-font;
+   font-size: $size-h2;
+   line-height: $lineheight-h2;
+   color: $title-color; 
+   text-transform: uppercase;
+    @media #{$tablet-landscape} {
+        font-size: $size-h3;
+        line-height: $lineheight-h3;
+    }
+    @media #{$tablet-portrait} {
+        font-size: $size-h5;
+        line-height: $lineheight-h5;
+    }
+    @media #{$mobile-landscape} {
+        font-size: $size-h6;
+        line-height: $lineheight-h6;
+		word-break: break-all;
+    }
+}
+h3{
+   font-family: $title-font;
+   font-size: $size-h3;
+   line-height: $lineheight-h3;
+   color: $title-color; 
+   text-transform: uppercase;
+    @media #{$tablet-landscape} {
+        font-size: $size-h4;
+        line-height: $lineheight-h4;
+    }
+    @media #{$tablet-portrait} {
+        font-size: $lineheight-h4-medium;
+        line-height: $lineheight-h5;
+    }
+    @media #{$mobile-landscape} {
+        font-size: $size-h6;
+        line-height: $lineheight-h6;
+    }
+}
+h4{
+   font-family: $title-font; 
+   font-size: $size-h4;
+   line-height: $lineheight-h4;
+   color: $title-color; 
+   text-transform: uppercase;
+    @media #{$tablet-landscape} {
+        font-size: $size-h4-medium;
+        line-height: $lineheight-h4-medium;
+    }
+    @media #{$tablet-portrait} {
+        font-size: $size-h6;
+        line-height: $lineheight-h6;
+    }
+    @media #{$mobile-landscape} {
+        font-size: $size-title;
+        line-height: $lineheight-h4-small;
+    }
+}
+h5{
+   font-family: $title-font;
+   font-size: $size-h5;
+   line-height: $lineheight-h5;
+   color: $title-color; 
+   text-transform: uppercase;
+    
+    @media #{$tablet-portrait} {
+        font-size: $size-h6;
+        line-height: $lineheight-h6;
+    } 
+    @media #{$mobile-landscape} {
+        font-size: $size-h6;
+        line-height: $lineheight-h6;
+    }
+}
+h6{
+   font-family: $title-font;
+   font-size: $size-h6;
+   line-height: $lineheight-h6;
+   color: $title-color; 
+   text-transform: uppercase;
+}
+p {
+	font-family: $main-font;
+    font-size: $size-base;
+    line-height: $base-lineheight;
+    color: $darker;
+    margin: 0px;
+	padding: 0 0 12px;
+    @media #{$tablet-portrait} {
+        font-size: $size-lx-small;
+        line-height: $size-title;
+    } 
+    @media #{$mobile-landscape} {
+        font-size: $size-lx-small;
+        line-height: $size-title;
+    }
+}
+ul {
+	background: none;
+	margin: 0px;
+	padding: 0px;
+	list-style-image: none;
+	list-style-type: none;
+}
+ul li {
+	background: none;
+	margin: 0px;
+	padding: 0px;
+	list-style-image: none;
+	list-style-type: none;
+}
+a{
+	@include transition (all .3s ease-in-out);
+}
+a, a:hover, a:focus {
+	text-decoration: none;
+	outline: 0px none !important;
+}
+strong{
+    color: $darker;
+    font-weight: $bold;
+    font-family: $main-font;
+}
+img, a img {
+	max-width: 100%;
+	margin: 0px;
+	padding: 0px;
+	border: none 0;
+	outline: 0px none !important;
+}
+input:focus, textarea:focus, a:focus {
+	outline: 0px none !important;
+}
+.button{
+    display: inline-block;
+    border: solid 1px $border-color;
+    font-family: $main-font;
+    font-weight: $light;
+    font-size: $size-btn;
+    line-height: $size-medium;
+    color: $darker;
+    padding: 40px;
+    text-align: center;
+    min-width: 315px;
+    background: none;
+    border-radius: 0;
+    @include transition (all .3s ease-in-out);
+    &:hover, &:focus{
+        background: $border-color;
+        color: $lighter;
+    }
+    &.yellow{
+        border-color: $hover-color;
+        color: $title-color;
+        &:hover, &:focus{
+            background: $hover-color;
+            color: $darker;
+        }
+    }
+    @media #{$tablet-landscape} {
+        padding: 30px;
+        min-width: 280px;
+    }
+    @media #{$tablet-portrait} {
+        font-size: $size-base;
+        padding: 20px;
+        min-width: 200px;
+    }
+    @media #{$mobile-landscape} {
+        font-size: $size-base;
+        padding: 20px;
+        min-width: 180px;
+    }
+}

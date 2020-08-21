@@ -1,0 +1,104 @@
+/**********************************************
+    Footer
+***********************************************/
+.footer-container{
+    background: $color1;
+}
+.footer-inner{
+    padding: 59px 0 25px;
+    text-align: center;
+}
+.footer-btn{
+    padding: 17px 0 0;
+}
+.footer-menu{
+    padding: 32px 0 0;
+    li{
+        display: inline-block;
+        vertical-align: top;
+        font-family: $main-font;
+        font-weight: $regular;
+        font-size: $sm-size;
+        line-height: $size-base;
+        color: $lighter;
+        padding: 0 9px;
+        a{
+            color: $lighter;
+            &:hover, &:focus{
+                color: $link-color;
+            }
+        }
+    }
+}
+.social-icons{
+    padding: 20px 0 0;
+    li{
+        display: inline-block;
+        vertical-align: top;
+        margin: 0 1px;
+        a{
+            display: block;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            background: $color2;
+            text-align: center;
+            img{
+                position: relative;
+                top: 50%;
+                @include transform-translatey(-50%);
+            }
+            &:hover, &:focus{
+                background: $hover-color;
+            }
+        }
+    }
+}
+.copyright-block{
+     padding: 30px 0 0;
+    ul{
+        li{
+            display: inline-block;
+            vertical-align: top;
+            font-family: $main-font;
+             font-weight: $regular;
+             font-size: $xsm-size;
+             line-height: $sm-size;
+             color: $color3;
+             padding:0 2px;
+             position: relative;
+            &:before{
+                content: "";
+                position: absolute;
+                left: -2px;
+                top: 2px;
+                width: 1px;
+                height: 10px;
+                background: $color3;
+            }
+            &:first-child:before{
+                display: none;
+            }
+            a{
+                color: $color3;
+                &:hover, &:focus{
+                    color: $lighter;
+                }
+            }
+        }
+    }
+}
+.copyright{
+     padding: 0 0 14px;
+     font-family: $main-font;
+     font-weight: $regular;
+     font-size: $xsm-size;
+     line-height: $sm-size;
+     color: $color3;
+    a{
+        color: $color3;
+        &:hover, &:focus{
+            color: $lighter;
+        }
+    }
+}

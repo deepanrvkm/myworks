@@ -1,0 +1,99 @@
+.about{
+    background: #e2f4ff url("../images/content/about-bg.jpg") no-repeat center bottom;
+    background-size: 100%;
+    padding: 93px 0 30%;
+    @media #{$screen-large} {
+        padding: 60px 0 30%;
+    }
+    @media #{$screen-medium} {
+        padding: 50px 0 30%;
+    }
+    @media #{$screen-small} {
+        padding: 40px 0 30%;
+    }
+    .more{
+      margin-right: 75px;
+      @media #{$screen-extrasmall} {
+        margin-right: 30px;    
+      }
+    }
+}
+.btns-outer{
+    margin: -10px 0 0;
+}
+.logo-list ul{
+    margin: 50px 0 0;
+    display: table;
+    li{
+       display: table-cell;
+        vertical-align: middle;
+        padding: 0 40px;
+        border-left: solid 1px $bg-color; 
+        &:first-child{
+            padding-left: 0;
+            border: none;
+        }
+        @media #{$screen-extrasmall} {
+            padding: 0 20px;
+        }
+    }
+}
+.list-block{
+    padding: 26px 0 0;
+    @media #{$screen-small} { 
+        padding: 40px 0 0;
+    }
+    ul{ 
+        li{
+            padding:0 0 0 95px; 
+            margin: 0 0 28px;
+            position: relative;
+            @media #{$screen-medium} {
+                padding: 0 0 0 60px;
+            }
+            @media #{$screen-extrasmall} {
+                padding: 0 0 0 60px;
+            }
+            &:before{
+                content: "";
+                position: absolute;
+                left: 20px;
+                top: 0;
+                width: 39px;
+                height: 37px;
+                background: url("../images/tick.png") no-repeat left top;
+                background-size: cover;
+                @media #{$screen-medium} {
+                    left: 10px;
+                    width: 29px;
+                    height: 27px;
+                }
+                @media #{$screen-extrasmall} {
+                    left: 10px;
+                    width: 29px;
+                    height: 27px;
+                }
+            }
+            h6{
+                font-size: $small-title;
+                line-height: $size-base;
+                color: $text-color;
+                font-weight: $regular;
+                text-transform: uppercase;
+                padding:0 0 4px;
+                a{
+                   color: $text-color;
+                    &:hover{
+                       color: $heading-color; 
+                    }
+                }
+            }
+            p{
+                padding: 0;
+                font-weight: $medium;
+                color: $darker;
+            }
+        }  
+    }
+}
+

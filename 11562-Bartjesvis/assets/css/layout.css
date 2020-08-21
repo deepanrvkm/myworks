@@ -1,0 +1,99 @@
+@media only screen and (min-width: 1440px) and (max-width: 1919px) {
+    .header-inner {padding: 50px 0 20px;}
+    .logo img {max-width: 400px;}
+    .menu ul li a {font-size: 24px; line-height: 25px;}    
+    .menu ul li ul {top: 20px; padding: 29px 0 2px;}
+}
+
+
+@media only screen and (min-width: 1024px) and (max-width: 1439px) {
+    h1{font-size:48px; line-height: 48px;}
+	h2{font-size:48px; line-height: 48px;}
+    h5{font-size:28px; line-height: 28px;}
+    p{font-size:18px; line-height: 24px;}    
+    .banner-image {height: 400px;}
+    .slick-arrow{width:20px; height: 50px; margin-top: -20px;}
+    .slick-next {right: -25px;}
+    .slick-prev {left: -25px;}
+    .slick-arrow.slick-next:before {border-width: 25px 0 25px 20px;}
+    .slick-arrow.slick-prev:before {border-width: 25px 20px 25px 0;}
+    .price-tag{padding:10px 20px 5px; vertical-align: top; font-size:24px; line-height:1;}
+    .price-tag span{font-size:45px; line-height:40px;}
+    .header-inner {padding: 30px 0 10px;}
+    .logo img {max-width: 300px;} 
+    .menu ul li a {font-size: 24px; line-height: 24px;}    
+    .menu ul li ul {top: 17px; padding: 22px 0 2px;left: -15px;}
+    .menu ul ul li a {padding: 12px 15px; font-size: 18px; line-height: 18px;}
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1279px) {
+    .menu ul li a {font-size: 21px;}
+}
+
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+	h1{font-size:36px; line-height: 38px;}
+    h2{font-size:36px; line-height: 38px;}
+    h5{font-size:24px; line-height: 24px;}
+    p{font-size:16px; line-height: 22px;}    
+    .banner-image {height: 350px;}
+    .slick-arrow{width:15px; height:30px;}
+    .slick-arrow{display: none!important;}
+    .price-tag{padding:10px 20px 5px; vertical-align: top; font-size:20px; line-height:1;}
+    .price-tag span{font-size:40px; line-height:36px;}
+    .menu ul li {margin: 0 15px 0 0;}
+    .menu ul li a {font-size: 16px; line-height: 17px;}
+    .header-inner {padding: 20px 0 10px;}
+    .logo img {max-width: 260px;} 
+    .menu ul li a {font-size: 16px; line-height: 17px;}    
+    .menu ul li ul {top: 11px; padding: 22px 0 2px;left: -15px;}
+    .menu ul ul li a {padding: 10px 15px; font-size: 15px; line-height: 15px;}
+}
+
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 767px) {
+    h1{font-size:36px; line-height: 38px;}
+    h2{font-size:36px; line-height: 38px;}
+    h5{font-size:24px; line-height: 24px;}
+    p{font-size:16px; line-height: 22px;}    
+    .banner-image {height: 250px;}
+    .slick-arrow{display: none!important;}
+    .grid-block{display: block;}
+    .grid-image {width: auto; min-height: 200px; margin: 0;}
+    .grid-content{display: block;padding:0 0 30px; text-align: center;width:100%;}
+    .imgRight .grid-content{padding:0 0 30px;}
+    .price-tag{position: inherit; display: block; padding:15px 20px 10px; vertical-align: top; font-size:24px; line-height:1; margin:0 0 20px;}
+    .price-tag span{font-size:45px; line-height:40px;display: inline-block; vertical-align: middle; margin-left: 10px;} 
+    .grid-block.slick-slide{display: block;}
+    .order{font-size:20px; line-height:21px;padding:10px 0;text-align: center;}
+    .order img{max-width: 24px;}
+    .header-inner{display: block;padding:10px 0 0;}
+    .logo {max-width: 200px;position: relative; top: 0; order: 1;margin-bottom: -20px;}
+    .logo img{max-width: 100%;} 
+    .menu{order: 3;}
+    .social-nav {order: 2; position: absolute; right: 50px; top: 30px;}       
+    .menu {position: relative; z-index:1; padding: 0; width:100%;}
+    .menu > ul{border-bottom: 1px solid #004169;}
+    .menu ul li{border-top: 1px solid #004169;}
+    .menu ul li a{font-size:20px; line-height: 21px;}
+    .menu ul li ul{position: inherit; top: 0;}
+    .menu ul ul li a{padding: 10px 0; font-size:18px; line-height: 20px;}
+    .menu ul li ul li ul{ position: inherit; border:none; left: inherit;}
+	.mean-container .mean-nav ul li a.mean-expand { border:none; background:none;}
+    .menu ul li.active a, .menu nav > ul > li:hover > a{border:none;}
+    .menu ul li.last ul li ul,.menu ul li:nth-last-child(2) ul ul{right: inherit;}
+}
+
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 479px) {
+	h1{font-size:32px; line-height: 33px;}
+    h2{font-size:32px; line-height: 33px;}
+    h5{font-size:20px; line-height: 21px;}
+    .order{font-size:15px; line-height:16px;}
+    .order img{max-width: 20px;}
+    .logo {max-width: 160px;}
+    .social-nav{top: -25px;}
+    body{display: none;}
+}
+

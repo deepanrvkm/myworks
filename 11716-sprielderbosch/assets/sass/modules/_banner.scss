@@ -1,0 +1,314 @@
+// ***********************************
+// BANNER
+// ***********************************
+.slick-arrow{
+    position: absolute;
+    top: 50%;
+    @include transform-translatey(-50%);
+    cursor: pointer;
+    z-index: 9;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: solid 1px $darker;;
+    background-position:  center center;
+    background-repeat: no-repeat;
+    font-size: 0;
+    @include transition(all 300ms ease-in-out);
+    &.slick-prev{
+        left: 0;
+        background-image: url("../images/arrow-left.svg")
+    }
+    &.slick-next{
+        right: 0;
+        background-image: url("../images/arrow-right.svg")
+    }
+    &.slick-disabled{
+        opacity: 0.3;
+        cursor: default;
+        &:hover{
+            border-color: $color1;
+        }
+    }
+    &:hover{
+        border-color: $darker;;
+    }
+}
+.slick-slide{
+    text-align: center;
+    a{
+        width: auto!important;
+    }
+}
+.slick-track{
+    @include flexbox;
+}
+.slick-slide{
+    float: none;
+}
+.slick-initialized .slick-slide{
+    height: auto;
+    @include flexbox;
+    @include justify-content(center);
+    @include align-items(center);
+}
+.slick-dots{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 35px;
+    margin: auto;
+    text-align: right;
+    li{
+        display: inline-block;
+        vertical-align: middle;
+        font-size: 0;
+        width: 17px;
+        height: 17px;
+        border-radius: 50%;
+        background: none;
+        border: solid 1px $lighter;
+        @include transition(all 300ms ease-in-out);
+        margin: 0 5px;
+        cursor: pointer;
+        &.slick-active{
+            background: $lighter;
+            cursor: default;
+        }
+        button{
+            display: none;
+        }
+    }
+}
+.banner-outer{
+    padding:0 20px;
+    position: relative;
+    @media #{$tablet-landscape} { 
+        padding: 0;
+    }
+    @media #{$tablet-portrait} { 
+        padding: 0;
+    }
+    @media #{$mobile-landscape} { 
+        padding: 0;
+    }
+}
+.banner-slide{
+    position: relative;
+}
+.banner-content{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 9;
+    .title{
+        text-align: left;
+        padding:35px 0;
+        h1{
+            color: $lighter;
+            padding:0 0 14px;
+            @media #{$tablet-landscape} { 
+                font-size: 42px;
+            }
+            @media #{$tablet-portrait} { 
+                font-size: 36px;
+                padding:0 0 10px;
+            }
+            @media #{$mobile-landscape} { 
+                font-size: 32px;
+                padding:0 0 10px;
+            }
+        }
+        h4{
+            color: $lighter;
+            @media #{$tablet-landscape} { 
+                font-size: 24px;
+            }
+            @media #{$tablet-portrait} { 
+                font-size: 20px;
+            }
+            @media #{$mobile-landscape} { 
+                font-size: 18px;
+            }
+        }
+    }
+}
+.banner-image{
+    width: 100%;
+    height: 500px;
+    position: relative;
+    &:before{
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 30%;
+        @include linearGradient(rgba(0,0,0,0), rgba(0,0,0,.6));
+    }
+    @media #{$tablet-landscape} { 
+        height: 400px;
+    }
+    @media #{$tablet-portrait} { 
+        height: 350px;
+    }
+    @media #{$mobile-landscape} { 
+        height: 250px;
+    }
+}
+
+.banner {
+    .banner-image {
+        height: 670px;
+        @media #{$tablet-portrait} { 
+            height: 520px;
+        }
+        @media #{$mobile-landscape} { 
+            height: 320px;
+        }
+    }
+    .banner-content {
+        text-align: left;
+        @media #{$mobile-landscape} { 
+            bottom: 58px;
+        }
+        .title {
+            width: 54%;
+            display: inline-block;
+            vertical-align: top;
+            padding-top: 0px;
+            @media #{$tablet-landscape} { 
+                width: 60%;
+            }
+            @media #{$tablet-portrait} { 
+                width: 63%;
+                h1 {
+                    font-size: 34px;
+                }
+            }
+            @media #{$mobile-landscape} { 
+                width: 100%;
+                padding-bottom: 24px;
+            }
+        }
+        .btn {
+            margin-top: 5px;
+            padding: 12px 27px;
+            @media #{$tablet-portrait} { 
+                margin-top: 0px;
+                padding: 10px 12px;
+                font-size: 14px;
+            }
+            @media #{$mobile-landscape} {
+                font-size: 14px;
+                margin-top: 0;
+                padding: 10px 12px;
+            }
+        }
+    }
+    .slick-dots {
+        left: inherit;
+        width: 40%;
+        text-align: left;
+    }
+}
+.slick-buttons {
+    position: absolute;
+    bottom: 35px;
+    left: 0;
+    width: 100%;
+    @media #{$tablet-landscape} { 
+        bottom: 28px;
+    }
+    @media #{$tablet-portrait} { 
+        bottom: 22px;
+    }
+    @media #{$mobile-landscape} {
+        bottom: 15px;
+    }
+    .buttons-inner {
+        float: right;
+        width: 46%;
+        margin-top: 8px;
+        padding-left: 4px;
+        @media #{$tablet-landscape} { 
+            width: 40%;
+        }
+        @media #{$tablet-portrait} { 
+            width: 37%;
+        }
+        @media #{$mobile-landscape} {
+            width: 100%;
+        }
+        a {
+            display: inline-block;
+            vertical-align: middle;
+            width: 17px;
+            height: 17px;
+            margin-right: 12px;
+            img {
+                display: block;
+                width: 17px;
+            }
+        }
+    }
+    .slick-dots {
+        display: inline-block;
+        position: relative;
+        bottom: inherit;
+    }
+}
+
+.banner-overlay {
+    position: absolute;
+    left: 0;
+    top: 40px;
+    width: 100%;
+    height: auto;
+    @media #{$mobile-landscape} { 
+        display: none;
+    }
+    .overlay-wrapper {
+        max-width: 1230px;
+        width: 100%;
+        margin: 0 auto;
+        @media #{$tablet-landscape} { 
+            max-width: 960px;
+        }
+        @media #{$tablet-portrait} { 
+            max-width: 720px;
+        }
+    }
+    .overlay-content {
+        float: right;
+        width: auto;
+        background: rgba($darker,0.6);
+        padding: 38px 34px 40px;
+        @include border-radius(6px);
+        text-align: center;
+        @media #{$tablet-portrait} { 
+            padding: 32px 34px 40px;
+        }
+        h2 {
+            font-size: $size-h1;
+            color: $lighter;
+            margin-bottom: 15px;
+            @media #{$tablet-portrait} { 
+                font-size: 40px;
+            }
+        }
+        p {
+            font-size: $size-h4;
+            line-height: 36px;
+            color: $lighter;
+            font-family: $title-sm;
+            padding: 0 0 32px;
+            @media #{$tablet-portrait} { 
+                font-size: 27px;
+                line-height: 34px;
+                padding: 0 0 26px;
+            }
+        }
+    }
+}

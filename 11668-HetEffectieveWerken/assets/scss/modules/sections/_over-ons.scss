@@ -1,0 +1,112 @@
+.tab-list{
+  &.over-on-tab{
+    padding: 73px 94px 60px 0;
+    @include breakpoint(large only){
+      padding: 70px 55px 60px 0;
+    }
+    @include breakpoint(medium only) {
+      padding: 35px 15px;
+    }
+    @include breakpoint(small only) {
+      padding: 0px;
+    }
+    .tab-title-outer{
+      position: inherit;
+      top: inherit;
+      right: inherit;
+      width: 100%;
+      ul{
+        width: 100%;
+        border-bottom: 1px solid $color2;
+        li{
+          border: none;
+          @include breakpoint(xlarge up) {
+            padding: 0 0 0 26px;
+          }
+          @include breakpoint(large up){
+            float: none;
+            display: inline-block;
+            padding: 0 0 0 10px;
+          }
+          > a{
+            letter-spacing: 1px;
+          }
+        }
+      }
+    }
+    .tabs-panel{
+      padding: 58px 0 16px;
+    }
+  }
+}
+.people-blk{
+  width: 100%;
+  h5{
+    padding-bottom: 45px;
+    letter-spacing: -1.13px;
+    @include breakpoint(medium down) {
+      padding-bottom: 30px;
+    }
+  }
+  ul{
+    width: 100%;
+    list-style: none;
+    @include breakpoint(medium down) {
+      margin: 0px;
+      border: none !important;
+    }
+    li{
+      width: 100%;
+      margin-bottom: 31px;
+      .people-single{
+        @include flexbox;
+        width: 100%;
+        @include breakpoint(small only) {
+          @include flex-direction(column);
+        }
+        .img-box{
+          min-width: 112px;
+          @include breakpoint(small only) {
+            min-width: 100%;
+            text-align: center;
+            margin-bottom: 10px;
+          }
+          img{
+            display: block;
+            padding-bottom: 0px;
+            width: 96px;
+            @include border-radius(100%);
+            @include breakpoint(small only) {
+              display: inline-block;
+            }
+          }
+        }
+        .content-box{
+          padding-top: 4px;
+          h6{
+            font-size: $size-base;
+            font-weight: $semibold;
+            color: $color9;
+            letter-spacing: -0.75px;
+          }
+          span{
+            display: block;
+            font-size: $size-base;
+            color: $color14;
+            letter-spacing: -0.75px;
+            margin-bottom: 6px;
+            @include breakpoint(small only) {
+              line-height: 1.5;
+            }
+          }
+          p{
+            font-size: $size-xmd;
+            line-height: 1.32;
+            color: $color10;
+            padding-bottom: 0px;
+          }
+        }
+      }
+    }
+  }
+}

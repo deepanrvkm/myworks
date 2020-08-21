@@ -1,0 +1,165 @@
+/**********************************************
+    Footer
+***********************************************/
+
+.footer-container{
+	background: $bg-col2;
+	
+	.footer-top-container{
+		border-bottom: 2px solid $border-col1;
+		@include flexbox;
+		padding: 53px 0 23px 0;
+		
+		@media #{$tablet-portrait} { 
+		   	padding: 53px 0 76px 90px;
+			@include flex-wrap(wrap);
+		}
+		@media #{$mobile-landscape} { 
+		   	padding: 35px 30px 30px;
+			@include flex-direction(column);
+		}
+		
+		h5{
+			color: $lighter;
+		}
+		
+		.contact-info{
+			width: 360px;
+			
+			@media #{$tablet-portrait} {
+				width: 270px;
+				padding-bottom: 32px;
+			}
+			@media #{$mobile-landscape} { 
+				width: 100%;
+				padding-bottom: 32px;
+			}
+			
+			h5{
+				padding-bottom: 19px;
+			}
+			
+			address{
+				margin-bottom: 18px;
+				font-size: $size-small;
+				line-height: 20px;
+				color: $text-col2;
+			}			
+			span{
+					font-size: $size-small;
+					line-height: $lineheight-h6;
+					color: $text-col2;
+				a{	
+					&:hover{
+						color: $link-color;
+					}
+				}
+			}
+		}
+		
+		.sitemap{
+			width: 450px;
+			padding-left: 115px;
+			
+			@media #{$tablet-portrait} {
+				width: 334px;
+				padding-left: 87px;
+			}
+			@media #{$mobile-landscape} { 
+				width: 100%;
+				padding-left: 0;
+				padding-bottom: 32px;
+			}
+			
+			h5{
+				padding-bottom: 17px;
+			}
+			
+			ul{
+				@include flexbox;
+				@include flex-wrap(wrap);
+				
+				li{
+					width: 112px;
+					
+					@media #{$tablet-portrait} {
+						width: 100%;
+					}
+					@media #{$mobile-landscape} { 
+						width: 100%;
+					}
+					
+					a{
+						color: $text-col2;
+						font-size: $size-small;
+						
+						&:hover{
+							color: $link-color;
+						}
+					}
+				}
+			}
+		}
+		
+		.social-icons{
+			padding-left: 68px;
+			width: 360px;
+			
+			@media #{$tablet-portrait} {
+				padding-left: 0;
+				width: 270px;
+			}
+			@media #{$mobile-landscape} { 
+				padding-left: 0;
+				width: 100%;
+			}
+			
+			h5{
+				padding-bottom: 15px;
+			}
+			
+			ul{
+				@include flexbox;
+				
+				li{
+					margin-left: 14px;
+					
+					&:first-child{
+						margin-left: 0;
+					}
+					
+					a{
+						width: 28px;
+						height: 28px;
+						
+						img{
+							width: 28px;
+							height: 28px;
+						}
+						
+						&:hover{
+							opacity: 0.5;
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	.footer-bottom-container{
+		font-size: $size-small;
+		line-height: 20px;
+		color: $text-col2;
+		padding: 25px 0 27px;
+		
+		@media #{$tablet-portrait} {
+			line-height: 24px;
+			padding: 21px 0 36px;
+		}
+		
+		@media #{$mobile-landscape} {
+			line-height: 20px;
+			padding: 20px 0;
+		}
+	}
+}

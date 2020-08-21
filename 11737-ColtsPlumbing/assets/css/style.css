@@ -1,0 +1,183 @@
+@font-face {
+	font-family: 'Rockwell';
+	src: url('../fonts/Rockwell/Rockwell.eot');
+	src: url('../fonts/Rockwell/Rockwell.woff') format('woff'), 
+         url('../fonts/Rockwell/Rockwell.ttf') format('truetype'), 
+         url('../fonts/Rockwell/Rockwell.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'RockwellBold';
+	src: url('../fonts/RockwellBold/RockwellBold.eot');
+	src: url('../fonts/RockwellBold/RockwellBold.woff') format('woff'), 
+         url('../fonts/RockwellBold/RockwellBold.ttf') format('truetype'), 
+         url('../fonts/RockwellBold/RockwellBold.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'AvenirLight';
+	src: url('../fonts/AvenirLight/AvenirLight.eot');
+	src: url('../fonts/AvenirLight/AvenirLight.woff') format('woff'), 
+         url('../fonts/AvenirLight/AvenirLight.ttf') format('truetype'), 
+         url('../fonts/AvenirLight/AvenirLight.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'AvenirRoman';
+	src: url('../fonts/AvenirRoman/AvenirRoman.eot');
+	src: url('../fonts/AvenirRoman/AvenirRoman.woff') format('woff'), 
+         url('../fonts/AvenirRoman/AvenirRoman.ttf') format('truetype'), 
+         url('../fonts/AvenirRoman/AvenirRoman.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+body {
+    font-family: 'Rockwell';
+    font-size: 26px;
+    line-height: 1.46;
+    color: #231f20;
+	margin: 0px;
+	padding: 0px;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-style: normal;
+	font-weight: normal;
+	margin: 0px;
+	padding: 0px;
+}
+h1{
+   font-family: 'RockwellBold';
+    font-size: 70px;
+    line-height: 1;
+    color: #231f20;
+}
+h2{
+   font-family: 'RockwellBold';
+    font-size: 67px;
+    line-height: 1;
+    color: #231f20;
+}
+h3{
+   font-family: 'RockwellBold';
+    font-size: 58px;
+    line-height: 1;
+    color: #231f20;
+}
+h4{
+   font-family: 'RockwellBold';
+    font-size: 56px;
+    line-height: 1;
+    color: #231f20;
+}
+h5{
+   font-family: 'RockwellBold';
+    font-size: 41px;
+    line-height: 1;
+    color: #231f20;
+}
+h6{
+   font-family: 'RockwellBold';
+    font-size: 35px;
+    line-height: 1;
+    color: #231f20;
+}
+p {
+	font-family: 'Rockwell';
+    font-size: 26px;
+    line-height: 1.46;
+    color: #231f20;
+    margin: 0px;
+	padding: 0 0 38px;
+}
+ul {
+	background: none;
+	margin: 0px;
+	padding: 0px;
+	list-style-image: none;
+	list-style-type: none;
+}
+ul li {
+	background: none;
+	margin: 0px;
+	padding: 0px;
+	list-style-image: none;
+	list-style-type: none;
+}
+a{
+    -webkit-transition: all 200ms ease-in;
+    -moz-transition: all 200ms ease-in;
+    -ms-transition: all 200ms ease-in;
+    -o-transition: all 200ms ease-in;
+    transition: all 200ms ease-in;
+}
+a, a:hover, a:focus {
+	text-decoration: none;
+	outline: 0px none !important;
+}
+img, a img {
+	max-width: 100%;
+	margin: 0px;
+	padding: 0px;
+	border: none 0;
+	outline: 0px none !important;
+}
+input:focus, textarea:focus, a:focus {
+	outline: 0px none !important;
+}
+@media (min-width: 320px) {
+	.container {
+		max-width: 540px;
+	}
+}
+@media (min-width: 768px) {
+	.container {
+		max-width: 750px;
+	}
+}
+@media (min-width: 1024px) {
+	.container {
+		max-width: 970px;
+	}
+}
+@media (min-width: 1360px) {
+	.container {
+		max-width: 1090px;
+	}
+}
+@media (min-width: 1920px) {
+	.container {
+		max-width: 1230px;
+	}
+}
+@media (min-width: 2400px) {
+	.container {
+		max-width: 1990px;
+	}
+}
+.container-fluid.no-gutters {
+	padding-right: 0;
+	padding-left: 0;
+}
+.no-gutters .row {
+	margin-right: 0;
+	margin-left: 0;
+}
+.no-gutters [class*="col-"] {
+	padding-right: 0;
+	padding-left: 0;
+}
+.block {
+	font: 16px/30px Arial;
+	color: #FFF;
+	text-align: center;
+	height: 30px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	background: #030;
+	clear: both;
+	float: left;
+	width: 100%;
+}

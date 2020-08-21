@@ -1,0 +1,93 @@
+// ***********************************
+// Nieuws
+// ***********************************
+.news-block{
+    background: $lighter;
+    margin:0 0 20px;
+    .news-image{
+        height: 250px;
+        @media #{$tablet-landscape} { 
+            height: 200px;
+        }
+        @media #{$tablet-portrait} { 
+            height: 150px;
+        }
+        @media #{$mobile-portrait} { 
+            height: 190px;
+        }
+    }
+    .news-content{
+        padding:33px 10px 17px;
+        @media #{$tablet-landscape} { 
+            padding:30px 10px 15px;
+        }
+        @media #{$tablet-portrait} { 
+            padding:25px 10px 15px;
+        }
+        @media #{$mobile-portrait} { 
+            padding:25px 10px 15px;
+        }
+        h4{
+            font-family: $title-font2;
+            text-transform: uppercase;
+            padding:0 0 8px;
+            @media #{$tablet-landscape} { 
+                font-size: 20px;
+            }
+            @media #{$tablet-portrait} { 
+                font-size: 16px;
+            }
+            @media #{$mobile-portrait} { 
+                font-size: 20px;
+            }
+        }
+        h6{
+            font-family: $sub-font1;
+            font-size:$text-size;
+            line-height: 1.5;
+            color: $color8;
+            padding:0 0 11px;
+            @media #{$tablet-landscape} { 
+                font-size: 16px;
+                padding:0 0 8px;
+            }
+            @media #{$tablet-portrait} { 
+                font-size: 14px;
+                padding:0 0 5px;
+            }
+            @media #{$mobile-portrait} { 
+                font-size: 16px;
+                padding:0 0 8px;
+            }
+        }
+        p{
+            padding: 0;
+            @media #{$tablet-landscape} { 
+                font-size: 16px;
+            }
+            @media #{$tablet-portrait} { 
+                font-size: 14px;
+            }
+            @media #{$mobile-portrait} { 
+                font-size: 16px;
+            }
+        }
+    }
+}
+.more{
+    font-family: $main-font;
+    font-weight: $semibold;
+    font-style: italic;
+    font-size:$text-size;
+    line-height: 1.5;
+    color: $color6;
+    @media #{$tablet-landscape} { 
+        font-size: 16px;
+    }
+    @media #{$tablet-portrait} { 
+        font-size: 14px;
+    }
+    @media #{$mobile-portrait} { 
+        font-size: 16px;
+    }
+}

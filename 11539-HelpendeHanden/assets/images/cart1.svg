@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="17.85" height="16.708" viewBox="0 0 17.85 16.708">
+  <g id="cart" transform="translate(-0.25)">
+    <path id="Path_265" data-name="Path 265" d="M.4,3.525a.491.491,0,0,1,.446-.268H14.274l.58-2.767A.669.669,0,0,1,15.479,0h2.052a.627.627,0,0,1,0,1.249H15.969l-1.963,9.014a.58.58,0,0,1-.58.491H2.408a.618.618,0,0,1-.58-.491L.267,4.016A.5.5,0,0,1,.4,3.525Z" transform="translate(0)" fill="#fff" fill-rule="evenodd"/>
+    <path id="Path_266" data-name="Path 266" d="M110.053,260A2.076,2.076,0,0,0,108,262.053a2.047,2.047,0,0,0,2.053,2.053,2.02,2.02,0,0,0,2.053-2.053A2.047,2.047,0,0,0,110.053,260Z" transform="translate(-98.812 -247.398)" fill="#fff" fill-rule="evenodd"/>
+    <path id="Path_267" data-name="Path 267" d="M252.053,260A2.076,2.076,0,0,0,250,262.053a2.053,2.053,0,1,0,4.105,0A2.076,2.076,0,0,0,252.053,260Z" transform="translate(-247.445 -247.398)" fill="#fff" fill-rule="evenodd"/>
+  </g>
+</svg>

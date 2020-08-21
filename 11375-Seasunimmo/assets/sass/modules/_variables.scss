@@ -1,0 +1,87 @@
+// Variables
+// --------------------------  
+ 
+// Colors and backgrounds
+// --------------------------
+
+$darker:                      #000000!default;
+$lighter: 		              #ffffff!default;
+$text-color:                  #404040;
+$link-color:                  #C91E11;
+$title-color:                 #333333;
+$bg-col1:                 	  #313131;
+$bg-col2:                 	  #1f1f1f;
+$bg-col3:                 	  #f6f7f9;
+$bg-col4:                 	  #acacac;
+$bg-col5:                 	  #F1F1F2;
+$bg-col6:                 	  #f3f3f3;
+$text-col1:                   #F9F9F9;
+$text-col2:                   #D9D9D9;
+$text-col3:                   #585858;
+$text-col4:                   #C10000;
+$text-col5:                   #4A4A4A;
+$text-col6:                   #555555;
+$text-col7:                   #F0F0F0;
+$text-col8:                   #F0556F;
+$text-col9:                   #7C241D;
+$border-col1:                 #2f2f2f;
+$border-col2:                 #D7DADE;
+$border-col3:                 #E6E7E9;
+$border-col4:                 #EAE7E7;
+$border-col5:                 #EFEFEF;
+$border-col6:                 #f4f4f4;
+$border-col7:                 #a39ca4;
+
+
+//== Typography
+// --------------------------  
+@import url('https://fonts.googleapis.com/css?family=Nunito:300,300i,400,400i,600,700,800,900');
+@import url('https://fonts.googleapis.com/css?family=Hind+Guntur:400,500');
+
+$main-font: 	'Nunito', sans-serif; 
+$sub-font: 	'Hind Guntur', sans-serif;
+
+$light:      300;
+$regular:    400;
+$medium:     500;
+$semibold:   600;
+$bold:       700;
+$extrabold:  800;
+$black:      900;
+
+
+$size-base:    16px !default; 
+
+$size-h1:                       ceil(($size-base * 2.00)) 		    !default;   // ~32px
+$size-h2:                       ceil(($size-base * 1.75)) 			!default;   // ~28px
+$size-h3:                       ceil(($size-base * 1.50)) 			!default;   // ~24px
+$size-h4:                       ceil(($size-base * 1.375)) 			!default;   // ~22px
+$size-h5:                       ceil(($size-base * 1.25)) 			!default;   // ~20px
+$size-h6:              		    ceil(($size-base * 1.125)) 			!default;   // ~18px
+
+$size-medium:              		ceil(($size-base * .937)) 			!default;   // ~15px
+$size-small:              		ceil(($size-base * .875)) 			!default;   // ~14px
+$size-xsmall:              		ceil(($size-base * .75)) 			!default;   // ~12px
+
+$base-linehight:			    24px !default;
+$lineheight-h1:                 ceil(($size-base * 2.50)) 		    !default;   // ~40px
+$lineheight-h2:                 ceil(($size-base * 2.31)) 			!default;   // ~37px
+$lineheight-h3:                 ceil(($size-base * 1.81)) 			!default;   // ~29px
+$lineheight-h4:                 ceil(($size-base * 1.625)) 			!default;   // ~26px
+$lineheight-h5:                 ceil(($size-base * 1.50)) 			!default;   // ~24px
+$lineheight-h6:                 ceil(($size-base * 1.375)) 			!default;   // ~22px
+
+
+//== Media queries breakpoints
+$desktop-only:      "(min-width: 992px)";
+$mobile-only:       "(max-width: 991px)";
+$screen-md:       	"(min-width: 1200px) and (max-width: 1399px)";
+$tablet-landscape:  "(min-width: 992px) and (max-width: 1279px)";
+$tablet-portrait:   "(min-width: 768px) and (max-width: 991px)";
+$mobile-landscape:  "only screen and (max-width : 767px)";
+$mobile-portrait:   "only screen and (max-width : 479px)";  
+
+
+
+
+ 

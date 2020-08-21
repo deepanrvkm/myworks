@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Booking | Castilla Alicante</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="format-detection" content="telephone=no">
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="shortcut icon" href="favicon.ico" />
+
+<!-- Le styles -->
+<link href="assets/css/foundation.css" rel="stylesheet" />
+<link href="assets/css/foundation-datepicker.css" rel="stylesheet" />
+<link href="assets/css/sumoselect.css" rel="stylesheet" />
+<link href="assets/css/style.css" rel="stylesheet" />
+
+<!--[if lt IE 9]>
+    <script src="assets/js/vendor/html5shiv.min.js"></script>
+    <script src="assets/js/vendor/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body>
+<div class="main-outercon">
+  <div class="off-canvas-wrapper">
+    <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper> 
+      <!--Begin header section-->
+      <header class="header-container">
+        <div class="header-top">
+          <div class="row">
+            <div class="medium-12 columns">
+              <div class="header-inner">
+                <div class="logo"> <a href="#"><img src="assets/images/logo.svg" alt=""></a> </div>
+                <div class="header-right">
+                  <div class="call"> <img src="assets/images/call.svg" alt=""><a href="tel:965162033 ">965 162 033 </a> </div>
+                  <div class="social-media">
+                    <ul>
+                      <li><a href="#" class="facebook"><img src="assets/images/facebook.svg" alt=""></a></li>
+                      <li><a href="#" class="twitter"><img src="assets/images/twitter.svg" alt=""></a></li>
+                      <li><a href="#" class="youtube"><img src="assets/images/youtube.svg" alt=""></a></li>
+                      <li><a href="#" class="googleplus"><img src="assets/images/googleplus.svg" alt=""></a></li>
+                      <li><a href="#" class="tripadvisor"><img src="assets/images/tripadvisor.svg" alt=""></a></li>
+                    </ul>
+                  </div>
+                  <div class="language">
+                    <div id="polyglotLanguageSwitcher" class="language-switcher">
+                      <form action="#">
+                        <select id="polyglot-language-options">
+                          <option id="en" value="en" selected>&nbsp;</option>
+                          <option id="es" value="es">&nbsp;</option>
+                          <option id="nl" value="nl">&nbsp;</option>
+                          <option id="fr" value="fr">&nbsp;</option>
+                          <option id="de" value="de">&nbsp;</option>
+                        </select>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="menu-container">
+          <div class="row">
+            <div class="medium-12 columns">
+              <button class="menu-icon" type="button" data-open="offCanvasLeft"><span>Menu</span></button>
+              <div class="main-menu">
+                <ul>
+                  <li class="active"><a href="#">Inicio</a></li>
+                  <li><a href="#">Ofertas</a></li>
+                  <li class="submenu"><a href="#">Hotel</a>
+                    <ul>
+                      <li><a href="#">Menu item 1</a></li>
+                      <li><a href="#">Menu item 2</a></li>
+                      <li><a href="#">Menu item 3</a></li>
+                      <li><a href="#">Menu item 4</a></li>
+                    </ul>
+                  </li>
+                  <li class="submenu"><a href="#">Servicios</a>
+                    <ul>
+                      <li><a href="#">Q de Calidad</a></li>
+                      <li><a href="#">Alquiler de coches y bicis</a></li>
+                      <li><a href="#">Alquiler cunas y accesorios niños</a></li>
+                      <li><a href="#">Servicio de lavandaría</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">Bodas y eventos</a></li>
+                  <li><a href="#">Eventos de empresa</a></li>
+                  <li><a href="#">Ocio y deporte</a></li>
+                  <li><a href="#">Turismo</a></li>
+                  <li><a href="#">Contato</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- off-canvas left menu -->
+        <div class="off-canvas position-left" id="offCanvasLeft" data-off-canvas>
+          <aside class="left-off-canvas-menu">
+            <div class="canvas-menu hide-for-large-up">
+              <div class="logo"> <a href="#"><img src="assets/images/logo.svg" alt=""></a> </div>
+              <div class="call"> <img src="assets/images/call.svg" alt=""><a href="tel:965162033 ">965 162 033 </a> </div>
+              <div class="main-menu">
+                <ul>
+                  <li class="active"><a href="#">Inicio</a></li>
+                  <li><a href="#">Ofertas</a></li>
+                  <li class="submenu"><a href="#">Hotel</a>
+                    <ul>
+                      <li><a href="#">Menu item 1</a></li>
+                      <li><a href="#">Menu item 2</a></li>
+                      <li><a href="#">Menu item 3</a></li>
+                      <li><a href="#">Menu item 4</a></li>
+                    </ul>
+                  </li>
+                  <li class="submenu"><a href="#">Servicios</a>
+                    <ul>
+                      <li><a href="#">Q de Calidad</a></li>
+                      <li><a href="#">Alquiler de coches y bicis</a></li>
+                      <li><a href="#">Alquiler cunas y accesorios niños</a></li>
+                      <li><a href="#">Servicio de lavandaría</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">Bodas y eventos</a></li>
+                  <li><a href="#">Eventos de empresa</a></li>
+                  <li><a href="#">Ocio y deporte</a></li>
+                  <li><a href="#">Turismo</a></li>
+                  <li><a href="#">Contato</a></li>
+                </ul>
+              </div>
+              <div class="social-media">
+                <ul>
+                  <li><a href="#" class="facebook"><img src="assets/images/facebook.svg" alt=""></a></li>
+                  <li><a href="#" class="twitter"><img src="assets/images/twitter.svg" alt=""></a></li>
+                  <li><a href="#" class="youtube"><img src="assets/images/youtube.svg" alt=""></a></li>
+                  <li><a href="#" class="googleplus"><img src="assets/images/googleplus.svg" alt=""></a></li>
+                  <li><a href="#" class="tripadvisor"><img src="assets/images/tripadvisor.svg" alt=""></a></li>
+                </ul>
+              </div>
+            </div>
+          </aside>
+        </div>
+        <!-- off-canvas left menu --> 
+        
+      </header>
+      <!--End header section--> 
+      
+      <!--Begin off-canvas section-->
+      <div class="off-canvas-content" data-off-canvas-content> 
+        <!--Begin Content section-->
+        <section class="content-container innerpage"> 
+          <!--Banner-->
+          <div class="banner-container">
+            <div class="row expanded collapse">
+              <div class="medium-12 columns">
+                <div class="banner-block">
+                  <div class="banner-slide">
+                    <div class="banner-image"> <img src="assets/images/content/banner3.jpg" alt="Banner Image"> </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="innerpage-outer"> 
+            <!--Booking Block1-->
+            <div class="booking-block-outer">
+              <div class="row">
+                <div class="medium-12 columns">
+                  <div class="booking-block">
+                    <div class="page-title">
+                      <h3>Paso 1/5 : Selección de fechas y habitaciones</h3>
+                    </div>
+                    <p>Estimado cliente, gracias por utlizar nuestro sistema de reserva online. El proceso de reserva consta de 3 sencillos pasos en los que podrá seleccionar las habitaciones que desea reservar, elegir el tipo de habitación que más se ajuste a sus necesidades y por último introducir los datos del titular de la reserva. </p>
+                    <div class="form-block">
+                      <form>
+                        <div class="form-field">
+                          <input type="text" class="inputbox dpicker" placeholder="Llegada">
+                        </div>
+                        <div class="form-field">
+                          <input type="text" class="inputbox dpicker" placeholder="Salida">
+                        </div>
+                        <div class="form-field small">
+                          <select class="simple-select">
+                            <option disabled="disabled" selected="selected">Noches</option>
+                            <!--placeholder-->
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                          </select>
+                        </div>
+                        <div class="form-field meduium">
+                          <select class="simple-select">
+                            <option disabled="disabled" selected="selected">Habitaciones</option>
+                            <!--placeholder-->
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                          </select>
+                        </div>
+                        <div class="form-field btnfield">
+                          <input type="submit" value="Consultar" />
+                        </div>
+                      </form>
+                    </div>
+                    <div class="short-text">
+                      <p><strong>A continuación seleccione la distribución de las habitaciones que desea reservar</strong>, indicando el tipo de habitación, nº de adultos, niños y bebes que se alojarán en cada una de las habitaciones seleccionadas.</p>
+                    </div>
+                    <div class="form-block light">
+                      <form>
+                        <div class="formcol1">
+                          <div class="input-row">
+                            <div class="form-icon"><img src="assets/images/bed.svg" alt=""><span>1</span></div>
+                            <div class="form-field">
+                              <select class="simple-select">
+                                <option disabled="disabled" selected="selected">Adultos</option>
+                                <!--placeholder-->
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                              </select>
+                            </div>
+                            <div class="form-field">
+                              <select class="simple-select">
+                                <option disabled="disabled" selected="selected">Niños</option>
+                                <!--placeholder-->
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                              </select>
+                            </div>
+                            <div class="form-field">
+                              <select class="simple-select">
+                                <option disabled="disabled" selected="selected">Bebes</option>
+                                <!--placeholder-->
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="input-row">
+                            <div class="form-icon"><img src="assets/images/bed.svg" alt=""><span>2</span></div>
+                            <div class="form-field">
+                              <select class="simple-select">
+                                <option disabled="disabled" selected="selected">Adultos</option>
+                                <!--placeholder-->
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                              </select>
+                            </div>
+                            <div class="form-field">
+                              <select class="simple-select">
+                                <option disabled="disabled" selected="selected">Niños</option>
+                                <!--placeholder-->
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                              </select>
+                            </div>
+                            <div class="form-field">
+                              <select class="simple-select">
+                                <option disabled="disabled" selected="selected">Bebes</option>
+                                <!--placeholder-->
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="formcol2"> <span>* La edad de los niños va desde los 1 a los 10 años. <br>
+                          ** Y la de los bebes de 0 a 1 años. </span> </div>
+                      </form>
+                    </div>
+                    <div class="input-row">
+                      <input type="button" value="Consultar disponibilidad y precios">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--Booking Block2-->
+            <div class="booking-block-outer">
+              <div class="row">
+                <div class="medium-12 columns">
+                  <div class="booking-block">
+                    <div class="page-title">
+                      <h3>Paso 2/5 : Selección de habitaciones</h3>
+                    </div>
+                    <p>Estimado cliente, gracias por utlizar nuestro sistema de reserva online. El proceso de reserva consta de 3 sencillos pasos en los que podrá seleccionar las habitaciones que desea reservar, elegir el tipo de habitación que más se ajuste a sus necesidades y por último introducir los datos del titular de la reserva. </p>
+                    <form>
+                      <!--Table-->
+                      <div class="booking-table"> 
+                        <!--Table Single Field1-->
+                        <div class="table-single">
+                          <div class="table-title">
+                            <h6><span>Habitación 1:</span> 2 Adultos - 1 Niño (elija el tipo de habitación y régimen)</h6>
+                          </div>
+                          <div class="table-body">
+                            <div class="table-row">
+                              <div class="table-col">
+                                <div class="table-img"> <img src="assets/images/content/room-img1.jpg" alt="Image"> </div>
+                              </div>
+                              <div class="table-col">
+                                <div class="feature-title">
+                                  <h4>Habitación doble + supletoria</h4>
+                                  <a href="javascript:void(0);" data-open="Modal1" class="info-link">más info</a> <strong>No reembolsable</strong> 
+                                  <!--Popup Starts-->
+                                  <div class="common-popup" id="Modal1" data-reveal>
+                                    <div class="popup-inner">
+                                      <p>Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+                                    </div>
+                                    <a href="javascript:void(0);" class="close-btn" data-close aria-label="Close modal"> <img src="assets/images/close.svg" alt=""> </a> </div>
+                                  <!--Popup Ends--> 
+                                </div>
+                                <div class="checkbox-list">
+                                  <ul>
+                                    <li>
+                                      <input type="radio" id="price1" name="radio-group1">
+                                      <label for="price1">Solo alojamiento: <strong>244,38&euro;</strong></label>
+                                    </li>
+                                    <li>
+                                      <input type="radio" id="price2" name="radio-group1">
+                                      <label for="price2">Alojamiento y Desayuno:<strong>313,9.9&euro;</strong></label>
+                                    </li>
+                                    <li>
+                                      <input type="radio" id="price3" name="radio-group1">
+                                      <label for="price3">Media pensión:<strong>429,63&euro;</strong></label>
+                                    </li>
+                                    <li>
+                                      <input type="radio" id="price4" name="radio-group1">
+                                      <label for="price4">Pensión Completa:<strong>545,33&euro;</strong></label>
+                                    </li>
+                                  </ul>
+                                </div>
+                                <p>TARIFA ESPECIAL NO REEMBOLSABLE . 100% de gastos del total de la reserva en el momento de su confirmación, no se pude cancelar, modificar o cambiar de nombre </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!--Table Single Field2-->
+                        <div class="table-single">
+                          <div class="table-body">
+                            <div class="table-row">
+                              <div class="table-col">
+                                <div class="table-img"> <img src="assets/images/content/room-img2.jpg" alt="Image"> </div>
+                              </div>
+                              <div class="table-col">
+                                <div class="feature-title">
+                                  <h4>Habitación doble + supletoria</h4>
+                                  <a href="javascript:void(0);" data-open="Modal2" class="info-link">más info</a> <strong>No reembolsable</strong> 
+                                  <!--Popup Starts-->
+                                  <div class="common-popup" id="Modal2" data-reveal>
+                                    <div class="popup-inner">
+                                      <p>Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+                                    </div>
+                                    <a href="javascript:void(0);" class="close-btn" data-close aria-label="Close modal"> <img src="assets/images/close.svg" alt=""> </a> </div>
+                                  <!--Popup Ends--> 
+                                </div>
+                                <div class="checkbox-list">
+                                  <ul>
+                                    <li>
+                                      <input type="radio" id="price5" name="radio-group">
+                                      <label for="price5">Solo alojamiento: <strong>244,38&euro;</strong></label>
+                                    </li>
+                                    <li>
+                                      <input type="radio" id="price6" name="radio-group">
+                                      <label for="price6">Alojamiento y Desayuno:<strong>313,9.9&euro;</strong></label>
+                                    </li>
+                                    <li>
+                                      <input type="radio" id="price7" name="radio-group">
+                                      <label for="price7">Media pensión:<strong>429,63&euro;</strong></label>
+                                    </li>
+                                    <li>
+                                      <input type="radio" id="price8" name="radio-group">
+                                      <label for="price8">Pensión Completa:<strong>545,33&euro;</strong></label>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!--Submit Block-->
+                      <div class="submit-block">
+                        <ul>
+                          <li>Importe total de mi reserva:<strong>545,33&euro;</strong></li>
+                        </ul>
+                        <p>El importe de la reserva incluye impuestos y descuentos por ofertas vigentes en el hotel ya aplicados.</p>
+                        <div class="bttn-outer">
+                          <button type="submit" class="btn">Continuar con la reserva</button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--Booking Block3-->
+            <div class="booking-block-outer">
+              <div class="row">
+                <div class="medium-12 columns">
+                  <div class="booking-block">
+                    <div class="page-title">
+                      <h3>Paso 3/5 : Selección de extras</h3>
+                    </div>
+                    <p>Reserva de 1 habitaciones en el establecimiento Castilla Alicante ***Sup. con fecha de entrada 30/03/2019 y salida 03/04/2019 (4 noches de estancia).</p>
+                    <form>
+                      <div class="personal-data-wrap">
+                        <div class="row small-up-1 medium-up-3 large-up-3">
+                          <div class="columns">
+                            <div class="data-card">
+                              <div class="card-image"> <img src="assets/images/content/card-image1.jpg" alt="Image"> </div>
+                              <div class="card-content eq-height">
+                                <div class="feature-title">
+                                  <h4>Spa centro deportivo arena</h4>
+                                  <strong>Precio por persona y estancia</strong> </div>
+                                <p>Disfrute del SPA en el centro deportivo Arena a escasos metros del hotel donde encontrara un espacio para relejarse.</p>
+                                <input type="checkbox" name="day_price" id="price9">
+                                <label for="price9">precio por persona y estancia <strong>13,00&euro;</strong></label>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="columns">
+                            <div class="data-card">
+                              <div class="card-image"> <img src="assets/images/content/card-image2.jpg" alt="Image"> </div>
+                              <div class="card-content eq-height">
+                                <div class="feature-title">
+                                  <h4>Servicio cuna</h4>
+                                  <strong>Ofrecemos cuna para su bebe</strong> </div>
+                                <input type="checkbox" name="day_price" id="price11">
+                                <label for="price11">precio por habitación y día <strong>8,00&euro;</strong></label>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="columns">
+                            <div class="data-card">
+                              <div class="card-image"> <img src="assets/images/content/card-image3.jpg" alt="Image"> </div>
+                              <div class="card-content eq-height">
+                                <div class="feature-title">
+                                  <h4>Botella de cava</h4>
+                                  <strong>Botella de cava el día de llegada</strong> </div>
+                                <input type="checkbox" name="day_price" id="price12">
+                                <label for="price12">precio por habitación y día <strong>15,00&euro;</strong></label>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!--Submit Block-->
+                      <div class="submit-block sub-total">
+                        <ul>
+                          <li>Importe total de mi reserva:<strong>545,33&euro;</strong></li>
+                          <li>Importe total de mi reserva:<strong>80,00&euro;</strong></li>
+                          <li>Importe total de mi reserva:<strong>545,33&euro;</strong></li>
+                        </ul>
+                        <p>El importe de la reserva incluye impuestos y descuentos por ofertas vigentes en el hotel ya aplicados.</p>
+                        <span class="note-text">* Los servicios extras no quedan garantizados ni están incluidos en el precio final. Se confirmarán mediante un mail directamente del Castilla Alicante ***Sup.</span>
+                        <div class="bttn-outer">
+                          <button type="submit" class="btn">Continuar con la reserva</button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--Booking Block4-->
+            <div class="booking-block-outer">
+              <div class="row">
+                <div class="medium-12 columns">
+                  <div class="booking-block formblock">
+                    <div class="page-title">
+                      <h3>Paso 4/5 : Datos personales</h3>
+                    </div>
+                    <h6>Resumen de su reserva de habitaciones:</h6>
+                    <p>Reserva de 1 habitaciones en el establecimiento Castilla Alicante ***Sup. con fecha de entrada 04/03/2019 y salida 06/03/2019 (2 noches de estancia).</p>
+                    <!--Table-->
+                    <div class="booking-table"> 
+                      <!--Table Single Field1-->
+                      <div class="table-single">
+                        <div class="table-title">
+                          <h6><span>Habitación 1: </span></h6>
+                          <span class="float-right">Total por la habitación: <strong>413,00€</strong></span> </div>
+                        <div class="table-body">
+                          <div class="table-row">
+                            <div class="table-col"> <span><i>Tipo de habitación:</i><strong>Doble superior</strong></span> <span><i>Regimen:</i><strong>Media pensión</strong></span> <span><i>Huéspedes:</i><strong>3 personas</strong></span> <span><i>Tarifa:</i><strong>Oferta media pension</strong></span> </div>
+                            <div class="table-col"> <span><i>Fecha entrada:</i><strong>04/03/2019</strong></span> <span><i>Fecha salida:</i><strong>07/03/2019</strong></span> <span><i>Noches:</i><strong>3 noches</strong></span> </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="table-single">
+                        <div class="table-title">
+                          <h6><span>Habitación 2: </span></h6>
+                          <span class="float-right">Total por la habitación: <strong>290,00€</strong></span> </div>
+                        <div class="table-body">
+                          <div class="table-row">
+                            <div class="table-col"> <span><i>Tipo de habitación:</i><strong>Doble superior</strong></span> <span><i>Regimen:</i><strong>Media pensión</strong></span> <span><i>Huéspedes:</i><strong>3 personas</strong></span> <span><i>Tarifa:</i><strong>Oferta media pension</strong></span> </div>
+                            <div class="table-col"> <span><i>Fecha entrada:</i><strong>04/03/2019</strong></span> <span><i>Fecha salida:</i><strong>07/03/2019</strong></span> <span><i>Noches:</i><strong>3 noches</strong></span> </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="table-single">
+                        <div class="table-title">
+                          <h6><span>Extras</span></h6>
+                          <span class="float-right">Importe total de mis extras: <strong>13,00€</strong></span> </div>
+                        <div class="table-body">
+                          <div class="table-row">
+                            <div class="table-col"> <span>SPA CENTRO DEPORTIVO ARENA</span> <span><i>Cantidad:</i><strong>1</strong></span> <span><i>Precio total:</i><strong>13,00€</strong></span> </div>
+                            <div class="table-col"> <span><i>Precio por persona y estancia:</i><strong>13,00 €</strong></span> </div>
+                          </div>
+                        </div>
+                      </div>
+                      <span class="note-text">* Los servicios extras no quedan garantizados ni están incluidos en el precio final. Se confirmarán mediante un mail directamente del Castilla Alicante ***Sup.</span> </div>
+                    <!--Table-->
+                    <div class="form-wrap">
+                      <h6>¿Ha estado en nuestro hotel antes? Identifíquese a continuación y benefíciese de un descuento sobre el precio de su reserva</h6>
+                      <div class="top-block">
+                        <form>
+                          <div class="ipfield-half">
+                            <label>NIF / NIE / Pasaporte</label>
+                            <div class="input-wrap required">
+                              <input type="text" class="inputbox" placeholder="NIF / NIE / Pasaporte">
+                            </div>
+                          </div>
+                          <div class="ipfield-quarter">
+                            <label>Fecha de nacimiento</label>
+                            <div class="input-wrap required">
+                              <input type="text" class="inputbox dpicker" placeholder="Día / Mes / Año" id="dpt">
+                            </div>
+                          </div>
+                          <div class="ipfield-quarter">
+                            <input type="submit" value="Validar">
+                          </div>
+                        </form>
+                      </div>
+                      <div class="bottom-block">
+                        <h6>Complete sus datos personales</h6>
+                        <form>
+                          <div class="input-row">
+                            <div class="input-field1">
+                              <div class="single-field">
+                                <label>Nombre</label>
+                                <div class="input-wrap required">
+                                  <input type="text" class="inputbox" placeholder="Nombre">
+                                </div>
+                              </div>
+                              <div class="single-field">
+                                <label>Primer apellido</label>
+                                <div class="input-wrap required">
+                                  <input type="text" class="inputbox" placeholder="Primer apellido">
+                                </div>
+                              </div>
+                              <div class="single-field">
+                                <label>Segundo apellido</label>
+                                <input type="text" class="inputbox" placeholder="Segundo apellido">
+                              </div>
+                            </div>
+                            <div class="input-field2">
+                              <div class="single-field">
+                                <label>Domicilio</label>
+                                <div class="input-wrap required">
+                                  <input type="text" class="inputbox" placeholder="Domicilio">
+                                </div>
+                              </div>
+                              <div class="single-field">
+                                <label>Población</label>
+                                <div class="input-wrap required">
+                                  <input type="text" class="inputbox" placeholder="Población">
+                                </div>
+                              </div>
+                              <div class="single-field">
+                                <label>Teléfono</label>
+                                <div class="input-wrap required">
+                                  <input type="text" class="inputbox" placeholder="Teléfono">
+                                </div>
+                              </div>
+                            </div>
+                            <div class="input-field2">
+                              <div class="single-field half-cols">
+                                <div class="input-field3">
+                                  <label>Código postal</label>
+                                  <div class="input-wrap required">
+                                    <input type="text" class="inputbox" placeholder="C.P.">
+                                  </div>
+                                </div>
+                                <div class="input-field4">
+                                  <label>Población</label>
+                                  <div class="input-wrap required">
+                                    <input type="text" class="inputbox" placeholder="Población">
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="single-field">
+                                <label>País</label>
+                                <div class="input-wrap required">
+                                  <input type="text" class="inputbox" placeholder="País">
+                                </div>
+                              </div>
+                              <div class="single-field ">
+                                <label>Correo Electrónico</label>
+                                <div class="input-wrap required">
+                                  <input type="text" class="inputbox" placeholder="Correo Electrónico">
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="input-row">
+                            <div class="input-field5">
+                              <label>Observaciones</label>
+                              <textarea></textarea>
+                            </div>
+                          </div>
+                          <div class="input-row bottm"> <span>Importe total de mi reserva: <strong>703,50 €</strong></span>
+                            <p>El importe de la reserva incluye impuestos y descuentos por ofertas vigentes en el hotel ya aplicados.</p>
+                            <input type="checkbox" name="remember" id="rem1">
+                            <label for="rem1">He leído y acepto la <a href="#">política de privacidad y condiciones generales de reserva</a>. </label>
+                            <div class="bttn-outer">
+                              <input type="submit" value="Confirmar reserva">
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!--End Content section--> 
+        
+        <!--Begin Footer section-->
+        <footer class="footer-container">
+          <div class="footertop-outer">
+            <div class="row">
+              <div class="small-12 medium-4 columns">
+                <div class="footertop">
+                  <div class="footer-icon"> <img src="assets/images/icon1.svg" alt=""> </div>
+                  <h6>Visita nuestro hotel a través de <br/>
+                    google street view</h6>
+                </div>
+              </div>
+              <div class="small-12 medium-4 columns">
+                <div class="footertop">
+                  <div class="footer-icon"> <img src="assets/images/icon2.svg" alt=""> </div>
+                  <h6>Wifi Gratis en Todo el Hotel <br/>
+                    Aprovecha nuestras ofertas y reserva YA</h6>
+                </div>
+              </div>
+              <div class="small-12 medium-4 columns">
+                <div class="footertop">
+                  <div class="footer-icon"> <img src="assets/images/icon3.svg" alt=""> </div>
+                  <h6>Sé el primero <br/>
+                    Conoce nuestras últimas promociones</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footermid-outer">
+            <div class="row">
+              <div class="small-12 medium-5 large-4 columns">
+                <div class="address-area">
+                  <div class="footer-logo"> <a href="#"><img src="assets/images/footer-logo.svg" alt=""></a> </div>
+                  <address>
+                  Hotel Castilla Alicante<br/>
+                  Av. de los Paises Escandinavos, 7<br/>
+                  Alicante (Playa de San Juan)
+                  </address>
+                  <div class="contact"> Tel: <a href="tel:965162033">(+34) 965 162 033</a><br/>
+                    Email: <a href="mailto:reservas@hcastilla.com">reservas@hcastilla.com</a> </div>
+                </div>
+              </div>
+              <div class="small-12 medium-6 large-5 columns">
+                <div class="footer-links">
+                  <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Ofertas</a></li>
+                    <li><a href="#">Hotel</a></li>
+                    <li><a href="#">Bodas y eventos</a></li>
+                    <li><a href="#">Eventos de empresa</a></li>
+                    <li><a href="#">Ocio y deporte</a></li>
+                    <li><a href="#">Turismo</a></li>
+                    <li><a href="#">Contacto</a></li>
+                    <li><a href="#">Salas para reuniones</a></li>
+                    <li><a href="#">Parque infantil</a></li>
+                    <li><a href="#">Restaurantes</a></li>
+                    <li><a href="#">Cafetaría</a></li>
+                    <li><a href="#">Banquetes de boda</a></li>
+                    <li><a href="#">Banquetes de comunión</a></li>
+                    <li><a href="#">Parking</a></li>
+                    <li><a href="#">Piscina</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footerbottom-outer">
+            <div class="row">
+              <div class="medium-12 columns">
+                <div class="copyright">Copyright 2019 Hotel Castilla Alicante -  Aviso legal -  Ley de protección de datos -  Ley Orgánica</div>
+              </div>
+            </div>
+          </div>
+        </footer>
+        <!--End Footer section--> 
+      </div>
+      <!--End off-canvas section--> 
+    </div>
+  </div>
+</div>
+
+<!-- Le javascript
+    ================================================== --> 
+<!-- Placed at the end of the document so the pages load faster --> 
+<script src="assets/js/vendor/jquery.min.js"></script> 
+<script src="assets/js/vendor/migrate.min.js"></script> 
+<script src="assets/js/vendor/what-input.js"></script> 
+<script src="assets/js/vendor/foundation.min.js"></script> 
+<script src="assets/js/vendor/debouncedresize.js"></script> 
+<script src="assets/js/vendor/slick.js"></script> 
+<script src="assets/js/vendor/imgLiquid.js"></script> 
+<script src="assets/js/vendor/matchHeight.js"></script> 
+<script src="assets/js/vendor/languageswitcher.js"></script> 
+<script src="assets/js/vendor/foundation-datepicker.js"></script> 
+<script src="assets/js/vendor/foundation-datepicker.es.js"></script> 
+<script src="assets/js/vendor/sumoselect.min.js"></script> 
+<script src="assets/js/main.js"></script>
+</body>
+</html>

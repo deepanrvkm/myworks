@@ -1,0 +1,242 @@
+.inner-content {
+    width: 100%;
+    padding: 36px 0;
+}
+
+.main-content {
+    width: 100%;
+}
+
+.main-content h4 {
+    padding-bottom: 30px;
+}
+
+.single-div {
+    width: 100%;
+    padding: 40px 0;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: space-between;
+    justify-content: space-between;
+}
+
+.image-div {
+    width: 19.39%;
+    height: 542px;
+}
+
+.content-div {
+    width: 80.61%;
+    padding-left: 45px;
+}
+
+h5.title {
+    position: relative;
+    color: #006738;
+    padding-left: 82px;
+    line-height: 49px;
+    margin-bottom: 23px;
+}
+
+h5.title:before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    background: url('../images/star.png') no-repeat;
+    width: 51px;
+    height: 49px;
+    background-size: 100%;
+}
+
+.inner-content ul {
+    width: 100%;
+}
+
+.inner-content ul li {
+    width: 100%;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 17px;
+    color: #231f20;
+}
+
+.inner-content ul li:before {
+    width: 100%;
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 16px;
+    background: #39b54a;
+    width: 10px;
+    height: 10px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.content-div span {
+    padding-bottom: 15px;
+    display: block;
+}
+
+.single-div.right-image .image-div {
+    order: 2;
+    width: 26.89%;
+}
+
+.single-div.right-image .image-div {
+    height: 349px;
+}
+
+.single-div.right-image .content-div {
+    width: 73.11%;
+    padding-right: 45px;
+    padding-left: 0;
+}
+
+.inner-content-div h5 {
+    color: #006738;
+    padding-bottom: 25px;
+}
+
+
+
+
+/*------------------------ contact --------------------*/
+
+.form-block {
+    width: 100%;
+}
+
+.contact-detail {
+    width: 50%;
+    padding-right: 50px;
+}
+
+.contact-detail a {
+    color: #434345;
+}
+
+.contact-detail address {
+    margin-bottom: 0;
+}
+
+.contact-detail a:hover,
+.contact-detail a:focus,
+.contact-detail a:active {
+    color: #006738;
+}
+
+.contact-detail h5 {
+    margin: 0 0 10px;
+    color: #231f20;
+}
+
+.contact-form {
+    width: 100%;
+    padding: 40px 0 50px;
+}
+
+.top-div {
+    width: 100%;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: space-between;
+    justify-content: space-between;
+
+}
+
+.contact-form form {
+    width: 100%;
+}
+
+.contact-form h6 {
+    padding: 0 0 30px;
+    color: #231f20;
+}
+
+.contact-form form input {
+    width: 100%;
+    height: 57px;
+    border: 2px solid #231f20;
+    color: #231f20;
+    font-size: 22px;
+    border-radius: 0;
+    margin: 0 0 20px;
+    padding: 5px 10px;
+
+}
+
+.contact-form form input:focus,
+.contact-form form textarea:focus {
+    outline: none;
+}
+
+.contact-form form textarea {
+    width: 100%;
+    margin: 0 0 20px;
+    height: 180px;
+    padding: 14px 10px;
+    border: 2px solid #231f20;
+    resize: none;
+    color: #231f20;
+    font-size: 22px;
+    line-height: 25px;
+    border-radius: 0;
+
+}
+
+.contact-form form label {
+    margin-bottom: 6px;
+}
+
+.contact-form form input[type="submit"] {
+    width: auto;
+    background: #006738;
+    padding: 0px;
+    color: #fff;
+    font-size: 30px;
+    height: 60px;
+    margin: 0;
+    min-width: 200px;
+    border: none;
+    cursor: pointer;
+}
+
+.contact-form form input[type="submit"]:hover,
+.contact-form form input[type="submit"]:active,
+.contact-form form input[type="submit"]:focus {
+    background: #0f5b34;
+
+}
+
+.form-submit {
+    width: 100%;
+}
+
+.contact-form form .g-recaptcha {
+    margin: 0 0 20px;
+}
+
+.contact-form form .g-recaptcha iframe {
+    border: 1px solid #7a0026;
+}
+
+.map {
+    height: auto;
+    width: 60%;
+}
+
+.map iframe {
+    width: 100%;
+    height: 100%;
+}

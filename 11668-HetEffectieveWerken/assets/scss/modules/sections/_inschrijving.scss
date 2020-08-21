@@ -1,0 +1,287 @@
+.tab-list{
+    padding:100px 96px 60px 0;
+    position: relative;
+    @include breakpoint(xlarge only) { 
+        padding:100px 80px 60px 0;
+    }
+    @include breakpoint(large only) { 
+        padding:100px 60px 60px 0;
+    }
+    @include breakpoint(medium down) { 
+        padding: 60px 15px 60px 0;
+    }
+    @include breakpoint(small only) {
+        padding: 0;
+    }
+    &.list-only{
+        @include breakpoint(small only) {
+            padding: 40px 20px;
+        }
+    }
+    h5{
+       padding:0 0 34px;
+       color: $color9;
+    }
+    .tab-title-outer{
+        position: absolute;
+        width: 1000px;
+        right: 96px;
+        top: 66px;
+        z-index: 9;
+        text-align: right;
+        @include breakpoint(xlarge only) { 
+           right: 80px;
+        }
+        @include breakpoint(large only) { 
+            right: 60px;
+        }
+        @include breakpoint(medium down) { 
+            position: inherit;
+            width: 100%;
+            text-align: left;
+            right: inherit;
+            top: 0;
+        }
+    }
+    .tabs{
+        float: right;
+        border: none;
+    }
+    .tabs-title{
+        float: left;
+        padding: 0 0 0 42px;
+        border-bottom: solid 1px $color2;
+        @media #{$md-desktop} { 
+           padding: 0 0 0 35px; 
+        }
+        @include breakpoint(xlarge only) { 
+            padding: 0 0 0 30px;
+        }
+        @include breakpoint(large only) { 
+            padding: 0 0 0 20px;
+        }
+        &:first-child{
+            padding-left: 0;
+        }
+        > a{
+            font-weight: $bold;
+            font-size: $size-sm;
+            line-height: 1;
+            color: $color13;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            padding: 0 0 16px;
+            position: relative;
+            @include breakpoint(xlarge only) { 
+                letter-spacing: .5px;
+                font-size: 11px;
+            }
+            @include breakpoint(large only) { 
+                letter-spacing: 0;
+                font-size: 11px;
+            }
+            &:before{
+                content: "";
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                width: 0;
+                height: 3px;
+                background: $primary;
+            }
+            &:focus, 
+            &[aria-selected="true"] {
+                background: none;
+                color: $darker;
+                &:before{
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .tabs-content{
+        border: none;
+        padding:50px 0 0;
+        @include breakpoint(large only) { 
+            padding:40px 0 0;
+        }
+    }
+    .tabs-panel{
+        .agenda-time-blk{
+            padding: 0;
+        }
+    }
+   .accordion-item{
+        .accordion-title{
+            padding: 15px;
+            font-weight: $semibold;
+            font-size: $size-base;
+            line-height: 1.125;
+            color: $color9;
+            &:hover, &:focus{
+                background: none;
+                color: $primary;
+            }
+        }
+       &.is-active .accordion-title{
+           color: $primary;
+       }
+        .accordion-content{
+            h5{
+                @include breakpoint(medium down) {
+                    padding:0 0 30px;
+                }
+            }
+            .agenda-time-blk{
+                padding: 0;
+            }
+        }
+    }
+    
+}
+.sm-accordion{
+        position: relative;
+        margin-left: 8px;
+        &:before{
+            content: "";
+            position: absolute;
+            left: 24px;
+            top: 0;
+            width: 1px;
+            height: 92%;
+            background: $color2;
+        }
+        .accordion-item{
+            padding: 0 0 32px;
+            .accordion-title{
+                border: none;
+                padding: 15px 0 15px 90px;
+                font-weight: $semibold;
+                font-size: $size-base;
+                line-height: 1.125;
+                color: $color9;
+                @include breakpoint(medium down) {
+                    padding: 15px 0 15px 70px;
+                }
+                &:hover, &:focus{
+                    background: none;
+                    color: $primary;
+                }
+                &:before{
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    width: 48px;
+                    height: 48px;
+                    border-radius: 50%;
+                    background: $lighter;
+                    border:solid 1px $color2;
+                    margin: 0;
+                    right: inherit;
+                }
+                &:after{
+                    content: "+";
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    width: 48px;
+                    height: 48px;
+                    font-weight: $lighter;
+                    font-size: 32px;
+                    line-height: 46px;
+                    text-align: center;
+                    color: $primary;
+                }
+            }
+            &.is-active .accordion-title{
+                color: $primary;
+            }
+            &.is-active .accordion-title:before{
+                background: $primary;
+                border: none;
+            }
+            &.is-active .accordion-title:after{
+                content: "";
+                width: 16px;
+                height: 3px;
+                background: $lighter;
+                left: 16px;
+                top: 22px;
+            }            
+            .accordion-content{
+                border: none;
+                padding: 0  30px 0 90px;
+                @include breakpoint(medium down) {
+                    padding: 0 0 0 70px;
+                }
+                p{
+                    line-height: 1.38;
+                    padding:0 0 17px;
+                }
+            }
+        }
+        &.icons{
+             .accordion-item{
+                .accordion-title{
+                    &:after{
+                        content: "";
+                        background-repeat: no-repeat;
+                        background-position: center center;
+                    }
+                    &.icon1:after{
+                         background-image: url("../images/timeline1.svg");
+                    }
+                    &.icon2:after{
+                         background-image: url("../images/timeline2.svg");
+                    }
+                    &.icon3:after{
+                         background-image: url("../images/timeline3.svg");
+                    }
+                    &.icon4:after{
+                         background-image: url("../images/timeline4.svg");
+                    }
+                    &.icon5:after{
+                         background-image: url("../images/timeline5.svg");
+                    }
+                    &.icon6:after{
+                         background-image: url("../images/timeline6.svg");
+                    }
+                    &.icon7:after{
+                         background-image: url("../images/timeline7.svg");
+                    }
+                }
+                 &.is-active .accordion-title{
+                    &:after{
+                        left: 0;
+                        top: 0;
+                        width: 48px;
+                        height: 48px;
+                        border-radius: 50%;
+                        background-color: $primary;
+                    }
+                    &.icon1:after{
+                         background-image: url("../images/timeline1w.svg");
+                    }
+                    &.icon2:after{
+                         background-image: url("../images/timeline2w.svg");
+                    }
+                    &.icon3:after{
+                         background-image: url("../images/timeline3w.svg");
+                    }
+                    &.icon4:after{
+                         background-image: url("../images/timeline4w.svg");
+                    }
+                    &.icon5:after{
+                         background-image: url("../images/timeline5w.svg");
+                    }
+                    &.icon6:after{
+                         background-image: url("../images/timeline6w.svg");
+                    }
+                    &.icon7:after{
+                         background-image: url("../images/timeline7w.svg");
+                    } 
+                }  
+            }
+        }
+    }

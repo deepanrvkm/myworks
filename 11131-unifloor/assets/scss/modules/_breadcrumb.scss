@@ -1,0 +1,16 @@
+.breadcrumbs {
+	padding-top: 42px;
+	padding-bottom: 30px;
+	li {
+		text-transform: capitalize;
+		color: $text-color;
+		font-size: $small-title;
+		a {
+			color: $text-color;
+			text-transform: capitalize;
+		}
+		&:not(:last-child):after{
+			margin: 0 6px;
+		}
+	}
+}

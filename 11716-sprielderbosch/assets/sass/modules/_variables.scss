@@ -1,0 +1,77 @@
+// Variables
+// --------------------------  
+ 
+// Colors and backgrounds
+// --------------------------
+
+$darker:                      #000000!default;
+$lighter: 		              #ffffff!default;
+$text-color:                  #000000;  
+$link-color:                  #ff7e00;
+
+$color1:                      #e0e0e0;
+$color2:                      #838383;
+$color3:                      #0d0d0d;
+$color4:                      #cdcdcd;
+$color5:                      #f2f1f0;
+$color6:                      #717171;
+$color7:                      #dcdcdc;
+$color8:                      #999999;
+$color9:                      #b6b6b6;
+$color10:                     #7a9a1d;
+$color11:                     #e2e2e2;
+$color12:                     #3a3a3a;
+$color13:                     #535353;
+$color14:                     #e7e7e7;
+$color15:                     #343434;
+
+
+
+//== Typography
+// --------------------------  
+$main-font: 	'CamptonLight';
+$main-fontIt: 	'CamptonLightItalic';
+$sub-font: 	    'CamptonBook';
+$sub-fontIt: 	'CamptonBookItalic';
+$title-lg: 	    'CamptonBold';
+$title-md: 	    'CamptonSemiBold';
+$title-sm: 	    'CamptonMedium';
+
+
+
+$light:      300;
+$regular:    400;
+$medium:     500;
+$semibold:   600;
+$bold:       700;
+$extrabold:  800;
+$black:      900;
+
+
+$size-base:    16px !default; 
+
+$size-h1:                       ceil(($size-base * 3.00)) 		    !default;   // ~48px
+$size-h2:                       ceil(($size-base * 2.25)) 			!default;   // ~36px
+$size-h3:                       ceil(($size-base * 2.25)) 			!default;   // ~36px
+$size-h4:                       ceil(($size-base * 1.88)) 			!default;   // ~30px
+$size-h5:                       ceil(($size-base * 1.50)) 			!default;   // ~24px
+$size-h6:                       ceil(($size-base * 1.25)) 			!default;   // ~20px
+
+$base-linehight:			    24px !default;
+$thin-size:                     ceil(($size-base * 0.75)) 		    !default;   // ~12px
+$sm-size:                       ceil(($size-base * 0.88)) 		    !default;   // ~14px
+$md-size:                       ceil(($size-base * 1.13)) 		    !default;   // ~18px
+
+
+
+//== Media queries breakpoints
+$desktop-only:      "(min-width: 768px)";
+$tablet-landscape:  "(min-width: 1024px) and (max-width: 1279px)";  
+$tablet-portrait:   "(min-width: 768px) and (max-width: 1023px)";
+$mobile-landscape:  "only screen and (max-width : 767px)";
+$mobile-portrait:   "only screen and (max-width : 479px)";  /*@media #{$mobile-portrait} {}*/ 
+
+
+
+
+ 

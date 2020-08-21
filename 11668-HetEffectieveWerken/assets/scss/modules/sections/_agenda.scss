@@ -1,0 +1,202 @@
+.agenda-block{
+  width: 100%;
+  padding: 57px 102px 80px 0;
+  @include breakpoint(large only){
+    padding: 45px 40px 60px 0;
+  }
+  @include breakpoint(medium only) {
+    padding: 40px 15px 50px 0;
+  }
+  @include breakpoint(small only) {
+    padding: 30px 10px 30px;
+  }
+}
+.agenda-top{
+  width: 100%;
+  h5{
+    font-weight: $bold;
+    color: $color9;
+  }
+}
+.agenda-time-blk{
+  width: 100%;
+  padding-top: 104px;
+  @include breakpoint(large only){
+    padding-top: 80px;
+  }
+  @include breakpoint(medium down) {
+    padding-top: 40px;
+  }
+  ul.time-management{
+    li{
+      border: none;
+      position: relative;
+      @include breakpoint(small only) {
+        padding: 16px 0px 16px 0px;
+      }
+      .date{
+        padding: 0 0px 0 27px;
+        @include breakpoint(medium down) {
+          width: 50%;
+          margin-bottom: 15px;
+        }
+        p{
+          color: rgba($darker, 0.7);
+          @include breakpoint(small only) {
+            font-size: 13px;
+          }
+          strong{
+            color: rgba($darker, 1);
+          }
+        }
+        &:first-child{
+          padding: 0 25px 0 0px;
+          &:after{
+            right: 12px;
+            background: url("../images/line-grey.png") no-repeat left center;
+            @include breakpoint(medium down) {
+              display: none;
+            }
+          }
+        }
+      }
+      .location{
+        width: 27%;
+        @include breakpoint(medium down) {
+          width: 50%;
+          padding: 0px;
+        }
+        .btn{
+          min-width: 138px;
+          padding: 16px 12px 16px 29px;
+          @include breakpoint(large only) {
+             padding: 16px 11px 16px 24px;
+              letter-spacing: 0;
+          }
+          @include breakpoint(medium down) {
+            padding: 16px 15px 16px 35px;
+            min-width: 90%;
+          }
+          @include breakpoint(small only) {
+            padding: 12px 7px 12px 28px;
+          }
+        }
+      }
+      .link{
+        width: 24.35%;
+        @include breakpoint(medium down) {
+          width: 50%;
+        }
+        .btn{
+          color: $darker;
+          min-width: 138px;
+          @include breakpoint(medium down) {
+            min-width: 90%;
+          }
+          @include breakpoint(small only) {
+            padding: 12px 7px 12px 28px;
+          }
+        }
+      }
+      &:before{
+        position: absolute;
+        content: "";
+        left: 0;
+        top: 0;
+        height: 1px;
+        width: 87%;
+        background: rgba($border-color, 0.10);
+      }
+      &:after{
+        @include breakpoint(medium down) {
+          position: absolute;
+          content: "";
+          top: 15px;
+          width: 14px;
+          height: 39px;
+          left: 45%;
+          background: url("../images/line-grey.png") no-repeat left center;
+          @include transform-translatex(-50%);
+        }
+        @include breakpoint(small only) {
+          left: 48%;
+        }
+      }
+      &:first-child{
+        &:before{
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+.agenda-bottom{
+  @include flexbox;
+  @include justify-content(space-between);
+  width: 100%;
+  padding-top: 36px;
+  @include breakpoint(medium down) {
+    padding-top: 20px;
+  }
+  @include breakpoint(small only) {
+    @include flex-direction(column);
+  }
+  .location-list{
+    width: 41.09%;
+    padding-top: 64px;
+    padding-right: 25px;
+    @include breakpoint(large only){ 
+      padding-top: 45px;
+    }
+    @include breakpoint(medium only) {
+      width: 35%;
+      padding-top: 15px;
+      padding-right: 15px;
+    }
+    @include breakpoint(small only) {
+      width: 100%;
+      padding-top: 10px;
+      padding-right: 0px;
+    }
+    ul{
+      width: 100%;
+      list-style: none;
+      li{
+        width: 100%;
+        font-size: $size-xmd;
+        color: $color10;
+        padding-left: 20px;
+        position: relative;
+        line-height: 1.14;
+        margin-bottom: 16px;
+        @include breakpoint(medium down) {
+          margin-bottom: 12px;
+        }
+        &:before{
+          position: absolute;
+          content: "";
+          left: 0;
+          top: 2px;
+          width: 11px;
+          height: 11px;
+          background: url('../images/tick-light.svg') no-repeat;
+        }
+      }
+    }
+  }
+  .location-map{
+    width: 58.91%;
+    @include breakpoint(medium only) {
+      width: 65%;
+    }
+    @include breakpoint(small only) {
+      width: 100%;
+    }
+    img{
+      display: block;
+      width: 100%;
+      padding: 0px;
+    }
+  }
+}

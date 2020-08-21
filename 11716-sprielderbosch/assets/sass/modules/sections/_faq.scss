@@ -1,0 +1,190 @@
+// ***********************************
+// Faq page
+// ***********************************
+
+.page-introblock {
+    width: 100%;
+    background: $lighter;
+    padding: 45px 0;
+    @media #{$mobile-landscape} { 
+        padding: 40px 0;
+    }
+    .left-content {
+        width: 100%;
+        padding-right: 60px;
+        @media #{$tablet-portrait} { 
+            padding-right: 30px;
+        }
+        @media #{$mobile-landscape} { 
+            padding: 0 0 30px;
+        }
+        p {
+            padding: 0;
+            color: $darker;
+            font-family: $sub-font;
+            font-size: 18px;
+            line-height: 1.56;
+            @media #{$tablet-portrait} { 
+                font-size: $size-base;
+                line-height: 1.5;
+            }
+            @media #{$mobile-landscape} { 
+                font-size: $size-base;
+                line-height: 1.5;
+            }
+        }
+    }
+}
+.contact-sidebar {
+    width: 100%;
+    h2 {
+        font-family: $sub-font;
+        color: $darker;
+        margin-bottom: 16px;
+        @media #{$tablet-portrait} { 
+            font-size: 30px;
+        }
+        @media #{$mobile-landscape} { 
+            font-size: 30px;
+        }
+    }
+    .contact-info {
+        @include flexbox;
+        @include flex-direction(row);
+        @include flex-wrap(wrap);
+        @include align-items(center);
+        padding: 0 3px;
+        p {
+            padding: 0;
+            color: $darker;
+            font-family: $sub-font;
+            font-size: 18px;
+            line-height: 1.56;
+            @media #{$tablet-portrait} { 
+                font-size: $size-base;
+                line-height: 1.5;
+            }
+            @media #{$mobile-landscape} { 
+                font-size: $size-base;
+                line-height: 1.5;
+            }
+            a {
+                color: $darker;
+                border-bottom: 1px solid $darker;
+                text-decoration: none;
+                &:hover,
+                &:focus{
+                    color: $link-color;
+                    border-bottom: 1px solid $link-color;
+                }
+            }
+        }
+    }
+    .profile-pic {
+        width: 76px;
+        height: 76px;
+        @include border-radius(100px);
+        margin-right: 20px;
+        @media #{$mobile-portrait} {
+            width: 60px;
+            height: 60px;
+            margin-right: 14px;
+        }
+    }
+}
+.faq-container {
+    width: 100%;
+    background: $lighter;
+    .card {
+        border: 0;
+        @include box-shadow(0px, 0px, 15px, 0px, rgba(0, 0, 0, 0.15));
+        margin-bottom: 30px;
+        padding: 15px 50px;
+        background: $lighter;
+        border-radius: 0;
+        @media #{$tablet-portrait} {
+            padding: 10px 29px;
+        }
+        @media #{$mobile-landscape} {
+            padding: 0 20px;
+        }
+    }
+    .card-header {
+        background: $lighter;
+        padding: 0;
+        border-bottom: 0;
+        h2 {
+            font-family: $main-font;
+            color: $color3;
+            @media #{$tablet-landscape} { 
+                font-size: 30px;
+            }
+            @media #{$tablet-portrait} { 
+                font-size: $size-h5;
+            }
+            @media #{$mobile-landscape} {
+                font-size: 23px;
+            }
+            button {
+                color: $color3;
+                border: 0;
+                padding: 27px 50px 27px 0;
+                text-decoration: none;
+                cursor: pointer;
+                width: 100%;
+                text-align: left;
+                position: relative;
+                &:after {
+                    position: absolute;
+                    content: "";
+                    right: 0;
+                    top: 0;
+                    bottom: 0;
+                    margin: auto;
+                    color: $darker;
+                    width: 20px;
+                    height: 13px;
+                    background: url(../images/arrow-up.svg) no-repeat center center;
+                    background-size: 100%;
+                    @include transition (all .3s ease-in-out);
+                    @media #{$tablet-portrait} { 
+                        width: 18px;
+                    }
+                    @media #{$mobile-landscape} {
+                        width: 15px;
+                    }
+                }
+                &:focus {
+                    outline: 0;
+                }
+                &.collapsed {
+                    &:after {
+                        background: url(../images/arrow-down.svg) no-repeat center center;
+                        background-size: 100%;
+                    }
+                }
+                @media #{$tablet-portrait} {
+                    padding: 27px 35px 27px 0;
+                }
+                @media #{$mobile-landscape} {
+                    padding: 22px 32px 22px 0;
+                }
+            }
+        }
+    }
+    .card-body {
+        padding: 0 50px 0 0;
+        @media #{$mobile-landscape} {
+            padding: 0;
+        }
+        p {
+            font-family: $main-font;
+            font-size: $size-base;
+            line-height: 1.63;
+            color: $darker;
+            @media #{$mobile-landscape} {
+                line-height: 1.5;
+            }
+        }
+    }
+}

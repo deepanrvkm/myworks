@@ -1,0 +1,211 @@
+// ***********************************
+// General
+// ***********************************
+.content-blockouter{
+    .single-contblock.br-only{
+        border-bottom: solid 1px $color9;
+        padding-bottom: 15px;
+    }
+}
+.image-list-outer{
+    padding:40px 0 30px;
+    h2{
+        padding:0 0 25px;
+    }
+}
+.grid-image{
+   float: left;
+   width: 50%;
+   height: 350px;
+   overflow: hidden;  
+    @media #{$tablet-landscape} { 
+        height: 250px;
+    }
+    @media #{$tablet-portrait} { 
+        height: 200px;
+    }
+    @media #{$mobile-landscape} { 
+         width: 100%;
+         height: 300px;
+    }
+    @media #{$mobile-portrait} { 
+        height: 200px;
+    }
+   &.sm-size{
+      width: 25%;
+      height: 175px;
+       @media #{$tablet-landscape} { 
+           height: 125px;
+       }
+       @media #{$tablet-portrait} { 
+           height: 100px;
+       }
+       @media #{$mobile-landscape} { 
+           width: 50%;
+           height: 150px;
+       }
+       @media #{$mobile-portrait} { 
+           height: 100px;
+       }
+   }
+    &.md-size{
+        width: 50%;
+        height: 175px;
+        @media #{$tablet-landscape} { 
+           height: 125px;
+       }
+       @media #{$tablet-portrait} { 
+           height: 100px;
+       }
+       @media #{$mobile-landscape} { 
+           height: 150px;
+       }
+       @media #{$mobile-portrait} { 
+           height: 100px;
+       }
+    }
+   .image-holder{
+       width: 100%;
+       height: 100%;
+       @include transition(all 300ms ease-in-out);
+       &:hover{
+           @include scale(1.05);
+       }
+   }
+}
+.content-area-outer{
+    padding:30px 0 40px;
+}
+.content-area{
+    @include flexbox;
+    @include justify-content(space-between);
+    @include flex-wrap(wrap);
+    @media #{$mobile-landscape} { 
+        padding: 20px 0 0;
+    }
+    .image-content{
+        width: 50%;
+        @include order(2);
+        padding:5px 0 0;
+        @media #{$mobile-landscape} { 
+            @include order(1);
+            padding: 0;
+            width: 100%;
+        }
+    }
+    .text-content{
+        width: 50%;
+        @include order(1);
+        padding-right: 30px;
+        @media #{$mobile-landscape} { 
+            @include order(2);
+            padding:30px 0 0;
+            width: 100%;
+        }
+        h3{
+            padding: 30px 0 23px;
+            @media #{$mobile-landscape} { 
+                padding: 0 0 20px;
+            }
+        }
+        p{
+            &:last-child{
+               @media #{$mobile-landscape} { 
+                   padding: 0;
+               }
+            }
+        }
+    }
+    .single-image{
+        float: right;
+        img{
+            display: block;
+        }
+    }
+}
+.rust{
+    .text-content{
+        p{
+            font-size: $md-size;
+            font-family: $sub-font;
+            line-height: 1.5;
+            &.name{
+                font-size: $size-base;
+                font-family: $main-fontIt;
+                span{
+                  color: $color2;  
+                }
+            }
+        }
+    }
+}
+.map-block-outer{
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    &:before{
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 30%;
+        @include linearGradient(rgba(0,0,0,.6), rgba(0,0,0,0));
+        z-index: 9;
+    }
+}
+.map-outer{
+    height: 830px;
+    @media #{$tablet-landscape} { 
+        height: 600px;
+    }
+    @media #{$tablet-portrait} { 
+        height: 400px;
+    }
+    @media #{$mobile-landscape} { 
+       height: 400px; 
+    }
+}
+#map-canvas {
+	float: left;
+	width: 100%;
+	height: 100%;
+}
+.map-content{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    padding:65px 0;
+}
+.map-text{
+    display: block;
+    max-width: 800px;
+    margin: auto;
+    h2{
+        color: $lighter;
+        padding:0 0 28px;
+    }
+    p{
+        font-size: $md-size;
+        font-family: $sub-font;
+        line-height: 1.5;
+        color: $lighter;
+    }
+}
+.text-block-inner{
+    padding: 40px 0 16px;
+    margin:0;
+    border-bottom: solid 1px $color9;
+    h2{
+        padding:0 0 17px;
+    }
+    .text-block{
+        max-width: 550px;
+        @media #{$mobile-landscape} { 
+            max-width: inherit;
+        }
+    }
+}

@@ -1,0 +1,94 @@
+// Variables
+// --------------------------  
+ 
+// Colors and backgrounds
+// --------------------------
+
+$darker:                      #000000!default;
+$lighter: 		              #ffffff!default;
+$text-color:                  #696969; 
+$link-color:                  #CF045F;
+$title-color:                 #2F2F2F;
+
+$color1:                      #E5E6ED;
+$color2:                      #757b91;
+$color3:                      #292929;
+$color4:                      #979797;
+$color5:                      #e3e3e3;
+$color6:                      #595959;
+$color7:                      #f4f4f4;
+$color8:                      #2B7681;
+$color9:                      #616161;
+$color10:                     #bbbbbb;
+$color11:                     #191919;
+$color12:                     #505050;
+$color13:                     #313131;
+$color14:                     #d8d8d8;
+$color15:                     #404040;
+$color16:                     #cacaca;
+$color17:                     #757575;
+$color18:                     #CF042E;
+$color19:                     #f2f2f2;
+$color20:                     #575d77;
+$color21:                     #531919;
+$color22:                     #666c83;
+$color23:                     #686E85;
+$color24:                     #535A73;
+$color25:                     #63A3AD;
+
+
+
+//== Typography
+// ----------------------------------  
+$main-font: 	   'AvenirMedium';
+$font-black:       'AvenirBlack';
+$font-heavy:       'AvenirHeavy';
+$font-book:        'AvenirBook';
+$sub-font: 	       'AvenirOblique';
+
+
+$light:      300;
+$regular:    400;
+$medium:     500;
+$semibold:   600;
+$bold:       700;
+$extrabold:  800;
+$black:      900;
+
+
+$size-base:       16px !default; 
+$size-h1:                       ceil(($size-base * 1.75)) 			!default;   // ~28px
+$size-h2:                       ceil(($size-base * 1.50)) 			!default;   // ~24px
+$size-h3:                       ceil(($size-base * 1.375)) 			!default;   // ~22px
+$size-h4:                       ceil(($size-base * 1.25)) 			!default;   // ~20px
+$size-h5:              		    ceil(($size-base * 1.187)) 			!default;   // ~19px
+$size-h6:                       ceil(($size-base * 1.06)) 		    !default;   // ~17px
+
+$base-linehight:  28px !default;
+$lineheight-h1:                 ceil(($size-base * 2.00)) 		    !default;   // ~32px
+$lineheight-h2:                 ceil(($size-base * 1.875)) 			!default;   // ~30px
+$lineheight-h3:                 ceil(($size-base * 1.81)) 			!default;   // ~29px
+$lineheight-h4:                 ceil(($size-base * 1.625)) 			!default;   // ~26px
+$lineheight-h5:                 ceil(($size-base * 1.50)) 			!default;   // ~24px
+$lineheight-h6:                 ceil(($size-base * 1.375)) 			!default;   // ~22px
+
+$mode-size:              		ceil(($size-base * 1.125)) 			!default;   // ~18px
+$med-size:                      ceil(($size-base * .937)) 			!default;   // ~15px
+$sm-size:                       ceil(($size-base * .875)) 			!default;   // ~14px
+$exsm-size:                     ceil(($size-base * .687)) 			!default;   // ~11px
+
+
+
+
+//== Media queries breakpoints
+$desktop-only:      "(min-width: 768px)";
+$mobile-only:       "(max-width: 767px)";
+$desktop-medium:    "(min-width: 1280px) and (max-width: 1400px)";
+$tablet-landscape:  "(min-width: 1024px) and (max-width: 1279px)";
+$tablet-portrait:   "(min-width: 768px) and (max-width: 1023px)";
+$mobile-landscape:  "only screen and (max-width : 767px)";
+$mobile-portrait:   "only screen and (max-width : 479px)";  
+
+
+
+ 

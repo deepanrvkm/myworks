@@ -1,0 +1,50 @@
+.content-form{
+	padding: 60px 20px 40px;
+	background: $bg-color;
+	margin: 0 0 40px;
+	@media #{$screen-medium} {
+		padding: 40px 20px 20px;
+	}
+	@media #{$screen-small} {
+		padding: 40px 20px 20px;
+	}
+}
+.form-in{
+	max-width: 400px;
+	.form-element{
+		::-webkit-input-placeholder {
+		  	color: $text-color;
+			opacity: 1;
+		}
+		::-moz-placeholder { 
+		  	color: $text-color;
+			opacity: 1;
+		}
+		:-ms-input-placeholder { 
+		  	color: $text-color;
+			opacity: 1;
+		}
+		:-moz-placeholder { 
+		  	color: $text-color;
+			opacity: 1;
+		}
+		padding: 0 0 20px;
+		input[type=text]{
+			float: none;
+			background: $lighter;
+			height: 40px;
+			line-height: 40px;
+			border: 0;
+			box-shadow: none;
+			margin: 0;
+		}
+		textarea{
+			border:0;
+		}
+		.button{
+			@media #{$screen-small} {
+				min-width: 245px;
+			}
+		}
+	}
+}

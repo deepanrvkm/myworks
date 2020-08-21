@@ -1,0 +1,371 @@
+/*---------------------------------
+    Discoverydays Page 
+-----------------------------------*/
+.newbies-top-container{
+    background: $color12;
+    padding:0 0 55px;
+    @media #{$tablet-portrait} { 
+        padding:0 0 40px;
+    }
+    @media #{$mobile-landscape} { 
+        padding:0 0 20px;
+    }
+    .page-title{
+        padding-bottom: 10px;
+        @media #{$mobile-landscape} { 
+            padding: 0;
+        }
+    }
+    @media #{$mobile-landscape} { 
+        .row .small-12:last-child{
+            order: 1;
+            img{
+                margin: 0 0 20px;
+            }
+        }
+        .row .small-12:first-child{
+            order: 2;
+        }
+    }
+}
+.title-block{
+    margin:0 0 40px;
+    @media #{$mobile-landscape} { 
+        margin:0;
+    }
+    h2{
+        font-size: $size-h1;
+        line-height: $lineheight-h1;
+        color: $title-color;
+        text-transform: uppercase;
+         padding-bottom: 28px;
+        text-align: center;
+        position: relative;
+        margin: 0 0 45px;
+        @media #{$tablet-portrait} { 
+            margin: 0 0 30px;
+        }
+        @media #{$mobile-landscape} { 
+            margin: 0 0 30px;
+        }
+        &:after {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            @include transform-translatex(-50%);
+            content: "";
+            background: $darker;
+            width: 40px;
+            height: 2px;
+        }
+
+        @media #{$tablet-portrait} {
+            padding-bottom: 20px;
+            font-size: 30px;
+        }
+
+        @media #{$mobile-landscape} {
+            padding-bottom: 20px;
+            font-size: 30px;
+        }
+    }
+     p{ 
+       text-align: center;
+       max-width: 900px;
+       margin: auto;  
+        a{
+            color: $link-color;
+        }
+    }
+    
+}
+.seminar-container{
+    padding:80px 0 70px;
+    @media #{$tablet-portrait} { 
+      padding:50px 0 30px;  
+    }
+    @media #{$mobile-landscape} { 
+       padding:40px 0; 
+    }
+}
+.newbies-mid-container{
+    padding: 65px 0 70px;
+    @include gradient(left ,$link-color, $color19);
+    @media #{$tablet-landscape} { 
+       padding: 60px 0; 
+    }
+    @media #{$tablet-portrait} { 
+        padding: 50px 0; 
+    }
+    @media #{$mobile-landscape} { 
+       padding: 40px 0; 
+    }
+    h3{
+        font-size: $med-size;
+        line-height: $lineheight-h2;
+        color: $lighter;
+        text-transform: uppercase;
+        padding:0 0 36px;
+        @media #{$tablet-landscape} { 
+           padding:0 0 30px; 
+        }
+        @media #{$tablet-portrait} { 
+             padding:0 0 20px;
+             font-size: 28px;
+        }
+        @media #{$mobile-landscape} { 
+            padding:0 0 20px;
+            font-size: 28px;
+        }
+    }
+}
+.newbies-left{
+    @media #{$mobile-landscape} { 
+        padding: 0 0 40px;
+    }
+    ul{
+        padding-left: 7px;
+        li{
+            font-size: $size-base;
+            line-height: $grid-line;
+            color: $lighter;
+            padding:0 0 0 25px;
+            margin:0 0 6px;
+            position: relative;
+            @media #{$tablet-portrait} { 
+                font-size: 16px;
+                line-height: 18px;
+            }
+            &:before{
+                content: "";
+                position: absolute;
+                left: 0;
+                top: 5px;
+                width: 15px;
+                height: 15px;
+                background: url("../images/tick-dark.svg") no-repeat left top;
+            }
+            @media #{$tablet-portrait} { 
+                font-size: 14px;
+                line-height: 20px;
+                margin: 0 0 10px;
+            }
+        }
+    }
+}
+.newbies-right{
+    ul{
+        @include split(2, 10px); 
+        @media #{$tablet-portrait} { 
+            @include split(1, 0); 
+        }
+        @media #{$mobile-landscape} { 
+           @include split(1, 0);  
+        }
+        li{
+            font-size: $size-h6;
+            line-height: $lineheight-h4;
+            color: $lighter;
+            margin:0 0 10px;
+            @include flexbox;
+            .icon{
+                min-width: 42px;
+                padding:3px 10px 0 0; 
+                text-align: center;
+            }
+            span{
+                color: $lighter;
+            }
+        }
+    }
+    .btns-row{
+        padding:30px 0 0;
+        @media #{$tablet-portrait} { 
+            padding: 0;
+        }
+        @media #{$mobile-landscape} { 
+            padding: 0;
+        }
+        .btn{
+            background: none;
+            border: solid 1px $lighter;
+            &:hover, &:focus{
+                background: $lighter;
+                color: $link-color;
+            }
+            @media #{$tablet-landscape} { 
+                min-width: 220px;
+            }
+            @media #{$tablet-portrait} { 
+                min-width: inherit;
+                letter-spacing: 1px;
+            }
+            @media #{$mobile-landscape} { 
+                min-width: 200px;
+            }
+            @media #{$mobile-portrait} { 
+                min-width: 100%;
+            }
+        }
+    }
+}
+.expect-container{
+    background: $color12;
+    padding:60px 0 150px;
+    @media #{$tablet-landscape} { 
+       padding:60px 0; 
+    }
+    @media #{$tablet-portrait} { 
+       padding:50px 0; 
+    }
+    @media #{$mobile-landscape} { 
+       padding:40px 0;
+    }
+}
+.expect-block{
+    padding:20px 0 0;
+    @media #{$tablet-landscape} { 
+        padding: 0;
+    }
+    @media #{$tablet-portrait} { 
+        padding: 0;
+    }
+    @media #{$mobile-landscape} { 
+        padding: 0;
+    }
+    .tabs{
+        border: none;
+        background: none;
+    }
+    .tabs-title > a{
+        font-size: $lineheight-h3;
+        line-height: $size-h2;
+        color: $color10;
+        font-weight: $bold;
+        text-transform: uppercase;
+        min-width: 265px;
+        text-align: center;
+        padding: 25px 15px;
+        @media #{$tablet-landscape} { 
+            font-size: 26px;
+            line-height: 28px;
+            padding: 20px 15px;
+            min-width: 200px;
+        }
+        @media #{$tablet-portrait} { 
+            font-size: 20px;
+            line-height: 22px;
+            padding: 20px 15px;
+            min-width: 170px;
+        }
+    }
+    .tabs-title > a:focus, 
+    .tabs-title > a[aria-selected="true"]{
+        background: $link-color;
+        color: $lighter;
+    }
+    .tabs-panel{
+        padding: 0;        
+    }
+    .tabs-content{
+       border: solid 1px $color4;
+       background: $lighter; 
+    }
+    .expect{
+        padding: 0 30px 50px 80px;
+        @media #{$tablet-portrait} { 
+           padding: 0 30px 40px 60px; 
+        }
+        @media #{$mobile-landscape} { 
+           padding: 0 30px 40px 20px;  
+        }
+        ul{
+            position: relative;
+            border-left: solid 1px $color8;
+            li{
+                position: relative;
+                padding:70px 0 0 65px;
+                @media #{$tablet-landscape} { 
+                    padding:50px 0 0 50px;
+                }
+                @media #{$tablet-portrait} { 
+                    padding:50px 0 0 50px;
+                }
+                @media #{$mobile-landscape} { 
+                    padding:40px 0 0 40px;
+                }
+                .pict{
+                    position: absolute;
+                    left: -87px;
+                    top: -8px;
+                    width: 44px;
+                    height: 44px;
+                    border-radius: 50%;
+                    border: solid 1px $link-color;
+                    overflow: hidden;
+                    @media #{$tablet-landscape} { 
+                       left: -72px; 
+                    }
+                    @media #{$tablet-portrait} { 
+                        left: -72px;
+                    }
+                    @media #{$mobile-landscape} { 
+                        left: -62px;
+                    }
+                    img{
+                        display: block;
+                        border-radius: 50%;
+                    }
+                }
+            }
+        }
+    }
+    .expect-title{
+        position: relative;
+        border-bottom: solid 1px $color8;
+        margin: 0 0 26px;
+    }
+    .time{
+        @include flexbox;
+        @include align-items(center);
+        font-size: $size-h6;
+        line-height: $lineheight-h6;
+        font-weight: $regular;
+        color: $link-color;
+        text-transform: uppercase;
+        padding: 0 0 8px;
+    }
+    .icon{
+        min-width: 35px;
+        padding:5px 10px 0 0;
+    }
+    h5{
+        padding: 0 0 13px;
+    }
+    .name{
+        font-size: $btn-size;
+        line-height: $size-h6;
+        font-weight: $regular;
+        color: $link-color;
+        text-transform: uppercase;
+        padding:5px 0 10px;
+    }
+    .accordion-content{
+        background: $lighter;
+    }
+    .accordion-title{
+        font-size: 20px;
+        line-height: 22px;
+        color: $color10;
+        font-weight: $bold;
+        text-transform: uppercase;
+        padding: 15px 20px;
+        text-align: left;
+    }
+    .is-active{
+        .accordion-title{
+            background: $link-color;
+            color: $lighter;
+        }
+    }
+}

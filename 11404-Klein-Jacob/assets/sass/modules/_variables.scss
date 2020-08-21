@@ -1,0 +1,91 @@
+// ***********************************
+// VARIABLES
+// ***********************************
+
+// Colors and Backgrounds
+// --------------------------
+
+$darker:                      #000000!default;
+$lighter: 		              #ffffff!default;
+$title-color: 		          #fab96a!default;
+$bg-col1: 		              #262a2d!default;
+$border-color: 		          #444444!default;
+$hover-color: 	     	      #c6985f!default;
+$border-color2: 		      #d0985c!default;
+$menu-color: 		          #1a171b!default;
+$gradient-color: 		      #945a3a!default;
+
+$color1: 		              #424242!default;
+$color2: 		              #383e42!default;
+$color3: 		              #4f4f51!default;
+$color4: 		              #efeff0!default;
+$color5: 		              #e9a962!default;
+$color6: 		              #282c2f!default;
+$color7: 		              #b2b2b2!default;
+$color8: 		              #1e2224!default;
+$color9: 		              #e7e7e7!default;
+$color10: 		              #2a272a!default;
+$color11: 		              #855234!default;
+    
+// Typography
+// -----------
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,700,800');
+@import url('https://fonts.googleapis.com/css?family=Assistant:400,700');
+ 
+$main-font:  'Open Sans', sans-serif;
+$title-font: 'TTCorals-ExtraBold';
+$menu-font:  'Assistant', sans-serif;
+    
+    
+$light:      300;
+$regular:    400;
+$medium:     500;
+$semibold:   600;
+$bold:       700;
+$extrabold:  800;
+$black:      900;
+
+
+$size-base:    		16px !default; 
+
+$size-h1:			ceil(($size-base * 4.250)) 		!default;   // ~68px
+$size-h2:			ceil(($size-base * 4.062))		!default;   // ~65px
+$size-h3:			ceil(($size-base * 3.562))		!default;   // ~57px
+$size-h4:			ceil(($size-base * 3.375)) 		!default;   // ~54px
+$size-h5:			ceil(($size-base * 3.125)) 		!default;   // ~50px
+$size-h6:			ceil(($size-base * 2.187)) 		!default;   // ~35px
+
+$base-lineheight:	ceil(($size-base * 1.81)) 		!default;   // ~29px
+
+$lineheight-h1:	    ceil(($size-base * 4.250)) 		!default;   // ~68px
+$lineheight-h2:	    ceil(($size-base * 4.312)) 		!default;   // ~69px
+$lineheight-h3:	    ceil(($size-base * 3.562)) 		!default;   // ~57px
+$lineheight-h4:	    ceil(($size-base * 3.625)) 		!default;   // ~58px
+$lineheight-h5:	    ceil(($size-base * 3.437)) 		!default;   // ~55px
+$lineheight-h6:	    ceil(($size-base * 2.437)) 		!default;   // ~55px
+
+$size-big:				ceil(($size-base * 5.81)) 		!default;   // ~93px
+$lineheight-big:		ceil(($size-base * 4.75)) 		!default;   // ~76px
+$lineheight-h4-medium:	ceil(($size-base * 2.875)) 		!default;   // ~46px
+$size-h4-medium:		ceil(($size-base * 2.625)) 		!default;   // ~42px
+$lineheight-h4-small:   ceil(($size-base * 1.875)) 		!default;   // ~30px
+$size-title:		    ceil(($size-base * 1.625)) 		!default;   // ~26px
+$size-subtext:		    ceil(($size-base * 1.562)) 		!default;   // ~25px
+$size-subtext1:		    ceil(($size-base * 1.50)) 		!default;   // ~24px
+$size-subtext2:		    ceil(($size-base * 1.437)) 		!default;   // ~23px
+$size-head:		        ceil(($size-base * 1.25)) 		!default;   // ~20px
+$size-medium:		    ceil(($size-base * 1.125)) 		!default;   // ~18px
+$size-btn:			    ceil(($size-base * 1.062))     	!default;   // ~17px
+$submenu-size:			ceil(($size-base * 0.937))     	!default;   // ~15px
+$size-lx-small:		    ceil(($size-base * 0.875)) 		!default;   // ~14px
+$size-small:		    ceil(($size-base * 0.75)) 		!default;   // ~12px
+
+
+//== Media queries breakpoints
+$tab-desktop:       "only screen and (min-width : 768px)";
+$desktop:           "(min-width: 1350px) and (max-width: 1919px)";
+$tablet-landscape:  "(min-width: 1024px) and (max-width: 1349px)";
+$tablet-portrait:   "(min-width: 768px) and (max-width: 1023px)";
+$mobile-landscape:  "only screen and (max-width : 767px)";
+$mobile-portrait:   "only screen and (max-width : 479px)";

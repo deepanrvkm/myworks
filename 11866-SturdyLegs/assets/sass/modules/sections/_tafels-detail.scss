@@ -1,0 +1,113 @@
+// ***********************************
+// Tafels Detail
+// ***********************************
+.product-slider{
+    .slick-list{
+        padding: 0 !important;
+    }
+    .product-image{
+        padding:0 10px;
+            img{
+                opacity: .5;
+                @include transition(all 300ms ease-in-out);
+            }
+        &.slick-center{
+            img{
+                opacity: 1;
+            }
+        }
+    }
+
+}
+.large-slider{
+    margin:0 0 20px;
+    @media #{$mobile-portrait} { 
+        margin: 0 0 10px;
+    }
+}
+.thumb-slider{
+    margin: 0 -10px;
+    @include flexbox;
+    @include justify-content(space-between);
+    @include flex-wrap(wrap);
+    @media #{$mobile-portrait} { 
+        margin:0 -5px;
+    }
+    .slick-list{
+        padding: 0 !important;
+    }
+}
+.thumb-image{
+    padding:0 10px;
+    @media #{$mobile-portrait} { 
+        padding:0 5px;
+    }
+}
+.tafels-detail{
+    .top-content{
+        @media #{$tablet-landscape} { 
+            padding: 0 0 20px;
+        }
+        @media #{$tablet-portrait} { 
+            padding: 0 0 10px;
+        }
+    }
+}
+.content-list-outer{
+    padding:62px 0 170px;
+    @media #{$tablet-landscape} { 
+       padding:50px 0 100px; 
+    }
+    @media #{$tablet-portrait} { 
+        padding:40px 0 80px; 
+    }
+    @media #{$mobile-landscape} { 
+        padding:40px 0 20px; 
+    }
+}
+.content-list{
+    @media #{$mobile-landscape} { 
+        padding:0 0 40px;
+    }
+    h4{
+        font-family: $title-font2;
+        padding:0 0 29px;
+        @media #{$tablet-landscape} { 
+            font-size: 22px;
+            padding:0 0 15px;
+        }
+        @media #{$tablet-portrait} { 
+            font-size: 18px;
+            padding:0 0 15px;
+        }
+        @media #{$mobile-landscape} { 
+            font-size: 22px;
+            padding:0 0 15px
+        }
+        @media #{$mobile-portrait} { 
+            font-size: 18px;
+            padding:0 0 15px;
+        }
+    }
+    ul{
+        li{
+            font-family: $main-font;
+            font-weight: 400;
+            font-size: $text-size;
+            line-height: 2;
+            color: $text-color;
+            @media #{$tablet-landscape} { 
+                font-size: 16px;
+            }
+            @media #{$tablet-portrait} { 
+                font-size: 13px;
+            }
+            @media #{$mobile-landscape} { 
+                font-size: 16px;
+            }
+            @media #{$mobile-portrait} { 
+                font-size: 14px;
+            }
+        }
+    }
+}
